@@ -112,7 +112,7 @@ public class GameActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -130,7 +130,7 @@ public class GameActivity extends AppCompatActivity {
         stoneExist[2][3]=1;
         stoneExist[2][4]=1;
 
-        View view = getLayoutInflater().from(this).inflate(R.layout.activity_main,null);
+        View view = getLayoutInflater().from(this).inflate(R.layout.activity_login,null);
 
         animTran1Start = AnimationUtils.loadAnimation(this, R.anim.anim_tran_1);
         animTran1End = AnimationUtils.loadAnimation(this, R.anim.anim_tran_1_end);

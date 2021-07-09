@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SJapp</string>
+    <string name="kakao_app_key">앱 키</string>
+    <string name="SJapp">SJapp</string>
 </resources>
