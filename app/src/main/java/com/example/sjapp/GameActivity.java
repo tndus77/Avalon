@@ -304,7 +304,29 @@ public class GameActivity extends AppCompatActivity {
             }
         });
     }
-    //private boolean canMove(){}
+    private int[] canMove(int num){
+        int availPoint[] = new int[6];
+        int col,row;//num의 stoneExist상의 위치
+        if(num<=5){
+            col = num - 1;
+            row = 0;
+        }if(num>=6 && num<=11){
+            col = num - 6;
+            row = 1;
+        }if(num>=12 && num<=18){
+            col = num - 12;
+            row = 2;
+        }if(num>=19 && num<=26){
+            col = num - 19;
+            row = 3;
+        }if(num>=27 && num<=35){
+            col = num - 27;
+            row = 4;
+        }
+        for(int)
+        stoneExist
+        return availPoint;
+    }
 
     private void drawingBackground() {
         canvas.drawColor(Color.WHITE);
