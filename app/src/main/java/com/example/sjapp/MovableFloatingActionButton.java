@@ -13,7 +13,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MovableFloatingActionButton extends FloatingActionButton implements View.OnTouchListener {
 
-    private final static float CLICK_DRAG_TOLERANCE = 10;
+    private final static float CLICK_DRAG_TOLERANCE = 100;
 
     private float downRawX, downRawY;
     private float dX,dY;
@@ -45,8 +45,10 @@ public class MovableFloatingActionButton extends FloatingActionButton implements
         if(action == event.ACTION_DOWN){
             downRawX = event.getRawX();
             downRawY = event.getRawY();
-            dX = v.getX() - downRawY;
+            dX = v.getX() - downRawX;
+
             dY = v.getY() - downRawY;
+
             return true;
         }
         else if(action == event.ACTION_MOVE) {
@@ -58,21 +60,34 @@ public class MovableFloatingActionButton extends FloatingActionButton implements
             int parentHeight = viewParent.getHeight();
 
             float newX = event.getRawX() + dX;
+
+
             newX = Math.max(layoutParams.leftMargin, newX);
             newX = Math.min(parentWidth - viewWidth - layoutParams.rightMargin, newX);
 
             float newY = event.getRawY() + dY;
+
             newY = Math.max(layoutParams.topMargin, newY);
             newY = Math.min(parentHeight - viewHeight - layoutParams.bottomMargin, newY);
 
             v.animate().x(newX).y(newY).setDuration(0).start();
         }
-        else if(action == event.ACTION_UP){
+        else if(action == event.ACTION_UP) {
+            float upRawX = event.getRawX();
+            float upRawY = event.getRawY();
 
+            float upDX = upRawX - downRawX;
+            float upDY = upRawY - downRawY;
 
-
-
-
+            if (Math.abs(upDX) < CLICK_DRAG_TOLERANCE && Math.abs(upDY) < CLICK_DRAG_TOLERANCE) {
+                return performClick();
+            } else {
+                return true;
+            }
+            //v.animate().x(upRawX).y(upRawY).setDuration(0).start();
+        }
+        else{
+            return super.onTouchEvent(event);
         }
         return false;
     }
