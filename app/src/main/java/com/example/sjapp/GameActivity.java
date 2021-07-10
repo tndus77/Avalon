@@ -2555,6 +2555,10 @@ public class GameActivity extends AppCompatActivity {
             black_stone23.setVisibility(View.INVISIBLE);
             onBlackButtonClicked(view,23);
         }
+        if(start==24){
+            black_stone24.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,24);
+        }
         if(start==25){
             black_stone25.setVisibility(View.INVISIBLE);
             onBlackButtonClicked(view,25);
