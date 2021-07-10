@@ -9,6 +9,6 @@ import retrofit2.http.POST;
 public interface retrofitInterface {
 
         @POST("/login")
-        Call<LoginActivity> executeLogin(@Body HashMap<String, String> map);
+        Call<Void> executeLogin(@Body HashMap<String, String> map);
 
 }
