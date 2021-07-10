@@ -2061,4 +2061,2791 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/black_stone" />
 
+    ////////27
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone27"
+        app:layout_constraintStart_toStartOf="@+id/black_stone27" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone27"
+        app:layout_constraintTop_toTopOf="@+id/black_stone27" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toStartOf="@+id/black_stone27"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone27" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="512dp"
+        android:layout_marginRight="512dp"
+        android:layout_marginBottom="152dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////28
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone28"
+        app:layout_constraintStart_toStartOf="@+id/black_stone28" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone28"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone28" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone28"
+        app:layout_constraintTop_toTopOf="@+id/black_stone28" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone28"
+        app:layout_constraintTop_toTopOf="@+id/black_stone28" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL28"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone28" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR28"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone28" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="468dp"
+        android:layout_marginRight="468dp"
+        android:layout_marginBottom="152dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+    //////29
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone29"
+        app:layout_constraintStart_toStartOf="@+id/black_stone29" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone29"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone29" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone29"
+        app:layout_constraintTop_toTopOf="@+id/black_stone29" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone29"
+        app:layout_constraintTop_toTopOf="@+id/black_stone29" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL29"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone29" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR29"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone29" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="424dp"
+        android:layout_marginRight="424dp"
+        android:layout_marginBottom="152dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////30
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone30"
+        app:layout_constraintStart_toStartOf="@+id/black_stone30" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone30"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone30" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone30"
+        app:layout_constraintTop_toTopOf="@+id/black_stone30" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone30"
+        app:layout_constraintTop_toTopOf="@+id/black_stone30" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL30"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone30" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR30"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone30" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="402dp"
+        android:layout_marginRight="402dp"
+        android:layout_marginBottom="152dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////31
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone31"
+        app:layout_constraintStart_toStartOf="@+id/black_stone31" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone31"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone31" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone31"
+        app:layout_constraintTop_toTopOf="@+id/black_stone31" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone31"
+        app:layout_constraintTop_toTopOf="@+id/black_stone31" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL31"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone31" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR31"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone31" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="380dp"
+        android:layout_marginRight="380dp"
+        android:layout_marginBottom="152dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////32
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone32"
+        app:layout_constraintStart_toStartOf="@+id/black_stone32" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone32"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone32" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone32"
+        app:layout_constraintTop_toTopOf="@+id/black_stone32" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone32"
+        app:layout_constraintTop_toTopOf="@+id/black_stone32" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL32"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone32" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR32"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone32" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="358dp"
+        android:layout_marginRight="358dp"
+        android:layout_marginBottom="152dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////33
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone33"
+        app:layout_constraintStart_toStartOf="@+id/black_stone33" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone33"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone33" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone33"
+        app:layout_constraintTop_toTopOf="@+id/black_stone33" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone33"
+        app:layout_constraintTop_toTopOf="@+id/black_stone33" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL33"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone33" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR33"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone33" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="336dp"
+        android:layout_marginRight="336dp"
+        android:layout_marginBottom="152dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////34
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone34"
+        app:layout_constraintStart_toStartOf="@+id/black_stone34" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone34"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone34" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone34"
+        app:layout_constraintTop_toTopOf="@+id/black_stone34" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone34"
+        app:layout_constraintTop_toTopOf="@+id/black_stone34" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL34"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone34" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR34"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone34" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="314dp"
+        android:layout_marginRight="314dp"
+        android:layout_marginBottom="152dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////35
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone35"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone35" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone35"
+        app:layout_constraintTop_toTopOf="@+id/black_stone35" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone35"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone35" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:layout_marginBottom="152dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    ////////36
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone36"
+        app:layout_constraintStart_toStartOf="@+id/black_stone36" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone36"
+        app:layout_constraintTop_toTopOf="@+id/black_stone36" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toStartOf="@+id/black_stone36"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone36" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone36"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone36" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="490dp"
+        android:layout_marginRight="490dp"
+        android:layout_marginBottom="190dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////37
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone37"
+        app:layout_constraintStart_toStartOf="@+id/black_stone37" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone37"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone37" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone37"
+        app:layout_constraintTop_toTopOf="@+id/black_stone37" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone37"
+        app:layout_constraintTop_toTopOf="@+id/black_stone37" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL37"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone37" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR37"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone37" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="446dp"
+        android:layout_marginRight="446dp"
+        android:layout_marginBottom="190dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////38
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone38"
+        app:layout_constraintStart_toStartOf="@+id/black_stone38" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone38"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone38" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone38"
+        app:layout_constraintTop_toTopOf="@+id/black_stone38" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone38"
+        app:layout_constraintTop_toTopOf="@+id/black_stone38" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL38"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone38" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR38"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone38" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="402dp"
+        android:layout_marginRight="402dp"
+        android:layout_marginBottom="190dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////39
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone39"
+        app:layout_constraintStart_toStartOf="@+id/black_stone39" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone39"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone39" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone39"
+        app:layout_constraintTop_toTopOf="@+id/black_stone39" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone39"
+        app:layout_constraintTop_toTopOf="@+id/black_stone39" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL39"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone39" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR39"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone39" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="358dp"
+        android:layout_marginRight="358dp"
+        android:layout_marginBottom="190dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////40
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone40"
+        app:layout_constraintStart_toStartOf="@+id/black_stone40" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone40"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone40" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone40"
+        app:layout_constraintTop_toTopOf="@+id/black_stone40" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone40"
+        app:layout_constraintTop_toTopOf="@+id/black_stone40" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL40"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone40" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR40"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone40" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="314dp"
+        android:layout_marginRight="314dp"
+        android:layout_marginBottom="190dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////41
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone41"
+        app:layout_constraintStart_toStartOf="@+id/black_stone41" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone41"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone41" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone41"
+        app:layout_constraintTop_toTopOf="@+id/black_stone41" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone41"
+        app:layout_constraintTop_toTopOf="@+id/black_stone41" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL41"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone41" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR41"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone41" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="270dp"
+        android:layout_marginRight="270dp"
+        android:layout_marginBottom="190dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////42
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone42"
+        app:layout_constraintStart_toStartOf="@+id/black_stone42" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone42"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone42" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone42"
+        app:layout_constraintTop_toTopOf="@+id/black_stone42" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone42"
+        app:layout_constraintTop_toTopOf="@+id/black_stone42" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL42"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone42" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR42"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone42" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="226dp"
+        android:layout_marginRight="226dp"
+        android:layout_marginBottom="190dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////43
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL43"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone43" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone43"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone43" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone43"
+        app:layout_constraintTop_toTopOf="@+id/black_stone43" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone43"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone43" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="204dp"
+        android:layout_marginRight="204dp"
+        android:layout_marginBottom="190dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    ////////44
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone44"
+        app:layout_constraintStart_toStartOf="@+id/black_stone44" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone44"
+        app:layout_constraintTop_toTopOf="@+id/black_stone44" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toStartOf="@+id/black_stone44"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone44" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone44"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone44" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="468dp"
+        android:layout_marginRight="468dp"
+        android:layout_marginBottom="228dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////45
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone45"
+        app:layout_constraintStart_toStartOf="@+id/black_stone45" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone45"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone45" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone45"
+        app:layout_constraintTop_toTopOf="@+id/black_stone45" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone45"
+        app:layout_constraintTop_toTopOf="@+id/black_stone45" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL45"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone45" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR45"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone45" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="424dp"
+        android:layout_marginRight="424dp"
+        android:layout_marginBottom="228dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////46
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone46"
+        app:layout_constraintStart_toStartOf="@+id/black_stone46" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone46"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone46" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone46"
+        app:layout_constraintTop_toTopOf="@+id/black_stone46" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone46"
+        app:layout_constraintTop_toTopOf="@+id/black_stone46" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL46"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone46" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR46"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone46" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="380dp"
+        android:layout_marginRight="380dp"
+        android:layout_marginBottom="228dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////47
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone47"
+        app:layout_constraintStart_toStartOf="@+id/black_stone47" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone47"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone47" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone47"
+        app:layout_constraintTop_toTopOf="@+id/black_stone47" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone47"
+        app:layout_constraintTop_toTopOf="@+id/black_stone47" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL47"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone47" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR47"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone47" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="336dp"
+        android:layout_marginRight="336dp"
+        android:layout_marginBottom="228dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////48
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone48"
+        app:layout_constraintStart_toStartOf="@+id/black_stone48" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone48"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone48" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone48"
+        app:layout_constraintTop_toTopOf="@+id/black_stone48" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone48"
+        app:layout_constraintTop_toTopOf="@+id/black_stone48" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL48"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone48" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR48"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone48" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="292dp"
+        android:layout_marginRight="292dp"
+        android:layout_marginBottom="228dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////49
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone49"
+        app:layout_constraintStart_toStartOf="@+id/black_stone49" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone49"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone49" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone49"
+        app:layout_constraintTop_toTopOf="@+id/black_stone49" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone49"
+        app:layout_constraintTop_toTopOf="@+id/black_stone49" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL49"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone49" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR49"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone49" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="248dp"
+        android:layout_marginRight="248dp"
+        android:layout_marginBottom="228dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////50
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL50"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone50" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone50"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone50" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone50"
+        app:layout_constraintTop_toTopOf="@+id/black_stone50" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone50"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone50" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="226dp"
+        android:layout_marginRight="226dp"
+        android:layout_marginBottom="228dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    ////////51
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone51"
+        app:layout_constraintStart_toStartOf="@+id/black_stone51" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone51"
+        app:layout_constraintTop_toTopOf="@+id/black_stone51" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toStartOf="@+id/black_stone51"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone51" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone51"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone51" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="446dp"
+        android:layout_marginRight="446dp"
+        android:layout_marginBottom="266dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////52
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone52"
+        app:layout_constraintStart_toStartOf="@+id/black_stone52" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone52"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone52" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone52"
+        app:layout_constraintTop_toTopOf="@+id/black_stone52" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone52"
+        app:layout_constraintTop_toTopOf="@+id/black_stone52" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL52"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone52" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR52"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone52" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="402dp"
+        android:layout_marginRight="402dp"
+        android:layout_marginBottom="266dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////53
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone53"
+        app:layout_constraintStart_toStartOf="@+id/black_stone53" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone53"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone53" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone53"
+        app:layout_constraintTop_toTopOf="@+id/black_stone53" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone53"
+        app:layout_constraintTop_toTopOf="@+id/black_stone53" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL53"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone53" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR53"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone53" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="358dp"
+        android:layout_marginRight="358dp"
+        android:layout_marginBottom="266dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////54
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone54"
+        app:layout_constraintStart_toStartOf="@+id/black_stone54" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone54"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone54" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone54"
+        app:layout_constraintTop_toTopOf="@+id/black_stone54" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone54"
+        app:layout_constraintTop_toTopOf="@+id/black_stone54" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL54"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone54" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR54"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone54" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="314dp"
+        android:layout_marginRight="314dp"
+        android:layout_marginBottom="266dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////55
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUR55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone55"
+        app:layout_constraintStart_toStartOf="@+id/black_stone55" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone55"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone55" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone55"
+        app:layout_constraintTop_toTopOf="@+id/black_stone55" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone55"
+        app:layout_constraintTop_toTopOf="@+id/black_stone55" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL55"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone55" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/arrowR55"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone55" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="370dp"
+        android:layout_marginRight="370dp"
+        android:layout_marginBottom="266dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////56
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL56"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone56" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowUL56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/black_stone56"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone56" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone56"
+        app:layout_constraintTop_toTopOf="@+id/black_stone56" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone56"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone56" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="248dp"
+        android:layout_marginRight="248dp"
+        android:layout_marginBottom="266dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    ////////57
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone57"
+        app:layout_constraintTop_toTopOf="@+id/black_stone57" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toStartOf="@+id/black_stone57"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone57" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone57"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone57" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="424dp"
+        android:layout_marginRight="424dp"
+        android:layout_marginBottom="304dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    ////////58
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone58"
+        app:layout_constraintTop_toTopOf="@+id/black_stone58" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toStartOf="@+id/black_stone58"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone58" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone58"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone58" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone58"
+        app:layout_constraintTop_toTopOf="@+id/black_stone58" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="380dp"
+        android:layout_marginRight="380dp"
+        android:layout_marginBottom="304dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    ////////59
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone59"
+        app:layout_constraintTop_toTopOf="@+id/black_stone59" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toStartOf="@+id/black_stone59"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone59" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone59"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone59" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone59"
+        app:layout_constraintTop_toTopOf="@+id/black_stone59" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="336dp"
+        android:layout_marginRight="336dp"
+        android:layout_marginBottom="304dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    ////////60
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowR60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/black_stone60"
+        app:layout_constraintTop_toTopOf="@+id/black_stone60" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toStartOf="@+id/black_stone60"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone60" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone60"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone60" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone60"
+        app:layout_constraintTop_toTopOf="@+id/black_stone60" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="292dp"
+        android:layout_marginRight="292dp"
+        android:layout_marginBottom="304dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+    //////61
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDR61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/arrowL61"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone61" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowL61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toStartOf="@+id/black_stone61"
+        app:layout_constraintTop_toTopOf="@+id/black_stone61" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arrowDL61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone61"
+        app:layout_constraintTop_toBottomOf="@+id/black_stone61" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/black_stone61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="270dp"
+        android:layout_marginRight="270dp"
+        android:layout_marginBottom="304dp"
+        android:background="@drawable/black_stone"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/black_stone" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

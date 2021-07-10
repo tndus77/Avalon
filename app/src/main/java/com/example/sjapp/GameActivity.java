@@ -206,6 +206,289 @@ public class GameActivity extends AppCompatActivity {
     FloatingActionButton arrowUR26;
     FloatingActionButton arrowDL26;
 
+    FloatingActionButton black_stone27;
+    FloatingActionButton arrowL27;
+    FloatingActionButton arrowUL27;
+    FloatingActionButton arrowUR27;
+    FloatingActionButton arrowR27;
+    FloatingActionButton arrowDL27;
+    FloatingActionButton arrowDR27;
+
+    FloatingActionButton black_stone28;
+    FloatingActionButton arrowL28;
+    FloatingActionButton arrowUL28;
+    FloatingActionButton arrowUR28;
+    FloatingActionButton arrowR28;
+    FloatingActionButton arrowDL28;
+    FloatingActionButton arrowDR28;
+
+    FloatingActionButton black_stone29;
+    FloatingActionButton arrowL29;
+    FloatingActionButton arrowUL29;
+    FloatingActionButton arrowUR29;
+    FloatingActionButton arrowR29;
+    FloatingActionButton arrowDL29;
+    FloatingActionButton arrowDR29;
+
+    FloatingActionButton black_stone30;
+    FloatingActionButton arrowL30;
+    FloatingActionButton arrowUL30;
+    FloatingActionButton arrowUR30;
+    FloatingActionButton arrowR30;
+    FloatingActionButton arrowDL30;
+    FloatingActionButton arrowDR30;
+
+    FloatingActionButton black_stone31;
+    FloatingActionButton arrowL31;
+    FloatingActionButton arrowUL31;
+    FloatingActionButton arrowUR31;
+    FloatingActionButton arrowR31;
+    FloatingActionButton arrowDL31;
+    FloatingActionButton arrowDR31;
+
+    FloatingActionButton black_stone32;
+    FloatingActionButton arrowL32;
+    FloatingActionButton arrowUL32;
+    FloatingActionButton arrowUR32;
+    FloatingActionButton arrowR32;
+    FloatingActionButton arrowDL32;
+    FloatingActionButton arrowDR32;
+
+    FloatingActionButton black_stone33;
+    FloatingActionButton arrowL33;
+    FloatingActionButton arrowUL33;
+    FloatingActionButton arrowUR33;
+    FloatingActionButton arrowR33;
+    FloatingActionButton arrowDL33;
+    FloatingActionButton arrowDR33;
+
+    FloatingActionButton black_stone34;
+    FloatingActionButton arrowL34;
+    FloatingActionButton arrowUL34;
+    FloatingActionButton arrowUR34;
+    FloatingActionButton arrowR34;
+    FloatingActionButton arrowDL34;
+    FloatingActionButton arrowDR34;
+
+    FloatingActionButton black_stone35;
+    FloatingActionButton arrowL35;
+    FloatingActionButton arrowUL35;
+    FloatingActionButton arrowUR35;
+    FloatingActionButton arrowR35;
+    FloatingActionButton arrowDL35;
+    FloatingActionButton arrowDR35;
+
+    FloatingActionButton black_stone36;
+    FloatingActionButton arrowL36;
+    FloatingActionButton arrowUL36;
+    FloatingActionButton arrowUR36;
+    FloatingActionButton arrowR36;
+    FloatingActionButton arrowDL36;
+    FloatingActionButton arrowDR36;
+
+    FloatingActionButton black_stone37;
+    FloatingActionButton arrowL37;
+    FloatingActionButton arrowUL37;
+    FloatingActionButton arrowUR37;
+    FloatingActionButton arrowR37;
+    FloatingActionButton arrowDL37;
+    FloatingActionButton arrowDR37;
+
+    FloatingActionButton black_stone38;
+    FloatingActionButton arrowL38;
+    FloatingActionButton arrowUL38;
+    FloatingActionButton arrowUR38;
+    FloatingActionButton arrowR38;
+    FloatingActionButton arrowDL38;
+    FloatingActionButton arrowDR38;
+
+    FloatingActionButton black_stone39;
+    FloatingActionButton arrowL39;
+    FloatingActionButton arrowUL39;
+    FloatingActionButton arrowUR39;
+    FloatingActionButton arrowR39;
+    FloatingActionButton arrowDL39;
+    FloatingActionButton arrowDR39;
+
+    FloatingActionButton black_stone40;
+    FloatingActionButton arrowL40;
+    FloatingActionButton arrowUL40;
+    FloatingActionButton arrowUR40;
+    FloatingActionButton arrowR40;
+    FloatingActionButton arrowDL40;
+    FloatingActionButton arrowDR40;
+
+    FloatingActionButton black_stone41;
+    FloatingActionButton arrowL41;
+    FloatingActionButton arrowUL41;
+    FloatingActionButton arrowUR41;
+    FloatingActionButton arrowR41;
+    FloatingActionButton arrowDL41;
+    FloatingActionButton arrowDR41;
+
+    FloatingActionButton black_stone42;
+    FloatingActionButton arrowL42;
+    FloatingActionButton arrowUL42;
+    FloatingActionButton arrowUR42;
+    FloatingActionButton arrowR42;
+    FloatingActionButton arrowDL42;
+    FloatingActionButton arrowDR42;
+
+    FloatingActionButton black_stone43;
+    FloatingActionButton arrowL43;
+    FloatingActionButton arrowUL43;
+    FloatingActionButton arrowUR43;
+    FloatingActionButton arrowR43;
+    FloatingActionButton arrowDL43;
+    FloatingActionButton arrowDR43;
+
+    FloatingActionButton black_stone44;
+    FloatingActionButton arrowL44;
+    FloatingActionButton arrowUL44;
+    FloatingActionButton arrowUR44;
+    FloatingActionButton arrowR44;
+    FloatingActionButton arrowDL44;
+    FloatingActionButton arrowDR44;
+
+    FloatingActionButton black_stone45;
+    FloatingActionButton arrowL45;
+    FloatingActionButton arrowUL45;
+    FloatingActionButton arrowUR45;
+    FloatingActionButton arrowR45;
+    FloatingActionButton arrowDL45;
+    FloatingActionButton arrowDR45;
+
+    FloatingActionButton black_stone46;
+    FloatingActionButton arrowL46;
+    FloatingActionButton arrowUL46;
+    FloatingActionButton arrowUR46;
+    FloatingActionButton arrowR46;
+    FloatingActionButton arrowDL46;
+    FloatingActionButton arrowDR46;
+
+    FloatingActionButton black_stone47;
+    FloatingActionButton arrowL47;
+    FloatingActionButton arrowUL47;
+    FloatingActionButton arrowUR47;
+    FloatingActionButton arrowR47;
+    FloatingActionButton arrowDL47;
+    FloatingActionButton arrowDR47;
+
+    FloatingActionButton black_stone48;
+    FloatingActionButton arrowL48;
+    FloatingActionButton arrowUL48;
+    FloatingActionButton arrowUR48;
+    FloatingActionButton arrowR48;
+    FloatingActionButton arrowDL48;
+    FloatingActionButton arrowDR48;
+
+    FloatingActionButton black_stone49;
+    FloatingActionButton arrowL49;
+    FloatingActionButton arrowUL49;
+    FloatingActionButton arrowUR49;
+    FloatingActionButton arrowR49;
+    FloatingActionButton arrowDL49;
+    FloatingActionButton arrowDR49;
+
+    FloatingActionButton black_stone50;
+    FloatingActionButton arrowL50;
+    FloatingActionButton arrowUL50;
+    FloatingActionButton arrowUR50;
+    FloatingActionButton arrowR50;
+    FloatingActionButton arrowDL50;
+    FloatingActionButton arrowDR50;
+
+    FloatingActionButton black_stone51;
+    FloatingActionButton arrowL51;
+    FloatingActionButton arrowUL51;
+    FloatingActionButton arrowUR51;
+    FloatingActionButton arrowR51;
+    FloatingActionButton arrowDL51;
+    FloatingActionButton arrowDR51;
+
+    FloatingActionButton black_stone52;
+    FloatingActionButton arrowL52;
+    FloatingActionButton arrowUL52;
+    FloatingActionButton arrowUR52;
+    FloatingActionButton arrowR52;
+    FloatingActionButton arrowDL52;
+    FloatingActionButton arrowDR52;
+
+    FloatingActionButton black_stone53;
+    FloatingActionButton arrowL53;
+    FloatingActionButton arrowUL53;
+    FloatingActionButton arrowUR53;
+    FloatingActionButton arrowR53;
+    FloatingActionButton arrowDL53;
+    FloatingActionButton arrowDR53;
+
+    FloatingActionButton black_stone54;
+    FloatingActionButton arrowL54;
+    FloatingActionButton arrowUL54;
+    FloatingActionButton arrowUR54;
+    FloatingActionButton arrowR54;
+    FloatingActionButton arrowDL54;
+    FloatingActionButton arrowDR54;
+
+    FloatingActionButton black_stone55;
+    FloatingActionButton arrowL55;
+    FloatingActionButton arrowUL55;
+    FloatingActionButton arrowUR55;
+    FloatingActionButton arrowR55;
+    FloatingActionButton arrowDL55;
+    FloatingActionButton arrowDR55;
+
+    FloatingActionButton black_stone56;
+    FloatingActionButton arrowL56;
+    FloatingActionButton arrowUL56;
+    FloatingActionButton arrowUR56;
+    FloatingActionButton arrowR56;
+    FloatingActionButton arrowDL56;
+    FloatingActionButton arrowDR56;
+
+    FloatingActionButton black_stone57;
+    FloatingActionButton arrowL57;
+    FloatingActionButton arrowUL57;
+    FloatingActionButton arrowUR57;
+    FloatingActionButton arrowR57;
+    FloatingActionButton arrowDL57;
+    FloatingActionButton arrowDR57;
+
+    FloatingActionButton black_stone58;
+    FloatingActionButton arrowL58;
+    FloatingActionButton arrowUL58;
+    FloatingActionButton arrowUR58;
+    FloatingActionButton arrowR58;
+    FloatingActionButton arrowDL58;
+    FloatingActionButton arrowDR58;
+
+    FloatingActionButton black_stone59;
+    FloatingActionButton arrowL59;
+    FloatingActionButton arrowUL59;
+    FloatingActionButton arrowUR59;
+    FloatingActionButton arrowR59;
+    FloatingActionButton arrowDL59;
+    FloatingActionButton arrowDR59;
+
+    FloatingActionButton black_stone60;
+    FloatingActionButton arrowL60;
+    FloatingActionButton arrowUL60;
+    FloatingActionButton arrowUR60;
+    FloatingActionButton arrowR60;
+    FloatingActionButton arrowDL60;
+    FloatingActionButton arrowDR60;
+
+    FloatingActionButton black_stone61;
+    FloatingActionButton arrowL61;
+    FloatingActionButton arrowUL61;
+    FloatingActionButton arrowUR61;
+    FloatingActionButton arrowR61;
+    FloatingActionButton arrowDL61;
+    FloatingActionButton arrowDR61;
+
+
+
+
     int stoneExist[][];//0:없음,1:내돌,2:상대돌
     int nowWayInfo[][];//선택된 돌 주위로 갈 수 있는 길 저장
 
