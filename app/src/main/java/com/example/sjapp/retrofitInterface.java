@@ -11,4 +11,7 @@ public interface retrofitInterface {
         @POST("/login")
         Call<Void> executeLogin(@Body HashMap<String, String> map);
 
+        @POST("/direction")
+        Call<Void> putDirection(@Body HashMap<String, String> map);
+
 }

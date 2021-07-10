@@ -39,6 +39,9 @@ public class LoginActivity extends AppCompatActivity {
     private retrofitInterface retrofitInterface;
     private String BASE_URL = "http://192.249.18.138:443";
 
+    String id;
+    String profileImg;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,7 +61,9 @@ public class LoginActivity extends AppCompatActivity {
                 Session session = Session.getCurrentSession();
                 session.addCallback(new SessionCallback());
                 session.open(AuthType.KAKAO_LOGIN_ALL, LoginActivity.this);
-                Intent intent = new Intent(getApplicationContext(), GameActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.putExtra("id",id);
+                intent.putExtra("profile",profileImg);
                 startActivity(intent);
             }
         });
@@ -95,9 +100,9 @@ public class LoginActivity extends AppCompatActivity {
                 @Override
                 public void onSuccess(MeV2Response result) {
 
-                    Log.i("KAKAO_API", "사용자 아이디: " + result.getId());
-
                     UserAccount kakaoAccount = result.getKakaoAccount();
+
+                    Log.i("KAKAO_API", "사용자 아이디: " + result.getId());
                     if (kakaoAccount != null) {
 
                         // 이메일
@@ -119,6 +124,8 @@ public class LoginActivity extends AppCompatActivity {
 
                         if (profile != null) {
                             Log.d("KAKAO_API", "nickname: " + profile.getNickname());
+                            id = profile.getNickname();
+                            profileImg = profile.getProfileImageUrl();
 
                         } else if (kakaoAccount.profileNeedsAgreement() == OptionalBoolean.TRUE) {
                             // 동의 요청 후 프로필 정보 획득 가능
