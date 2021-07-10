@@ -1,6 +1,7 @@
 package com.example.sjapp;
 
 import android.util.Log;
+import android.widget.ImageView;
 
 import com.kakao.auth.ISessionCallback;
 import com.kakao.network.ErrorResult;
@@ -12,12 +13,15 @@ import com.kakao.usermgmt.response.model.UserAccount;
 import com.kakao.util.OptionalBoolean;
 import com.kakao.util.exception.KakaoException;
 
+import java.util.HashMap;
+
 
 public class SessionCallback implements ISessionCallback{
     //로그인에 성공
     @Override
     public void onSessionOpened() {
         requestMe();
+        
     }
 
     //로그인 실패 상태
@@ -42,6 +46,7 @@ public class SessionCallback implements ISessionCallback{
                     //사용자 정보 요청이 성공한 경우로 사용자 정보 객체를 받음
                     @Override
                     public void onSuccess(MeV2Response result) {
+
                         Log.i("KAKAO_API", "사용자 아이디: " + result.getId());
 
                         UserAccount kakaoAccount = result.getKakaoAccount();
@@ -66,8 +71,6 @@ public class SessionCallback implements ISessionCallback{
 
                             if (profile != null) {
                                 Log.d("KAKAO_API", "nickname: " + profile.getNickname());
-                                Log.d("KAKAO_API", "profile image: " + profile.getProfileImageUrl());
-                                Log.d("KAKAO_API", "thumbnail image: " + profile.getThumbnailImageUrl());
 
                             } else if (kakaoAccount.profileNeedsAgreement() == OptionalBoolean.TRUE) {
                                 // 동의 요청 후 프로필 정보 획득 가능
@@ -75,6 +78,9 @@ public class SessionCallback implements ISessionCallback{
                             } else {
                                 // 프로필 획득 불가
                             }
+                            HashMap<String, String> map = new HashMap<>();
+                            map.put("name", result.getKakaoAccount().getProfile().getNickname());
+                            map.put("email", result.getKakaoAccount().getEmail());
                         }
                     }
                 });

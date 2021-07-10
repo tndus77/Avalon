@@ -17,14 +17,12 @@
         <meta-data
             android:name="com.kakao.sdk.AppKey"
             android:value="91094397a69339690e4ded69b25761e9" />
-        <activity android:name=".GameActivity">
+        <activity android:name=".LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
     </application>
 
 </manifest>
