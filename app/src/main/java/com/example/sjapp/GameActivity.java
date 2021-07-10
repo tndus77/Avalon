@@ -207,11 +207,8 @@ public class GameActivity extends AppCompatActivity {
     FloatingActionButton arrowDL26;
 
     FloatingActionButton black_stone27;
-    FloatingActionButton arrowL27;
-    FloatingActionButton arrowUL27;
     FloatingActionButton arrowUR27;
     FloatingActionButton arrowR27;
-    FloatingActionButton arrowDL27;
     FloatingActionButton arrowDR27;
 
     FloatingActionButton black_stone28;
@@ -273,14 +270,9 @@ public class GameActivity extends AppCompatActivity {
     FloatingActionButton black_stone35;
     FloatingActionButton arrowL35;
     FloatingActionButton arrowUL35;
-    FloatingActionButton arrowUR35;
-    FloatingActionButton arrowR35;
     FloatingActionButton arrowDL35;
-    FloatingActionButton arrowDR35;
 
     FloatingActionButton black_stone36;
-    FloatingActionButton arrowL36;
-    FloatingActionButton arrowUL36;
     FloatingActionButton arrowUR36;
     FloatingActionButton arrowR36;
     FloatingActionButton arrowDL36;
@@ -337,14 +329,10 @@ public class GameActivity extends AppCompatActivity {
     FloatingActionButton black_stone43;
     FloatingActionButton arrowL43;
     FloatingActionButton arrowUL43;
-    FloatingActionButton arrowUR43;
-    FloatingActionButton arrowR43;
     FloatingActionButton arrowDL43;
     FloatingActionButton arrowDR43;
 
     FloatingActionButton black_stone44;
-    FloatingActionButton arrowL44;
-    FloatingActionButton arrowUL44;
     FloatingActionButton arrowUR44;
     FloatingActionButton arrowR44;
     FloatingActionButton arrowDL44;
@@ -393,14 +381,10 @@ public class GameActivity extends AppCompatActivity {
     FloatingActionButton black_stone50;
     FloatingActionButton arrowL50;
     FloatingActionButton arrowUL50;
-    FloatingActionButton arrowUR50;
-    FloatingActionButton arrowR50;
     FloatingActionButton arrowDL50;
     FloatingActionButton arrowDR50;
 
     FloatingActionButton black_stone51;
-    FloatingActionButton arrowL51;
-    FloatingActionButton arrowUL51;
     FloatingActionButton arrowUR51;
     FloatingActionButton arrowR51;
     FloatingActionButton arrowDL51;
@@ -441,48 +425,34 @@ public class GameActivity extends AppCompatActivity {
     FloatingActionButton black_stone56;
     FloatingActionButton arrowL56;
     FloatingActionButton arrowUL56;
-    FloatingActionButton arrowUR56;
-    FloatingActionButton arrowR56;
     FloatingActionButton arrowDL56;
     FloatingActionButton arrowDR56;
 
     FloatingActionButton black_stone57;
-    FloatingActionButton arrowL57;
-    FloatingActionButton arrowUL57;
-    FloatingActionButton arrowUR57;
     FloatingActionButton arrowR57;
     FloatingActionButton arrowDL57;
     FloatingActionButton arrowDR57;
 
     FloatingActionButton black_stone58;
     FloatingActionButton arrowL58;
-    FloatingActionButton arrowUL58;
-    FloatingActionButton arrowUR58;
     FloatingActionButton arrowR58;
     FloatingActionButton arrowDL58;
     FloatingActionButton arrowDR58;
 
     FloatingActionButton black_stone59;
     FloatingActionButton arrowL59;
-    FloatingActionButton arrowUL59;
-    FloatingActionButton arrowUR59;
     FloatingActionButton arrowR59;
     FloatingActionButton arrowDL59;
     FloatingActionButton arrowDR59;
 
     FloatingActionButton black_stone60;
     FloatingActionButton arrowL60;
-    FloatingActionButton arrowUL60;
-    FloatingActionButton arrowUR60;
     FloatingActionButton arrowR60;
     FloatingActionButton arrowDL60;
     FloatingActionButton arrowDR60;
 
     FloatingActionButton black_stone61;
     FloatingActionButton arrowL61;
-    FloatingActionButton arrowUL61;
-    FloatingActionButton arrowUR61;
-    FloatingActionButton arrowR61;
     FloatingActionButton arrowDL61;
     FloatingActionButton arrowDR61;
 
@@ -513,15 +483,6 @@ public class GameActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         stoneExist = new int[9][9];
-//        stoneExist[0]=new int[5];
-//        stoneExist[1]=new int[6];
-//        stoneExist[2]=new int[7];
-//        stoneExist[3]=new int[8];
-//        stoneExist[4]=new int[9];
-//        stoneExist[5]=new int[8];
-//        stoneExist[6]=new int[7];
-//        stoneExist[7]=new int[6];
-//        stoneExist[8]=new int[5];
 
         for(int i=0;i<9;i++){
             if(i<=1 || i>=7){
@@ -736,6 +697,258 @@ public class GameActivity extends AppCompatActivity {
         arrowUL26 = (FloatingActionButton)findViewById(R.id.arrowUL26);
         arrowUR26 = (FloatingActionButton)findViewById(R.id.arrowUR26);
         arrowDL26 = (FloatingActionButton)findViewById(R.id.arrowDL26);
+
+        black_stone27 = (FloatingActionButton)findViewById(R.id.black_stone27);
+        arrowUR27 = (FloatingActionButton)findViewById(R.id.arrowUR27);
+        arrowR27 = (FloatingActionButton)findViewById(R.id.arrowR27);
+        arrowDR27 = (FloatingActionButton)findViewById(R.id.arrowDR27);
+
+        black_stone28 = (FloatingActionButton)findViewById(R.id.black_stone28);
+        arrowL28 = (FloatingActionButton)findViewById(R.id.arrowL28);
+        arrowUL28 = (FloatingActionButton)findViewById(R.id.arrowUL28);
+        arrowUR28 = (FloatingActionButton)findViewById(R.id.arrowUR28);
+        arrowR28 = (FloatingActionButton)findViewById(R.id.arrowR28);
+        arrowDL28 = (FloatingActionButton)findViewById(R.id.arrowDL28);
+        arrowDR28 = (FloatingActionButton)findViewById(R.id.arrowDR28);
+
+        black_stone29 = (FloatingActionButton)findViewById(R.id.black_stone29);
+        arrowL29 = (FloatingActionButton)findViewById(R.id.arrowL29);
+        arrowUL29 = (FloatingActionButton)findViewById(R.id.arrowUL29);
+        arrowUR29 = (FloatingActionButton)findViewById(R.id.arrowUR29);
+        arrowR29 = (FloatingActionButton)findViewById(R.id.arrowR29);
+        arrowDL29 = (FloatingActionButton)findViewById(R.id.arrowDL29);
+        arrowDR29 = (FloatingActionButton)findViewById(R.id.arrowDR29);
+
+        black_stone30 = (FloatingActionButton)findViewById(R.id.black_stone30);
+        arrowL30 = (FloatingActionButton)findViewById(R.id.arrowL30);
+        arrowUL30 = (FloatingActionButton)findViewById(R.id.arrowUL30);
+        arrowUR30 = (FloatingActionButton)findViewById(R.id.arrowUR30);
+        arrowR30 = (FloatingActionButton)findViewById(R.id.arrowR30);
+        arrowDL30 = (FloatingActionButton)findViewById(R.id.arrowDL30);
+        arrowDR30 = (FloatingActionButton)findViewById(R.id.arrowDR30);
+
+        black_stone31 = (FloatingActionButton)findViewById(R.id.black_stone31);
+        arrowL31 = (FloatingActionButton)findViewById(R.id.arrowL31);
+        arrowUL31 = (FloatingActionButton)findViewById(R.id.arrowUL31);
+        arrowUR31 = (FloatingActionButton)findViewById(R.id.arrowUR31);
+        arrowR31 = (FloatingActionButton)findViewById(R.id.arrowR31);
+        arrowDL31 = (FloatingActionButton)findViewById(R.id.arrowDL31);
+        arrowDR31 = (FloatingActionButton)findViewById(R.id.arrowDR31);
+
+        black_stone32 = (FloatingActionButton)findViewById(R.id.black_stone32);
+        arrowL32 = (FloatingActionButton)findViewById(R.id.arrowL32);
+        arrowUL32 = (FloatingActionButton)findViewById(R.id.arrowUL32);
+        arrowUR32 = (FloatingActionButton)findViewById(R.id.arrowUR32);
+        arrowR32 = (FloatingActionButton)findViewById(R.id.arrowR32);
+        arrowDL32 = (FloatingActionButton)findViewById(R.id.arrowDL32);
+        arrowDR32 = (FloatingActionButton)findViewById(R.id.arrowDR32);
+
+        black_stone33 = (FloatingActionButton)findViewById(R.id.black_stone33);
+        arrowL33 = (FloatingActionButton)findViewById(R.id.arrowL33);
+        arrowUL33 = (FloatingActionButton)findViewById(R.id.arrowUL33);
+        arrowUR33 = (FloatingActionButton)findViewById(R.id.arrowUR33);
+        arrowR33 = (FloatingActionButton)findViewById(R.id.arrowR33);
+        arrowDL33 = (FloatingActionButton)findViewById(R.id.arrowDL33);
+        arrowDR33 = (FloatingActionButton)findViewById(R.id.arrowDR33);
+
+        black_stone34 = (FloatingActionButton)findViewById(R.id.black_stone34);
+        arrowL34 = (FloatingActionButton)findViewById(R.id.arrowL34);
+        arrowUL34 = (FloatingActionButton)findViewById(R.id.arrowUL34);
+        arrowUR34 = (FloatingActionButton)findViewById(R.id.arrowUR34);
+        arrowR34 = (FloatingActionButton)findViewById(R.id.arrowR34);
+        arrowDL34 = (FloatingActionButton)findViewById(R.id.arrowDL34);
+        arrowDR34 = (FloatingActionButton)findViewById(R.id.arrowDR34);
+
+        black_stone35 = (FloatingActionButton)findViewById(R.id.black_stone35);
+        arrowL35 = (FloatingActionButton)findViewById(R.id.arrowL35);
+        arrowUL35 = (FloatingActionButton)findViewById(R.id.arrowUL35);
+        arrowDL35 = (FloatingActionButton)findViewById(R.id.arrowDL35);
+
+        black_stone36 = (FloatingActionButton)findViewById(R.id.black_stone36);
+        arrowUR36 = (FloatingActionButton)findViewById(R.id.arrowUR36);
+        arrowR36 = (FloatingActionButton)findViewById(R.id.arrowR36);
+        arrowDL36 = (FloatingActionButton)findViewById(R.id.arrowDL36);
+        arrowDR36 = (FloatingActionButton)findViewById(R.id.arrowDR36);
+
+        black_stone37 = (FloatingActionButton)findViewById(R.id.black_stone37);
+        arrowL37 = (FloatingActionButton)findViewById(R.id.arrowL37);
+        arrowUL37 = (FloatingActionButton)findViewById(R.id.arrowUL37);
+        arrowUR37 = (FloatingActionButton)findViewById(R.id.arrowUR37);
+        arrowR37 = (FloatingActionButton)findViewById(R.id.arrowR37);
+        arrowDL37 = (FloatingActionButton)findViewById(R.id.arrowDL37);
+        arrowDR37 = (FloatingActionButton)findViewById(R.id.arrowDR37);
+
+        black_stone38 = (FloatingActionButton)findViewById(R.id.black_stone38);
+        arrowL38 = (FloatingActionButton)findViewById(R.id.arrowL38);
+        arrowUL38 = (FloatingActionButton)findViewById(R.id.arrowUL38);
+        arrowUR38 = (FloatingActionButton)findViewById(R.id.arrowUR38);
+        arrowR38 = (FloatingActionButton)findViewById(R.id.arrowR38);
+        arrowDL38 = (FloatingActionButton)findViewById(R.id.arrowDL38);
+        arrowDR38 = (FloatingActionButton)findViewById(R.id.arrowDR38);
+
+        black_stone39 = (FloatingActionButton)findViewById(R.id.black_stone39);
+        arrowL39 = (FloatingActionButton)findViewById(R.id.arrowL39);
+        arrowUL39 = (FloatingActionButton)findViewById(R.id.arrowUL39);
+        arrowUR39 = (FloatingActionButton)findViewById(R.id.arrowUR39);
+        arrowR39 = (FloatingActionButton)findViewById(R.id.arrowR39);
+        arrowDL39 = (FloatingActionButton)findViewById(R.id.arrowDL39);
+        arrowDR39 = (FloatingActionButton)findViewById(R.id.arrowDR39);
+
+        black_stone40 = (FloatingActionButton)findViewById(R.id.black_stone40);
+        arrowL40 = (FloatingActionButton)findViewById(R.id.arrowL40);
+        arrowUL40 = (FloatingActionButton)findViewById(R.id.arrowUL40);
+        arrowUR40 = (FloatingActionButton)findViewById(R.id.arrowUR40);
+        arrowR40 = (FloatingActionButton)findViewById(R.id.arrowR40);
+        arrowDL40 = (FloatingActionButton)findViewById(R.id.arrowDL40);
+        arrowDR40 = (FloatingActionButton)findViewById(R.id.arrowDR40);
+
+        black_stone41 = (FloatingActionButton)findViewById(R.id.black_stone41);
+        arrowL41 = (FloatingActionButton)findViewById(R.id.arrowL41);
+        arrowUL41 = (FloatingActionButton)findViewById(R.id.arrowUL41);
+        arrowUR41 = (FloatingActionButton)findViewById(R.id.arrowUR41);
+        arrowR41 = (FloatingActionButton)findViewById(R.id.arrowR41);
+        arrowDL41 = (FloatingActionButton)findViewById(R.id.arrowDL41);
+        arrowDR41 = (FloatingActionButton)findViewById(R.id.arrowDR41);
+
+        black_stone42 = (FloatingActionButton)findViewById(R.id.black_stone42);
+        arrowL42 = (FloatingActionButton)findViewById(R.id.arrowL42);
+        arrowUL42 = (FloatingActionButton)findViewById(R.id.arrowUL42);
+        arrowUR42 = (FloatingActionButton)findViewById(R.id.arrowUR42);
+        arrowR42 = (FloatingActionButton)findViewById(R.id.arrowR42);
+        arrowDL42 = (FloatingActionButton)findViewById(R.id.arrowDL42);
+        arrowDR42 = (FloatingActionButton)findViewById(R.id.arrowDR42);
+
+        black_stone43 = (FloatingActionButton)findViewById(R.id.black_stone43);
+        arrowL43 = (FloatingActionButton)findViewById(R.id.arrowL43);
+        arrowUL43 = (FloatingActionButton)findViewById(R.id.arrowUL43);
+        arrowDL43 = (FloatingActionButton)findViewById(R.id.arrowDL43);
+        arrowDR43 = (FloatingActionButton)findViewById(R.id.arrowDR43);
+
+        black_stone44 = (FloatingActionButton)findViewById(R.id.black_stone44);
+        arrowUR44 = (FloatingActionButton)findViewById(R.id.arrowUR44);
+        arrowR44 = (FloatingActionButton)findViewById(R.id.arrowR44);
+        arrowDL44 = (FloatingActionButton)findViewById(R.id.arrowDL44);
+        arrowDR44 = (FloatingActionButton)findViewById(R.id.arrowDR44);
+
+        black_stone45 = (FloatingActionButton)findViewById(R.id.black_stone45);
+        arrowL45 = (FloatingActionButton)findViewById(R.id.arrowL45);
+        arrowUL45 = (FloatingActionButton)findViewById(R.id.arrowUL45);
+        arrowUR45 = (FloatingActionButton)findViewById(R.id.arrowUR45);
+        arrowR45 = (FloatingActionButton)findViewById(R.id.arrowR45);
+        arrowDL45 = (FloatingActionButton)findViewById(R.id.arrowDL45);
+        arrowDR45 = (FloatingActionButton)findViewById(R.id.arrowDR45);
+
+        black_stone46 = (FloatingActionButton)findViewById(R.id.black_stone46);
+        arrowL46 = (FloatingActionButton)findViewById(R.id.arrowL46);
+        arrowUL46 = (FloatingActionButton)findViewById(R.id.arrowUL46);
+        arrowUR46 = (FloatingActionButton)findViewById(R.id.arrowUR46);
+        arrowR46 = (FloatingActionButton)findViewById(R.id.arrowR46);
+        arrowDL46 = (FloatingActionButton)findViewById(R.id.arrowDL46);
+        arrowDR46 = (FloatingActionButton)findViewById(R.id.arrowDR46);
+
+        black_stone47 = (FloatingActionButton)findViewById(R.id.black_stone47);
+        arrowL47 = (FloatingActionButton)findViewById(R.id.arrowL47);
+        arrowUL47 = (FloatingActionButton)findViewById(R.id.arrowUL47);
+        arrowUR47 = (FloatingActionButton)findViewById(R.id.arrowUR47);
+        arrowR47 = (FloatingActionButton)findViewById(R.id.arrowR47);
+        arrowDL47 = (FloatingActionButton)findViewById(R.id.arrowDL47);
+        arrowDR47 = (FloatingActionButton)findViewById(R.id.arrowDR47);
+
+        black_stone48 = (FloatingActionButton)findViewById(R.id.black_stone48);
+        arrowL48 = (FloatingActionButton)findViewById(R.id.arrowL48);
+        arrowUL48 = (FloatingActionButton)findViewById(R.id.arrowUL48);
+        arrowUR48 = (FloatingActionButton)findViewById(R.id.arrowUR48);
+        arrowR48 = (FloatingActionButton)findViewById(R.id.arrowR48);
+        arrowDL48 = (FloatingActionButton)findViewById(R.id.arrowDL48);
+        arrowDR48 = (FloatingActionButton)findViewById(R.id.arrowDR48);
+
+        black_stone49 = (FloatingActionButton)findViewById(R.id.black_stone49);
+        arrowL49 = (FloatingActionButton)findViewById(R.id.arrowL49);
+        arrowUL49 = (FloatingActionButton)findViewById(R.id.arrowUL49);
+        arrowUR49 = (FloatingActionButton)findViewById(R.id.arrowUR49);
+        arrowR49 = (FloatingActionButton)findViewById(R.id.arrowR49);
+        arrowDL49 = (FloatingActionButton)findViewById(R.id.arrowDL49);
+        arrowDR49 = (FloatingActionButton)findViewById(R.id.arrowDR49);
+
+        black_stone50 = (FloatingActionButton)findViewById(R.id.black_stone50);
+        arrowL50 = (FloatingActionButton)findViewById(R.id.arrowL50);
+        arrowUL50 = (FloatingActionButton)findViewById(R.id.arrowUL50);
+        arrowDL50 = (FloatingActionButton)findViewById(R.id.arrowDL50);
+        arrowDR50 = (FloatingActionButton)findViewById(R.id.arrowDR50);
+
+        black_stone51 = (FloatingActionButton)findViewById(R.id.black_stone51);
+        arrowUR51 = (FloatingActionButton)findViewById(R.id.arrowUR51);
+        arrowR51 = (FloatingActionButton)findViewById(R.id.arrowR51);
+        arrowDL51 = (FloatingActionButton)findViewById(R.id.arrowDL51);
+        arrowDR51 = (FloatingActionButton)findViewById(R.id.arrowDR51);
+
+        black_stone52 = (FloatingActionButton)findViewById(R.id.black_stone52);
+        arrowL52 = (FloatingActionButton)findViewById(R.id.arrowL52);
+        arrowUL52 = (FloatingActionButton)findViewById(R.id.arrowUL52);
+        arrowUR52 = (FloatingActionButton)findViewById(R.id.arrowUR52);
+        arrowR52 = (FloatingActionButton)findViewById(R.id.arrowR52);
+        arrowDL52 = (FloatingActionButton)findViewById(R.id.arrowDL52);
+        arrowDR52 = (FloatingActionButton)findViewById(R.id.arrowDR52);
+
+        black_stone53 = (FloatingActionButton)findViewById(R.id.black_stone53);
+        arrowL53 = (FloatingActionButton)findViewById(R.id.arrowL53);
+        arrowUL53 = (FloatingActionButton)findViewById(R.id.arrowUL53);
+        arrowUR53 = (FloatingActionButton)findViewById(R.id.arrowUR53);
+        arrowR53 = (FloatingActionButton)findViewById(R.id.arrowR53);
+        arrowDL53 = (FloatingActionButton)findViewById(R.id.arrowDL53);
+        arrowDR53 = (FloatingActionButton)findViewById(R.id.arrowDR53);
+
+        black_stone54 = (FloatingActionButton)findViewById(R.id.black_stone54);
+        arrowL54 = (FloatingActionButton)findViewById(R.id.arrowL54);
+        arrowUL54 = (FloatingActionButton)findViewById(R.id.arrowUL54);
+        arrowUR54 = (FloatingActionButton)findViewById(R.id.arrowUR54);
+        arrowR54 = (FloatingActionButton)findViewById(R.id.arrowR54);
+        arrowDL54 = (FloatingActionButton)findViewById(R.id.arrowDL54);
+        arrowDR54 = (FloatingActionButton)findViewById(R.id.arrowDR54);
+
+        black_stone55 = (FloatingActionButton)findViewById(R.id.black_stone55);
+        arrowL55 = (FloatingActionButton)findViewById(R.id.arrowL55);
+        arrowUL55 = (FloatingActionButton)findViewById(R.id.arrowUL55);
+        arrowUR55 = (FloatingActionButton)findViewById(R.id.arrowUR55);
+        arrowR55 = (FloatingActionButton)findViewById(R.id.arrowR55);
+        arrowDL55 = (FloatingActionButton)findViewById(R.id.arrowDL55);
+        arrowDR55 = (FloatingActionButton)findViewById(R.id.arrowDR55);
+
+        black_stone56 = (FloatingActionButton)findViewById(R.id.black_stone56);
+        arrowL56 = (FloatingActionButton)findViewById(R.id.arrowL56);
+        arrowUL56 = (FloatingActionButton)findViewById(R.id.arrowUL56);
+        arrowDL56 = (FloatingActionButton)findViewById(R.id.arrowDL56);
+        arrowDR56 = (FloatingActionButton)findViewById(R.id.arrowDR56);
+
+        black_stone57 = (FloatingActionButton)findViewById(R.id.black_stone57);
+        arrowR57 = (FloatingActionButton)findViewById(R.id.arrowR57);
+        arrowDL57 = (FloatingActionButton)findViewById(R.id.arrowDL57);
+        arrowDR57 = (FloatingActionButton)findViewById(R.id.arrowDR57);
+
+        black_stone58 = (FloatingActionButton)findViewById(R.id.black_stone58);
+        arrowL58 = (FloatingActionButton)findViewById(R.id.arrowL58);
+        arrowR58 = (FloatingActionButton)findViewById(R.id.arrowR58);
+        arrowDL58 = (FloatingActionButton)findViewById(R.id.arrowDL58);
+        arrowDR58 = (FloatingActionButton)findViewById(R.id.arrowDR58);
+
+        black_stone59 = (FloatingActionButton)findViewById(R.id.black_stone59);
+        arrowL59 = (FloatingActionButton)findViewById(R.id.arrowL59);
+        arrowR59 = (FloatingActionButton)findViewById(R.id.arrowR59);
+        arrowDL59 = (FloatingActionButton)findViewById(R.id.arrowDL59);
+        arrowDR59 = (FloatingActionButton)findViewById(R.id.arrowDR59);
+
+        black_stone60 = (FloatingActionButton)findViewById(R.id.black_stone60);
+        arrowL60 = (FloatingActionButton)findViewById(R.id.arrowL60);
+        arrowR60 = (FloatingActionButton)findViewById(R.id.arrowR60);
+        arrowDL60 = (FloatingActionButton)findViewById(R.id.arrowDL60);
+        arrowDR60 = (FloatingActionButton)findViewById(R.id.arrowDR60);
+
+        black_stone61 = (FloatingActionButton)findViewById(R.id.black_stone61);
+        arrowL61 = (FloatingActionButton)findViewById(R.id.arrowL61);
+        arrowDL61 = (FloatingActionButton)findViewById(R.id.arrowDL61);
+        arrowDR61 = (FloatingActionButton)findViewById(R.id.arrowDR61);
+
+
 
         imageView = (ImageView)findViewById(R.id.background);
         bitmap = Bitmap.createBitmap(1080,1080,Bitmap.Config.ARGB_8888);
@@ -2379,6 +2592,2231 @@ public class GameActivity extends AppCompatActivity {
             }
         });
 
+        black_stone27.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,27);
+            }
+        });
+        arrowUR27.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(27)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(27,nowWayInfo[0],0);
+                    moving(27,result[0],result[1]);
+                }
+            }
+        });
+        arrowR27.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(27)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(27,nowWayInfo[1],1);
+                    moving(27,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR27.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(27)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(27,nowWayInfo[2],2);
+                    moving(27,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone28.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,28);
+            }
+        });
+        arrowUR28.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(28)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(28,nowWayInfo[0],0);
+                    moving(28,result[0],result[1]);
+                }
+            }
+        });
+        arrowR28.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(28)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(28,nowWayInfo[1],1);
+                    moving(28,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR28.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(28)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(28,nowWayInfo[2],2);
+                    moving(28,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL28.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(28)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(28,nowWayInfo[3],3);
+                    moving(28,result[0],result[1]);
+                }
+            }
+        });
+        arrowL28.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(28)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(28,nowWayInfo[4],4);
+                    moving(28,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL28.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(28)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(28,nowWayInfo[5],5);
+                    moving(28,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone29.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,29);
+            }
+        });
+        arrowUR29.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(29)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(29,nowWayInfo[0],0);
+                    moving(29,result[0],result[1]);
+                }
+            }
+        });
+        arrowR29.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(29)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(29,nowWayInfo[1],1);
+                    moving(29,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR29.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(29)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(29,nowWayInfo[2],2);
+                    moving(29,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL29.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(29)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(29,nowWayInfo[3],3);
+                    moving(29,result[0],result[1]);
+                }
+            }
+        });
+        arrowL29.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(29)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(29,nowWayInfo[4],4);
+                    moving(29,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL29.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(29)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(29,nowWayInfo[5],5);
+                    moving(29,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone30.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,30);
+            }
+        });
+        arrowUR30.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(30)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(30,nowWayInfo[0],0);
+                    moving(30,result[0],result[1]);
+                }
+            }
+        });
+        arrowR30.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(30)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(30,nowWayInfo[1],1);
+                    moving(30,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR30.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(30)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(30,nowWayInfo[2],2);
+                    moving(30,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL30.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(30)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(30,nowWayInfo[3],3);
+                    moving(30,result[0],result[1]);
+                }
+            }
+        });
+        arrowL30.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(30)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(30,nowWayInfo[4],4);
+                    moving(30,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL30.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(30)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(30,nowWayInfo[5],5);
+                    moving(30,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone31.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,31);
+            }
+        });
+        arrowUR31.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(31)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(31,nowWayInfo[0],0);
+                    moving(31,result[0],result[1]);
+                }
+            }
+        });
+        arrowR31.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(31)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(31,nowWayInfo[1],1);
+                    moving(31,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR31.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(31)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(31,nowWayInfo[2],2);
+                    moving(31,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL31.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(31)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(31,nowWayInfo[3],3);
+                    moving(31,result[0],result[1]);
+                }
+            }
+        });
+        arrowL31.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(31)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(31,nowWayInfo[4],4);
+                    moving(31,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL31.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(31)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(31,nowWayInfo[5],5);
+                    moving(31,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone32.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,32);
+            }
+        });
+        arrowUR32.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(32)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(32,nowWayInfo[0],0);
+                    moving(32,result[0],result[1]);
+                }
+            }
+        });
+        arrowR32.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(32)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(32,nowWayInfo[1],1);
+                    moving(32,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR32.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(32)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(32,nowWayInfo[2],2);
+                    moving(32,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL32.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(32)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(32,nowWayInfo[3],3);
+                    moving(32,result[0],result[1]);
+                }
+            }
+        });
+        arrowL32.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(32)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(32,nowWayInfo[4],4);
+                    moving(32,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL32.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(32)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(32,nowWayInfo[5],5);
+                    moving(32,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone33.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,33);
+            }
+        });
+        arrowUR33.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(33)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(33,nowWayInfo[0],0);
+                    moving(33,result[0],result[1]);
+                }
+            }
+        });
+        arrowR33.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(33)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(33,nowWayInfo[1],1);
+                    moving(33,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR33.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(33)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(33,nowWayInfo[2],2);
+                    moving(33,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL33.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(33)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(33,nowWayInfo[3],3);
+                    moving(33,result[0],result[1]);
+                }
+            }
+        });
+        arrowL33.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(33)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(33,nowWayInfo[4],4);
+                    moving(33,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL33.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(33)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(33,nowWayInfo[5],5);
+                    moving(33,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone34.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,34);
+            }
+        });
+        arrowUR34.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(34)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(34,nowWayInfo[0],0);
+                    moving(34,result[0],result[1]);
+                }
+            }
+        });
+        arrowR34.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(34)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(34,nowWayInfo[1],1);
+                    moving(34,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR34.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(34)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(34,nowWayInfo[2],2);
+                    moving(34,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL34.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(34)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(34,nowWayInfo[3],3);
+                    moving(34,result[0],result[1]);
+                }
+            }
+        });
+        arrowL34.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(34)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(34,nowWayInfo[4],4);
+                    moving(34,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL34.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(34)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(34,nowWayInfo[5],5);
+                    moving(34,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone35.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,35);
+            }
+        });
+        arrowDL35.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(35)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(35,nowWayInfo[3],3);
+                    moving(35,result[0],result[1]);
+                }
+            }
+        });
+        arrowL35.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(35)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(35,nowWayInfo[4],4);
+                    moving(35,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL35.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(35)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(35,nowWayInfo[5],5);
+                    moving(35,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone36.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,36);
+            }
+        });
+        arrowUR36.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(36)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(36,nowWayInfo[0],0);
+                    moving(36,result[0],result[1]);
+                }
+            }
+        });
+        arrowR36.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(36)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(36,nowWayInfo[1],1);
+                    moving(36,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR36.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(36)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(36,nowWayInfo[2],2);
+                    moving(36,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL36.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(36)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(36,nowWayInfo[3],3);
+                    moving(36,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone37.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,37);
+            }
+        });
+        arrowUR37.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(37)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(37,nowWayInfo[0],0);
+                    moving(37,result[0],result[1]);
+                }
+            }
+        });
+        arrowR37.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(37)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(37,nowWayInfo[1],1);
+                    moving(37,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR37.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(37)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(37,nowWayInfo[2],2);
+                    moving(37,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL37.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(37)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(37,nowWayInfo[3],3);
+                    moving(37,result[0],result[1]);
+                }
+            }
+        });
+        arrowL37.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(37)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(37,nowWayInfo[4],4);
+                    moving(37,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL37.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(37)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(37,nowWayInfo[5],5);
+                    moving(37,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone38.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,38);
+            }
+        });
+        arrowUR38.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(38)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(38,nowWayInfo[0],0);
+                    moving(38,result[0],result[1]);
+                }
+            }
+        });
+        arrowR38.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(38)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(38,nowWayInfo[1],1);
+                    moving(38,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR38.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(38)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(38,nowWayInfo[2],2);
+                    moving(38,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL38.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(38)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(38,nowWayInfo[3],3);
+                    moving(38,result[0],result[1]);
+                }
+            }
+        });
+        arrowL38.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(38)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(38,nowWayInfo[4],4);
+                    moving(38,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL38.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(38)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(38,nowWayInfo[5],5);
+                    moving(38,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone39.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,39);
+            }
+        });
+        arrowUR39.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(39)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(39,nowWayInfo[0],0);
+                    moving(39,result[0],result[1]);
+                }
+            }
+        });
+        arrowR39.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(39)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(39,nowWayInfo[1],1);
+                    moving(39,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR39.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(39)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(39,nowWayInfo[2],2);
+                    moving(39,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL39.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(39)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(39,nowWayInfo[3],3);
+                    moving(39,result[0],result[1]);
+                }
+            }
+        });
+        arrowL39.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(39)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(39,nowWayInfo[4],4);
+                    moving(39,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL39.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(39)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(39,nowWayInfo[5],5);
+                    moving(39,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone40.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,40);
+            }
+        });
+        arrowUR40.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(40)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(40,nowWayInfo[0],0);
+                    moving(40,result[0],result[1]);
+                }
+            }
+        });
+        arrowR40.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(40)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(40,nowWayInfo[1],1);
+                    moving(40,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR40.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(40)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(40,nowWayInfo[2],2);
+                    moving(40,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL40.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(40)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(40,nowWayInfo[3],3);
+                    moving(40,result[0],result[1]);
+                }
+            }
+        });
+        arrowL40.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(40)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(40,nowWayInfo[4],4);
+                    moving(40,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL40.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(40)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(40,nowWayInfo[5],5);
+                    moving(40,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone41.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,41);
+            }
+        });
+        arrowUR41.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(41)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(41,nowWayInfo[0],0);
+                    moving(41,result[0],result[1]);
+                }
+            }
+        });
+        arrowR41.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(41)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(41,nowWayInfo[1],1);
+                    moving(41,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR41.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(41)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(41,nowWayInfo[2],2);
+                    moving(41,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL41.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(41)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(41,nowWayInfo[3],3);
+                    moving(41,result[0],result[1]);
+                }
+            }
+        });
+        arrowL41.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(41)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(41,nowWayInfo[4],4);
+                    moving(41,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL41.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(41)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(41,nowWayInfo[5],5);
+                    moving(41,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone42.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,42);
+            }
+        });
+        arrowUR42.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(42)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(42,nowWayInfo[0],0);
+                    moving(42,result[0],result[1]);
+                }
+            }
+        });
+        arrowR42.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(42)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(42,nowWayInfo[1],1);
+                    moving(42,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR42.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(42)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(42,nowWayInfo[2],2);
+                    moving(42,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL42.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(42)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(42,nowWayInfo[3],3);
+                    moving(42,result[0],result[1]);
+                }
+            }
+        });
+        arrowL42.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(42)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(42,nowWayInfo[4],4);
+                    moving(42,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL42.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(42)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(42,nowWayInfo[5],5);
+                    moving(42,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone43.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,43);
+            }
+        });
+        arrowDR43.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(43)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(43,nowWayInfo[2],2);
+                    moving(43,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL43.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(43)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(43,nowWayInfo[3],3);
+                    moving(43,result[0],result[1]);
+                }
+            }
+        });
+        arrowL43.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(43)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(43,nowWayInfo[4],4);
+                    moving(43,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL43.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(43)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(43,nowWayInfo[5],5);
+                    moving(43,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone44.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,44);
+            }
+        });
+        arrowUR44.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(44)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(44,nowWayInfo[0],0);
+                    moving(44,result[0],result[1]);
+                }
+            }
+        });
+        arrowR44.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(44)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(44,nowWayInfo[1],1);
+                    moving(44,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR44.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(44)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(44,nowWayInfo[2],2);
+                    moving(44,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL44.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(44)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(44,nowWayInfo[3],3);
+                    moving(44,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone45.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,45);
+            }
+        });
+        arrowUR45.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(45)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(45,nowWayInfo[0],0);
+                    moving(45,result[0],result[1]);
+                }
+            }
+        });
+        arrowR45.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(45)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(45,nowWayInfo[1],1);
+                    moving(45,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR45.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(45)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(45,nowWayInfo[2],2);
+                    moving(45,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL45.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(45)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(45,nowWayInfo[3],3);
+                    moving(45,result[0],result[1]);
+                }
+            }
+        });
+        arrowL45.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(45)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(45,nowWayInfo[4],4);
+                    moving(45,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL45.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(45)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(45,nowWayInfo[5],5);
+                    moving(45,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone46.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,46);
+            }
+        });
+        arrowUR46.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(46)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(46,nowWayInfo[0],0);
+                    moving(46,result[0],result[1]);
+                }
+            }
+        });
+        arrowR46.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(46)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(46,nowWayInfo[1],1);
+                    moving(46,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR46.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(46)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(46,nowWayInfo[2],2);
+                    moving(46,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL46.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(46)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(46,nowWayInfo[3],3);
+                    moving(46,result[0],result[1]);
+                }
+            }
+        });
+        arrowL46.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(46)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(46,nowWayInfo[4],4);
+                    moving(46,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL46.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(46)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(46,nowWayInfo[5],5);
+                    moving(46,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone47.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,47);
+            }
+        });
+        arrowUR47.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(47)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(47,nowWayInfo[0],0);
+                    moving(47,result[0],result[1]);
+                }
+            }
+        });
+        arrowR47.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(47)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(47,nowWayInfo[1],1);
+                    moving(47,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR47.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(47)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(47,nowWayInfo[2],2);
+                    moving(47,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL47.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(47)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(47,nowWayInfo[3],3);
+                    moving(47,result[0],result[1]);
+                }
+            }
+        });
+        arrowL47.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(47)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(47,nowWayInfo[4],4);
+                    moving(47,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL47.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(47)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(47,nowWayInfo[5],5);
+                    moving(47,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone48.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,48);
+            }
+        });
+        arrowUR48.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(48)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(48,nowWayInfo[0],0);
+                    moving(48,result[0],result[1]);
+                }
+            }
+        });
+        arrowR48.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(48)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(48,nowWayInfo[1],1);
+                    moving(48,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR48.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(48)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(48,nowWayInfo[2],2);
+                    moving(48,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL48.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(48)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(48,nowWayInfo[3],3);
+                    moving(48,result[0],result[1]);
+                }
+            }
+        });
+        arrowL48.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(48)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(48,nowWayInfo[4],4);
+                    moving(48,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL48.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(48)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(48,nowWayInfo[5],5);
+                    moving(48,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone49.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,49);
+            }
+        });
+        arrowUR49.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(49)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(49,nowWayInfo[0],0);
+                    moving(49,result[0],result[1]);
+                }
+            }
+        });
+        arrowR49.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(49)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(49,nowWayInfo[1],1);
+                    moving(49,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR49.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(49)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(49,nowWayInfo[2],2);
+                    moving(49,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL49.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(49)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(49,nowWayInfo[3],3);
+                    moving(49,result[0],result[1]);
+                }
+            }
+        });
+        arrowL49.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(49)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(49,nowWayInfo[4],4);
+                    moving(49,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL49.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(49)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(49,nowWayInfo[5],5);
+                    moving(49,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone50.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,50);
+            }
+        });
+        arrowDR50.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(50)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(50,nowWayInfo[2],2);
+                    moving(50,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL50.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(50)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(50,nowWayInfo[3],3);
+                    moving(50,result[0],result[1]);
+                }
+            }
+        });
+        arrowL50.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(50)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(50,nowWayInfo[4],4);
+                    moving(50,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL50.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(50)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(50,nowWayInfo[5],5);
+                    moving(50,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone51.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,51);
+            }
+        });
+        arrowUR51.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(51)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(51,nowWayInfo[0],0);
+                    moving(51,result[0],result[1]);
+                }
+            }
+        });
+        arrowR51.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(51)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(51,nowWayInfo[1],1);
+                    moving(51,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR51.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(51)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(51,nowWayInfo[2],2);
+                    moving(51,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL51.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(51)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(51,nowWayInfo[3],3);
+                    moving(51,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone52.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,52);
+            }
+        });
+        arrowUR52.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(52)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(52,nowWayInfo[0],0);
+                    moving(52,result[0],result[1]);
+                }
+            }
+        });
+        arrowR52.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(52)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(52,nowWayInfo[1],1);
+                    moving(52,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR52.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(52)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(52,nowWayInfo[2],2);
+                    moving(52,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL52.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(52)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(52,nowWayInfo[3],3);
+                    moving(52,result[0],result[1]);
+                }
+            }
+        });
+        arrowL52.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(52)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(52,nowWayInfo[4],4);
+                    moving(52,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL52.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(52)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(52,nowWayInfo[5],5);
+                    moving(52,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone53.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,53);
+            }
+        });
+        arrowUR53.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(53)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(53,nowWayInfo[0],0);
+                    moving(53,result[0],result[1]);
+                }
+            }
+        });
+        arrowR53.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(53)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(53,nowWayInfo[1],1);
+                    moving(53,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR53.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(53)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(53,nowWayInfo[2],2);
+                    moving(53,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL53.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(53)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(53,nowWayInfo[3],3);
+                    moving(53,result[0],result[1]);
+                }
+            }
+        });
+        arrowL53.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(53)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(53,nowWayInfo[4],4);
+                    moving(53,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL53.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(53)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(53,nowWayInfo[5],5);
+                    moving(53,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone54.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,54);
+            }
+        });
+        arrowUR54.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(54)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(54,nowWayInfo[0],0);
+                    moving(54,result[0],result[1]);
+                }
+            }
+        });
+        arrowR54.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(54)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(54,nowWayInfo[1],1);
+                    moving(54,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR54.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(54)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(54,nowWayInfo[2],2);
+                    moving(54,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL54.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(54)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(54,nowWayInfo[3],3);
+                    moving(54,result[0],result[1]);
+                }
+            }
+        });
+        arrowL54.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(54)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(54,nowWayInfo[4],4);
+                    moving(54,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL54.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(54)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(54,nowWayInfo[5],5);
+                    moving(54,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone55.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,55);
+            }
+        });
+        arrowUR55.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(55)[0]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(55,nowWayInfo[0],0);
+                    moving(55,result[0],result[1]);
+                }
+            }
+        });
+        arrowR55.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(55)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(55,nowWayInfo[1],1);
+                    moving(55,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR55.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(55)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(55,nowWayInfo[2],2);
+                    moving(55,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL55.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(55)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(55,nowWayInfo[3],3);
+                    moving(55,result[0],result[1]);
+                }
+            }
+        });
+        arrowL55.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(55)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(55,nowWayInfo[4],4);
+                    moving(55,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL55.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(55)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(55,nowWayInfo[5],5);
+                    moving(55,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone56.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,56);
+            }
+        });
+        arrowDR56.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(56)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(56,nowWayInfo[2],2);
+                    moving(56,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL56.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(56)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(56,nowWayInfo[3],3);
+                    moving(56,result[0],result[1]);
+                }
+            }
+        });
+        arrowL56.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(56)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(56,nowWayInfo[4],4);
+                    moving(56,result[0],result[1]);
+                }
+            }
+        });
+        arrowUL56.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(56)[5]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(56,nowWayInfo[5],5);
+                    moving(56,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone57.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,57);
+            }
+        });
+        arrowR57.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(57)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(57,nowWayInfo[1],1);
+                    moving(57,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR57.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(57)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(57,nowWayInfo[2],2);
+                    moving(57,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL57.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(57)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(57,nowWayInfo[3],3);
+                    moving(57,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone58.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,58);
+            }
+        });
+        arrowR58.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(58)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(58,nowWayInfo[1],1);
+                    moving(58,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR58.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(58)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(58,nowWayInfo[2],2);
+                    moving(58,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL58.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(58)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(58,nowWayInfo[3],3);
+                    moving(58,result[0],result[1]);
+                }
+            }
+        });
+        arrowL58.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(58)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(58,nowWayInfo[4],4);
+                    moving(58,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone59.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,59);
+            }
+        });
+        arrowR59.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(59)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(59,nowWayInfo[1],1);
+                    moving(59,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR59.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(59)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(59,nowWayInfo[2],2);
+                    moving(59,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL59.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(59)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(59,nowWayInfo[3],3);
+                    moving(59,result[0],result[1]);
+                }
+            }
+        });
+        arrowL59.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(59)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(59,nowWayInfo[4],4);
+                    moving(59,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone60.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,60);
+            }
+        });
+        arrowR60.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(60)[1]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(60,nowWayInfo[1],1);
+                    moving(60,result[0],result[1]);
+                }
+            }
+        });
+        arrowDR60.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(60)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(60,nowWayInfo[2],2);
+                    moving(60,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL60.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(60)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(60,nowWayInfo[3],3);
+                    moving(60,result[0],result[1]);
+                }
+            }
+        });
+        arrowL60.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(60)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(60,nowWayInfo[4],4);
+                    moving(60,result[0],result[1]);
+                }
+            }
+        });
+
+        black_stone61.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBlackButtonClicked(v,61);
+            }
+        });
+        arrowDR61.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(61)[2]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(61,nowWayInfo[2],2);
+                    moving(61,result[0],result[1]);
+                }
+            }
+        });
+        arrowDL61.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(61)[3]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(61,nowWayInfo[3],3);
+                    moving(61,result[0],result[1]);
+                }
+            }
+        });
+        arrowL61.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!canMove(61)[4]){
+                    Toast.makeText(view.getContext(),"움직일 수 없습니다",Toast.LENGTH_SHORT).show();
+                }else{
+                    int[] result= movingPoint(61,nowWayInfo[4],4);
+                    moving(61,result[0],result[1]);
+                }
+            }
+        });
+
         init();
     }
     private void init(){
@@ -2396,6 +4834,41 @@ public class GameActivity extends AppCompatActivity {
         black_stone24.setVisibility(View.INVISIBLE);
         black_stone25.setVisibility(View.INVISIBLE);
         black_stone26.setVisibility(View.INVISIBLE);
+        black_stone27.setVisibility(View.INVISIBLE);
+        black_stone28.setVisibility(View.INVISIBLE);
+        black_stone29.setVisibility(View.INVISIBLE);
+        black_stone30.setVisibility(View.INVISIBLE);
+        black_stone31.setVisibility(View.INVISIBLE);
+        black_stone32.setVisibility(View.INVISIBLE);
+        black_stone33.setVisibility(View.INVISIBLE);
+        black_stone34.setVisibility(View.INVISIBLE);
+        black_stone35.setVisibility(View.INVISIBLE);
+        black_stone36.setVisibility(View.INVISIBLE);
+        black_stone37.setVisibility(View.INVISIBLE);
+        black_stone38.setVisibility(View.INVISIBLE);
+        black_stone39.setVisibility(View.INVISIBLE);
+        black_stone40.setVisibility(View.INVISIBLE);
+        black_stone41.setVisibility(View.INVISIBLE);
+        black_stone42.setVisibility(View.INVISIBLE);
+        black_stone43.setVisibility(View.INVISIBLE);
+        black_stone44.setVisibility(View.INVISIBLE);
+        black_stone45.setVisibility(View.INVISIBLE);
+        black_stone46.setVisibility(View.INVISIBLE);
+        black_stone47.setVisibility(View.INVISIBLE);
+        black_stone48.setVisibility(View.INVISIBLE);
+        black_stone49.setVisibility(View.INVISIBLE);
+        black_stone50.setVisibility(View.INVISIBLE);
+        black_stone51.setVisibility(View.INVISIBLE);
+        black_stone52.setVisibility(View.INVISIBLE);
+        black_stone53.setVisibility(View.INVISIBLE);
+        black_stone54.setVisibility(View.INVISIBLE);
+        black_stone55.setVisibility(View.INVISIBLE);
+        black_stone56.setVisibility(View.INVISIBLE);
+        black_stone57.setVisibility(View.INVISIBLE);
+        black_stone58.setVisibility(View.INVISIBLE);
+        black_stone59.setVisibility(View.INVISIBLE);
+        black_stone60.setVisibility(View.INVISIBLE);
+        black_stone61.setVisibility(View.INVISIBLE);
     }
 
     private boolean[] canMove(int num){
@@ -2850,6 +5323,145 @@ public class GameActivity extends AppCompatActivity {
             black_stone26.setVisibility(View.INVISIBLE);
             onBlackButtonClicked(view,26);
         }
+        if(start==27){
+            black_stone27.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,27);
+        }
+        if(start==28){
+            black_stone28.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,28);
+        }
+        if(start==29){
+            black_stone29.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,29);
+        }
+        if(start==30){
+            black_stone30.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,30);
+        }
+        if(start==31){
+            black_stone31.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,31);
+        }
+        if(start==32){
+            black_stone32.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,32);
+        }
+        if(start==33){
+            black_stone33.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,33);
+        }
+        if(start==34){
+            black_stone34.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,34);
+        }
+        if(start==35){
+            black_stone35.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,35);
+        }
+        if(start==36){
+            black_stone36.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,36);
+        }
+        if(start==37){
+            black_stone37.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,37);
+        }
+        if(start==38){
+            black_stone38.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,38);
+        }
+        if(start==39){
+            black_stone39.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,39);
+        }
+        if(start==40){
+            black_stone40.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,40);
+        }if(start==41){
+            black_stone41.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,41);
+        }
+        if(start==42){
+            black_stone42.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,42);
+        }
+        if(start==43){
+            black_stone43.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,43);
+        }
+        if(start==44){
+            black_stone44.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,44);
+        }
+        if(start==45){
+            black_stone45.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,45);
+        }
+        if(start==46){
+            black_stone46.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,46);
+        }
+        if(start==47){
+            black_stone47.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,47);
+        }
+        if(start==48){
+            black_stone48.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,48);
+        }
+        if(start==49){
+            black_stone49.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,49);
+        }
+        if(start==50){
+            black_stone50.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,50);
+        }if(start==51){
+            black_stone51.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,51);
+        }
+        if(start==52){
+            black_stone52.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,52);
+        }
+        if(start==53){
+            black_stone53.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,53);
+        }
+        if(start==54){
+            black_stone54.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,54);
+        }
+        if(start==55){
+            black_stone55.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,55);
+        }
+        if(start==56){
+            black_stone56.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,56);
+        }
+        if(start==57){
+            black_stone57.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,57);
+        }
+        if(start==58){
+            black_stone58.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,58);
+        }
+        if(start==59){
+            black_stone59.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,59);
+        }
+        if(start==60){
+            black_stone60.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,60);
+        }
+        if(start==61){
+            black_stone60.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,60);
+        }
+
 
         if(kindOfStone==-1)
             return;
@@ -2964,7 +5576,112 @@ public class GameActivity extends AppCompatActivity {
         if(end==26){
             black_stone26.setVisibility(View.VISIBLE);
         }
+        if(end==27){
+            black_stone27.setVisibility(View.VISIBLE);
+        }
+        if(end==28){
+            black_stone28.setVisibility(View.VISIBLE);
+        }
+        if(end==29){
+            black_stone29.setVisibility(View.VISIBLE);
+        }
+        if(end==30){
+            black_stone30.setVisibility(View.VISIBLE);
+        }
+        if(end==31){
+            black_stone31.setVisibility(View.VISIBLE);
+        }
+        if(end==32){
+            black_stone32.setVisibility(View.VISIBLE);
+        }
+        if(end==33){
+            black_stone33.setVisibility(View.VISIBLE);
+        }
+        if(end==34){
+            black_stone34.setVisibility(View.VISIBLE);
+        }
+        if(end==35){
+            black_stone35.setVisibility(View.VISIBLE);
+        }
+        if(end==36){
+            black_stone36.setVisibility(View.VISIBLE);
+        }
+        if(end==37){
+            black_stone37.setVisibility(View.VISIBLE);
+        }
+        if(end==38){
+            black_stone38.setVisibility(View.VISIBLE);
+        }
+        if(end==39){
+            black_stone39.setVisibility(View.VISIBLE);
+        }
+        if(end==40){
+            black_stone40.setVisibility(View.VISIBLE);
+        }if(end==41){
+            black_stone41.setVisibility(View.VISIBLE);
+        }
+        if(end==42){
+            black_stone42.setVisibility(View.VISIBLE);
+        }
+        if(end==43){
+            black_stone43.setVisibility(View.VISIBLE);
+        }
+        if(end==44){
+            black_stone44.setVisibility(View.VISIBLE);
+        }
+        if(end==45){
+            black_stone45.setVisibility(View.VISIBLE);
+        }
+        if(end==46){
+            black_stone46.setVisibility(View.VISIBLE);
+        }
+        if(end==47){
+            black_stone47.setVisibility(View.VISIBLE);
+        }
+        if(end==48){
+            black_stone48.setVisibility(View.VISIBLE);
+        }
+        if(end==49){
+            black_stone49.setVisibility(View.VISIBLE);
+        }
+        if(end==50){
+            black_stone50.setVisibility(View.VISIBLE);
+        }
+        if(end==51){
+            black_stone51.setVisibility(View.VISIBLE);
+        }
+        if(end==52){
+            black_stone52.setVisibility(View.VISIBLE);
+        }
+        if(end==53){
+            black_stone53.setVisibility(View.VISIBLE);
+        }
+        if(end==54){
+            black_stone54.setVisibility(View.VISIBLE);
+        }
+        if(end==55){
+            black_stone55.setVisibility(View.VISIBLE);
+        }
+        if(end==56){
+            black_stone56.setVisibility(View.VISIBLE);
+        }
+        if(end==57){
+            black_stone57.setVisibility(View.VISIBLE);
+        }
+        if(end==58){
+            black_stone58.setVisibility(View.VISIBLE);
+        }
+        if(end==59){
+            black_stone59.setVisibility(View.VISIBLE);
+        }
+        if(end==60){
+            black_stone60.setVisibility(View.VISIBLE);
+        }
+        if(end==61){
+            black_stone60.setVisibility(View.VISIBLE);
+        }
     }
+
     private boolean endroad(int row, int col){//false: no line
         if(col<0 || row<0 || col>8 || row>8)
             return false;
@@ -3218,7 +5935,8 @@ public class GameActivity extends AppCompatActivity {
                 arrowL8.setEnabled(true);
                 arrowUL8.setEnabled(true);
                 black_stone8.setEnabled(true);
-            }if(num==9) {
+            }
+            if(num==9) {
                 arrowUR9.startAnimation(animTran1Start);
                 arrowR9.startAnimation(animTran2Start);
                 arrowDR9.startAnimation(animTran3Start);
@@ -3468,19 +6186,486 @@ public class GameActivity extends AppCompatActivity {
                 arrowUL26.setEnabled(true);
                 black_stone26.setEnabled(true);
             }
+            if(num==27) {
+                arrowUR27.startAnimation(animTran1Start);
+                arrowR27.startAnimation(animTran2Start);
+                arrowDR27.startAnimation(animTran3Start);
+                arrowUR27.setEnabled(true);
+                arrowR27.setEnabled(true);
+                arrowDR27.setEnabled(true);
+                black_stone27.setEnabled(true);
+            }
+            if(num==28) {
+                arrowUR28.startAnimation(animTran1Start);
+                arrowR28.startAnimation(animTran2Start);
+                arrowDR28.startAnimation(animTran3Start);
+                arrowDL28.startAnimation(animTran4Start);
+                arrowL28.startAnimation(animTran5Start);
+                arrowUL28.startAnimation(animTran6Start);
+                arrowUR28.setEnabled(true);
+                arrowR28.setEnabled(true);
+                arrowDR28.setEnabled(true);
+                arrowDL28.setEnabled(true);
+                arrowL28.setEnabled(true);
+                arrowUL28.setEnabled(true);
+                black_stone28.setEnabled(true);
+            }
+            if(num==29) {
+                arrowUR29.startAnimation(animTran1Start);
+                arrowR29.startAnimation(animTran2Start);
+                arrowDR29.startAnimation(animTran3Start);
+                arrowDL29.startAnimation(animTran4Start);
+                arrowL29.startAnimation(animTran5Start);
+                arrowUL29.startAnimation(animTran6Start);
+                arrowUR29.setEnabled(true);
+                arrowR29.setEnabled(true);
+                arrowDR29.setEnabled(true);
+                arrowDL29.setEnabled(true);
+                arrowL29.setEnabled(true);
+                arrowUL29.setEnabled(true);
+                black_stone29.setEnabled(true);
+            }
+            if(num==30) {
+                arrowUR30.startAnimation(animTran1Start);
+                arrowR30.startAnimation(animTran2Start);
+                arrowDR30.startAnimation(animTran3Start);
+                arrowDL30.startAnimation(animTran4Start);
+                arrowL30.startAnimation(animTran5Start);
+                arrowUL30.startAnimation(animTran6Start);
+                arrowUR30.setEnabled(true);
+                arrowR30.setEnabled(true);
+                arrowDR30.setEnabled(true);
+                arrowDL30.setEnabled(true);
+                arrowL30.setEnabled(true);
+                arrowUL30.setEnabled(true);
+                black_stone30.setEnabled(true);
+            }
+            if(num==31) {
+                arrowUR31.startAnimation(animTran1Start);
+                arrowR31.startAnimation(animTran2Start);
+                arrowDR31.startAnimation(animTran3Start);
+                arrowDL31.startAnimation(animTran4Start);
+                arrowL31.startAnimation(animTran5Start);
+                arrowUL31.startAnimation(animTran6Start);
+                arrowUR31.setEnabled(true);
+                arrowR31.setEnabled(true);
+                arrowDR31.setEnabled(true);
+                arrowDL31.setEnabled(true);
+                arrowL31.setEnabled(true);
+                arrowUL31.setEnabled(true);
+                black_stone31.setEnabled(true);
+            }
+            if(num==32) {
+                arrowUR32.startAnimation(animTran1Start);
+                arrowR32.startAnimation(animTran2Start);
+                arrowDR32.startAnimation(animTran3Start);
+                arrowDL32.startAnimation(animTran4Start);
+                arrowL32.startAnimation(animTran5Start);
+                arrowUL32.startAnimation(animTran6Start);
+                arrowUR32.setEnabled(true);
+                arrowR32.setEnabled(true);
+                arrowDR32.setEnabled(true);
+                arrowDL32.setEnabled(true);
+                arrowL32.setEnabled(true);
+                arrowUL32.setEnabled(true);
+                black_stone32.setEnabled(true);
+            }
+            if(num==33) {
+                arrowUR33.startAnimation(animTran1Start);
+                arrowR33.startAnimation(animTran2Start);
+                arrowDR33.startAnimation(animTran3Start);
+                arrowDL33.startAnimation(animTran4Start);
+                arrowL33.startAnimation(animTran5Start);
+                arrowUL33.startAnimation(animTran6Start);
+                arrowUR33.setEnabled(true);
+                arrowR33.setEnabled(true);
+                arrowDR33.setEnabled(true);
+                arrowDL33.setEnabled(true);
+                arrowL33.setEnabled(true);
+                arrowUL33.setEnabled(true);
+                black_stone33.setEnabled(true);
+            }
+            if(num==34) {
+                arrowUR34.startAnimation(animTran1Start);
+                arrowR34.startAnimation(animTran2Start);
+                arrowDR34.startAnimation(animTran3Start);
+                arrowDL34.startAnimation(animTran4Start);
+                arrowL34.startAnimation(animTran5Start);
+                arrowUL34.startAnimation(animTran6Start);
+                arrowUR34.setEnabled(true);
+                arrowR34.setEnabled(true);
+                arrowDR34.setEnabled(true);
+                arrowDL34.setEnabled(true);
+                arrowL34.setEnabled(true);
+                arrowUL34.setEnabled(true);
+                black_stone34.setEnabled(true);
+            }
+            if(num==35) {
+                arrowDL35.startAnimation(animTran4Start);
+                arrowL35.startAnimation(animTran5Start);
+                arrowUL35.startAnimation(animTran6Start);
+                arrowDL35.setEnabled(true);
+                arrowL35.setEnabled(true);
+                arrowUL35.setEnabled(true);
+                black_stone35.setEnabled(true);
+            }
+            if(num==36) {
+                arrowUR36.startAnimation(animTran1Start);
+                arrowR36.startAnimation(animTran2Start);
+                arrowDR36.startAnimation(animTran3Start);
+                arrowDL36.startAnimation(animTran4Start);
+                arrowUR36.setEnabled(true);
+                arrowR36.setEnabled(true);
+                arrowDR36.setEnabled(true);
+                arrowDL36.setEnabled(true);
+                black_stone36.setEnabled(true);
+            }
+            if(num==37) {
+                arrowUR37.startAnimation(animTran1Start);
+                arrowR37.startAnimation(animTran2Start);
+                arrowDR37.startAnimation(animTran3Start);
+                arrowDL37.startAnimation(animTran4Start);
+                arrowL37.startAnimation(animTran5Start);
+                arrowUL37.startAnimation(animTran6Start);
+                arrowUR37.setEnabled(true);
+                arrowR37.setEnabled(true);
+                arrowDR37.setEnabled(true);
+                arrowDL37.setEnabled(true);
+                arrowL37.setEnabled(true);
+                arrowUL37.setEnabled(true);
+                black_stone37.setEnabled(true);
+            }
+            if(num==38) {
+                arrowUR38.startAnimation(animTran1Start);
+                arrowR38.startAnimation(animTran2Start);
+                arrowDR38.startAnimation(animTran3Start);
+                arrowDL38.startAnimation(animTran4Start);
+                arrowL38.startAnimation(animTran5Start);
+                arrowUL38.startAnimation(animTran6Start);
+                arrowUR38.setEnabled(true);
+                arrowR38.setEnabled(true);
+                arrowDR38.setEnabled(true);
+                arrowDL38.setEnabled(true);
+                arrowL38.setEnabled(true);
+                arrowUL38.setEnabled(true);
+                black_stone38.setEnabled(true);
+            }
+            if(num==39) {
+                arrowUR39.startAnimation(animTran1Start);
+                arrowR39.startAnimation(animTran2Start);
+                arrowDR39.startAnimation(animTran3Start);
+                arrowDL39.startAnimation(animTran4Start);
+                arrowL39.startAnimation(animTran5Start);
+                arrowUL39.startAnimation(animTran6Start);
+                arrowUR39.setEnabled(true);
+                arrowR39.setEnabled(true);
+                arrowDR39.setEnabled(true);
+                arrowDL39.setEnabled(true);
+                arrowL39.setEnabled(true);
+                arrowUL39.setEnabled(true);
+                black_stone39.setEnabled(true);
+            }
+            if(num==40) {
+                arrowUR40.startAnimation(animTran1Start);
+                arrowR40.startAnimation(animTran2Start);
+                arrowDR40.startAnimation(animTran3Start);
+                arrowDL40.startAnimation(animTran4Start);
+                arrowL40.startAnimation(animTran5Start);
+                arrowUL40.startAnimation(animTran6Start);
+                arrowUR40.setEnabled(true);
+                arrowR40.setEnabled(true);
+                arrowDR40.setEnabled(true);
+                arrowDL40.setEnabled(true);
+                arrowL40.setEnabled(true);
+                arrowUL40.setEnabled(true);
+                black_stone40.setEnabled(true);
+            }
+            if(num==41) {
+                arrowUR41.startAnimation(animTran1Start);
+                arrowR41.startAnimation(animTran2Start);
+                arrowDR41.startAnimation(animTran3Start);
+                arrowDL41.startAnimation(animTran4Start);
+                arrowL41.startAnimation(animTran5Start);
+                arrowUL41.startAnimation(animTran6Start);
+                arrowUR41.setEnabled(true);
+                arrowR41.setEnabled(true);
+                arrowDR41.setEnabled(true);
+                arrowDL41.setEnabled(true);
+                arrowL41.setEnabled(true);
+                arrowUL41.setEnabled(true);
+                black_stone41.setEnabled(true);
+            }
+            if(num==42) {
+                arrowUR42.startAnimation(animTran1Start);
+                arrowR42.startAnimation(animTran2Start);
+                arrowDR42.startAnimation(animTran3Start);
+                arrowDL42.startAnimation(animTran4Start);
+                arrowL42.startAnimation(animTran5Start);
+                arrowUL42.startAnimation(animTran6Start);
+                arrowUR42.setEnabled(true);
+                arrowR42.setEnabled(true);
+                arrowDR42.setEnabled(true);
+                arrowDL42.setEnabled(true);
+                arrowL42.setEnabled(true);
+                arrowUL42.setEnabled(true);
+                black_stone42.setEnabled(true);
+            }
+            if(num==43) {
+                arrowDR43.startAnimation(animTran3Start);
+                arrowDL43.startAnimation(animTran4Start);
+                arrowL43.startAnimation(animTran5Start);
+                arrowUL43.startAnimation(animTran6Start);
+                arrowDR43.setEnabled(true);
+                arrowDL43.setEnabled(true);
+                arrowL43.setEnabled(true);
+                arrowUL43.setEnabled(true);
+                black_stone43.setEnabled(true);
+            }
+            if(num==44) {
+                arrowUR44.startAnimation(animTran1Start);
+                arrowR44.startAnimation(animTran2Start);
+                arrowDR44.startAnimation(animTran3Start);
+                arrowDL44.startAnimation(animTran4Start);
+                arrowUR44.setEnabled(true);
+                arrowR44.setEnabled(true);
+                arrowDR44.setEnabled(true);
+                arrowDL44.setEnabled(true);
+                black_stone44.setEnabled(true);
+            }
+            if(num==45) {
+                arrowUR45.startAnimation(animTran1Start);
+                arrowR45.startAnimation(animTran2Start);
+                arrowDR45.startAnimation(animTran3Start);
+                arrowDL45.startAnimation(animTran4Start);
+                arrowL45.startAnimation(animTran5Start);
+                arrowUL45.startAnimation(animTran6Start);
+                arrowUR45.setEnabled(true);
+                arrowR45.setEnabled(true);
+                arrowDR45.setEnabled(true);
+                arrowDL45.setEnabled(true);
+                arrowL45.setEnabled(true);
+                arrowUL45.setEnabled(true);
+                black_stone45.setEnabled(true);
+            }
+            if(num==46) {
+                arrowUR46.startAnimation(animTran1Start);
+                arrowR46.startAnimation(animTran2Start);
+                arrowDR46.startAnimation(animTran3Start);
+                arrowDL46.startAnimation(animTran4Start);
+                arrowL46.startAnimation(animTran5Start);
+                arrowUL46.startAnimation(animTran6Start);
+                arrowUR46.setEnabled(true);
+                arrowR46.setEnabled(true);
+                arrowDR46.setEnabled(true);
+                arrowDL46.setEnabled(true);
+                arrowL46.setEnabled(true);
+                arrowUL46.setEnabled(true);
+                black_stone46.setEnabled(true);
+            }
+            if(num==47) {
+                arrowUR47.startAnimation(animTran1Start);
+                arrowR47.startAnimation(animTran2Start);
+                arrowDR47.startAnimation(animTran3Start);
+                arrowDL47.startAnimation(animTran4Start);
+                arrowL47.startAnimation(animTran5Start);
+                arrowUL47.startAnimation(animTran6Start);
+                arrowUR47.setEnabled(true);
+                arrowR47.setEnabled(true);
+                arrowDR47.setEnabled(true);
+                arrowDL47.setEnabled(true);
+                arrowL47.setEnabled(true);
+                arrowUL47.setEnabled(true);
+                black_stone47.setEnabled(true);
+            }
+            if(num==48) {
+                arrowUR48.startAnimation(animTran1Start);
+                arrowR48.startAnimation(animTran2Start);
+                arrowDR48.startAnimation(animTran3Start);
+                arrowDL48.startAnimation(animTran4Start);
+                arrowL48.startAnimation(animTran5Start);
+                arrowUL48.startAnimation(animTran6Start);
+                arrowUR48.setEnabled(true);
+                arrowR48.setEnabled(true);
+                arrowDR48.setEnabled(true);
+                arrowDL48.setEnabled(true);
+                arrowL48.setEnabled(true);
+                arrowUL48.setEnabled(true);
+                black_stone48.setEnabled(true);
+            }
+            if(num==49) {
+                arrowUR49.startAnimation(animTran1Start);
+                arrowR49.startAnimation(animTran2Start);
+                arrowDR49.startAnimation(animTran3Start);
+                arrowDL49.startAnimation(animTran4Start);
+                arrowL49.startAnimation(animTran5Start);
+                arrowUL49.startAnimation(animTran6Start);
+                arrowUR49.setEnabled(true);
+                arrowR49.setEnabled(true);
+                arrowDR49.setEnabled(true);
+                arrowDL49.setEnabled(true);
+                arrowL49.setEnabled(true);
+                arrowUL49.setEnabled(true);
+                black_stone49.setEnabled(true);
+            }
+            if(num==50) {
+                arrowDR50.startAnimation(animTran3Start);
+                arrowDL50.startAnimation(animTran4Start);
+                arrowL50.startAnimation(animTran5Start);
+                arrowUL50.startAnimation(animTran6Start);
+                arrowDR50.setEnabled(true);
+                arrowDL50.setEnabled(true);
+                arrowL50.setEnabled(true);
+                arrowUL50.setEnabled(true);
+                black_stone50.setEnabled(true);
+            }
+            if(num==51) {
+                arrowUR51.startAnimation(animTran1Start);
+                arrowR51.startAnimation(animTran2Start);
+                arrowDR51.startAnimation(animTran3Start);
+                arrowDL51.startAnimation(animTran4Start);
+                arrowUR51.setEnabled(true);
+                arrowR51.setEnabled(true);
+                arrowDR51.setEnabled(true);
+                arrowDL51.setEnabled(true);
+                black_stone51.setEnabled(true);
+            }
+            if(num==52) {
+                arrowUR52.startAnimation(animTran1Start);
+                arrowR52.startAnimation(animTran2Start);
+                arrowDR52.startAnimation(animTran3Start);
+                arrowDL52.startAnimation(animTran4Start);
+                arrowL52.startAnimation(animTran5Start);
+                arrowUL52.startAnimation(animTran6Start);
+                arrowUR52.setEnabled(true);
+                arrowR52.setEnabled(true);
+                arrowDR52.setEnabled(true);
+                arrowDL52.setEnabled(true);
+                arrowL52.setEnabled(true);
+                arrowUL52.setEnabled(true);
+                black_stone52.setEnabled(true);
+            }
+            if(num==53) {
+                arrowUR53.startAnimation(animTran1Start);
+                arrowR53.startAnimation(animTran2Start);
+                arrowDR53.startAnimation(animTran3Start);
+                arrowDL53.startAnimation(animTran4Start);
+                arrowL53.startAnimation(animTran5Start);
+                arrowUL53.startAnimation(animTran6Start);
+                arrowUR53.setEnabled(true);
+                arrowR53.setEnabled(true);
+                arrowDR53.setEnabled(true);
+                arrowDL53.setEnabled(true);
+                arrowL53.setEnabled(true);
+                arrowUL53.setEnabled(true);
+                black_stone53.setEnabled(true);
+            }
+            if(num==54) {
+                arrowUR54.startAnimation(animTran1Start);
+                arrowR54.startAnimation(animTran2Start);
+                arrowDR54.startAnimation(animTran3Start);
+                arrowDL54.startAnimation(animTran4Start);
+                arrowL54.startAnimation(animTran5Start);
+                arrowUL54.startAnimation(animTran6Start);
+                arrowUR54.setEnabled(true);
+                arrowR54.setEnabled(true);
+                arrowDR54.setEnabled(true);
+                arrowDL54.setEnabled(true);
+                arrowL54.setEnabled(true);
+                arrowUL54.setEnabled(true);
+                black_stone54.setEnabled(true);
+            }
+            if(num==55) {
+                arrowUR55.startAnimation(animTran1Start);
+                arrowR55.startAnimation(animTran2Start);
+                arrowDR55.startAnimation(animTran3Start);
+                arrowDL55.startAnimation(animTran4Start);
+                arrowL55.startAnimation(animTran5Start);
+                arrowUL55.startAnimation(animTran6Start);
+                arrowUR55.setEnabled(true);
+                arrowR55.setEnabled(true);
+                arrowDR55.setEnabled(true);
+                arrowDL55.setEnabled(true);
+                arrowL55.setEnabled(true);
+                arrowUL55.setEnabled(true);
+                black_stone55.setEnabled(true);
+            }
+            if(num==56) {
+                arrowDR56.startAnimation(animTran3Start);
+                arrowDL56.startAnimation(animTran4Start);
+                arrowL56.startAnimation(animTran5Start);
+                arrowUL56.startAnimation(animTran6Start);
+                arrowDR56.setEnabled(true);
+                arrowDL56.setEnabled(true);
+                arrowL56.setEnabled(true);
+                arrowUL56.setEnabled(true);
+                black_stone56.setEnabled(true);
+            }
+            if(num==57) {
+                arrowR57.startAnimation(animTran2Start);
+                arrowDR57.startAnimation(animTran3Start);
+                arrowDL57.startAnimation(animTran4Start);
+                arrowR57.setEnabled(true);
+                arrowDR57.setEnabled(true);
+                arrowDL57.setEnabled(true);
+                black_stone57.setEnabled(true);
+            }
+            if(num==58) {
+                arrowR58.startAnimation(animTran2Start);
+                arrowDR58.startAnimation(animTran3Start);
+                arrowDL58.startAnimation(animTran4Start);
+                arrowL58.startAnimation(animTran5Start);
+                arrowR58.setEnabled(true);
+                arrowDR58.setEnabled(true);
+                arrowDL58.setEnabled(true);
+                arrowL58.setEnabled(true);
+                black_stone58.setEnabled(true);
+            }
+            if(num==59) {
+                arrowR59.startAnimation(animTran2Start);
+                arrowDR59.startAnimation(animTran3Start);
+                arrowDL59.startAnimation(animTran4Start);
+                arrowL59.startAnimation(animTran5Start);
+                arrowR59.setEnabled(true);
+                arrowDR59.setEnabled(true);
+                arrowDL59.setEnabled(true);
+                arrowL59.setEnabled(true);
+                black_stone59.setEnabled(true);
+            }
+            if(num==60) {
+                arrowR60.startAnimation(animTran2Start);
+                arrowDR60.startAnimation(animTran3Start);
+                arrowDL60.startAnimation(animTran4Start);
+                arrowL60.startAnimation(animTran5Start);
+                arrowR60.setEnabled(true);
+                arrowDR60.setEnabled(true);
+                arrowDL60.setEnabled(true);
+                arrowL60.setEnabled(true);
+                black_stone60.setEnabled(true);
+            }
+            if(num==61) {
+                arrowDR61.startAnimation(animTran3Start);
+                arrowDL61.startAnimation(animTran4Start);
+                arrowL61.startAnimation(animTran5Start);
+                arrowDR61.setEnabled(true);
+                arrowDL61.setEnabled(true);
+                arrowL61.setEnabled(true);
+                black_stone61.setEnabled(true);
+            }
+
 
         }
         else {
             allEnabled();
-            if (num == 1) {
+            if(num==1) {
                 arrowUR1.startAnimation(animTran1End);
                 arrowR1.startAnimation(animTran2End);
                 arrowUL1.startAnimation(animTran6End);
                 arrowUR1.setEnabled(false);
                 arrowR1.setEnabled(false);
                 arrowUL1.setEnabled(false);
+                black_stone1.setEnabled(false);
             }
-            if (num == 2) {
+            if(num==2) {
                 arrowUR2.startAnimation(animTran1End);
                 arrowR2.startAnimation(animTran2End);
                 arrowUL2.startAnimation(animTran6End);
@@ -3489,8 +6674,9 @@ public class GameActivity extends AppCompatActivity {
                 arrowR2.setEnabled(false);
                 arrowUL2.setEnabled(false);
                 arrowL2.setEnabled(false);
+                black_stone2.setEnabled(false);
             }
-            if (num == 3) {
+            if(num==3){
                 arrowUR3.startAnimation(animTran1End);
                 arrowR3.startAnimation(animTran2End);
                 arrowUL3.startAnimation(animTran6End);
@@ -3499,8 +6685,9 @@ public class GameActivity extends AppCompatActivity {
                 arrowR3.setEnabled(false);
                 arrowUL3.setEnabled(false);
                 arrowL3.setEnabled(false);
+                black_stone3.setEnabled(false);
             }
-            if (num == 4) {
+            if(num==4){
                 arrowUR4.startAnimation(animTran1End);
                 arrowR4.startAnimation(animTran2End);
                 arrowUL4.startAnimation(animTran6End);
@@ -3509,16 +6696,18 @@ public class GameActivity extends AppCompatActivity {
                 arrowR4.setEnabled(false);
                 arrowUL4.setEnabled(false);
                 arrowL4.setEnabled(false);
+                black_stone4.setEnabled(false);
             }
-            if (num == 5) {
+            if(num==5) {
                 arrowUR5.startAnimation(animTran1End);
                 arrowL5.startAnimation(animTran5End);
                 arrowUL5.startAnimation(animTran6End);
                 arrowUR5.setEnabled(false);
                 arrowL5.setEnabled(false);
                 arrowUL5.setEnabled(false);
+                black_stone5.setEnabled(false);
             }
-            if (num == 6) {
+            if(num==6) {
                 arrowUR6.startAnimation(animTran1End);
                 arrowR6.startAnimation(animTran2End);
                 arrowDR6.startAnimation(animTran3End);
@@ -3527,8 +6716,9 @@ public class GameActivity extends AppCompatActivity {
                 arrowR6.setEnabled(false);
                 arrowDR6.setEnabled(false);
                 arrowUL6.setEnabled(false);
+                black_stone6.setEnabled(false);
             }
-            if (num == 7) {
+            if(num==7) {
                 arrowUR7.startAnimation(animTran1End);
                 arrowR7.startAnimation(animTran2End);
                 arrowDR7.startAnimation(animTran3End);
@@ -3541,8 +6731,9 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL7.setEnabled(false);
                 arrowL7.setEnabled(false);
                 arrowUL7.setEnabled(false);
+                black_stone7.setEnabled(false);
             }
-            if (num == 8) {
+            if(num==8) {
                 arrowUR8.startAnimation(animTran1End);
                 arrowR8.startAnimation(animTran2End);
                 arrowDR8.startAnimation(animTran3End);
@@ -3555,8 +6746,9 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL8.setEnabled(false);
                 arrowL8.setEnabled(false);
                 arrowUL8.setEnabled(false);
+                black_stone8.setEnabled(false);
             }
-            if (num == 9) {
+            if(num==9) {
                 arrowUR9.startAnimation(animTran1End);
                 arrowR9.startAnimation(animTran2End);
                 arrowDR9.startAnimation(animTran3End);
@@ -3569,8 +6761,9 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL9.setEnabled(false);
                 arrowL9.setEnabled(false);
                 arrowUL9.setEnabled(false);
+                black_stone9.setEnabled(false);
             }
-            if (num == 10) {
+            if(num==10) {
                 arrowUR10.startAnimation(animTran1End);
                 arrowR10.startAnimation(animTran2End);
                 arrowDR10.startAnimation(animTran3End);
@@ -3583,8 +6776,9 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL10.setEnabled(false);
                 arrowL10.setEnabled(false);
                 arrowUL10.setEnabled(false);
+                black_stone10.setEnabled(false);
             }
-            if (num == 11) {
+            if(num==11) {
                 arrowUR11.startAnimation(animTran1End);
                 arrowDL11.startAnimation(animTran4End);
                 arrowL11.startAnimation(animTran5End);
@@ -3593,8 +6787,9 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL11.setEnabled(false);
                 arrowL11.setEnabled(false);
                 arrowUL11.setEnabled(false);
+                black_stone11.setEnabled(false);
             }
-            if (num == 12) {
+            if(num==12) {
                 arrowUR12.startAnimation(animTran1End);
                 arrowR12.startAnimation(animTran2End);
                 arrowDR12.startAnimation(animTran3End);
@@ -3603,8 +6798,9 @@ public class GameActivity extends AppCompatActivity {
                 arrowR12.setEnabled(false);
                 arrowDR12.setEnabled(false);
                 arrowUL12.setEnabled(false);
+                black_stone12.setEnabled(false);
             }
-            if (num == 13) {
+            if(num==13) {
                 arrowUR13.startAnimation(animTran1End);
                 arrowR13.startAnimation(animTran2End);
                 arrowDR13.startAnimation(animTran3End);
@@ -3617,8 +6813,9 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL13.setEnabled(false);
                 arrowL13.setEnabled(false);
                 arrowUL13.setEnabled(false);
+                black_stone13.setEnabled(false);
             }
-            if (num == 14) {
+            if(num==14) {
                 arrowUR14.startAnimation(animTran1End);
                 arrowR14.startAnimation(animTran2End);
                 arrowDR14.startAnimation(animTran3End);
@@ -3631,8 +6828,9 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL14.setEnabled(false);
                 arrowL14.setEnabled(false);
                 arrowUL14.setEnabled(false);
+                black_stone14.setEnabled(false);
             }
-            if (num == 15) {
+            if(num==15) {
                 arrowUR15.startAnimation(animTran1End);
                 arrowR15.startAnimation(animTran2End);
                 arrowDR15.startAnimation(animTran3End);
@@ -3645,8 +6843,9 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL15.setEnabled(false);
                 arrowL15.setEnabled(false);
                 arrowUL15.setEnabled(false);
+                black_stone15.setEnabled(false);
             }
-            if (num == 16) {
+            if(num==16) {
                 arrowUR16.startAnimation(animTran1End);
                 arrowR16.startAnimation(animTran2End);
                 arrowDR16.startAnimation(animTran3End);
@@ -3659,8 +6858,9 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL16.setEnabled(false);
                 arrowL16.setEnabled(false);
                 arrowUL16.setEnabled(false);
+                black_stone16.setEnabled(false);
             }
-            if (num == 17) {
+            if(num==17) {
                 arrowUR17.startAnimation(animTran1End);
                 arrowR17.startAnimation(animTran2End);
                 arrowDR17.startAnimation(animTran3End);
@@ -3673,8 +6873,9 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL17.setEnabled(false);
                 arrowL17.setEnabled(false);
                 arrowUL17.setEnabled(false);
+                black_stone17.setEnabled(false);
             }
-            if (num == 18) {
+            if(num==18) {
                 arrowUR18.startAnimation(animTran1End);
                 arrowDL18.startAnimation(animTran4End);
                 arrowL18.startAnimation(animTran5End);
@@ -3683,6 +6884,7 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL18.setEnabled(false);
                 arrowL18.setEnabled(false);
                 arrowUL18.setEnabled(false);
+                black_stone18.setEnabled(false);
             }
             if(num==19) {
                 arrowUR19.startAnimation(animTran1End);
@@ -3693,6 +6895,7 @@ public class GameActivity extends AppCompatActivity {
                 arrowR19.setEnabled(false);
                 arrowDR19.setEnabled(false);
                 arrowUL19.setEnabled(false);
+                black_stone19.setEnabled(false);
             }
             if(num==20) {
                 arrowUR20.startAnimation(animTran1End);
@@ -3707,8 +6910,9 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL20.setEnabled(false);
                 arrowL20.setEnabled(false);
                 arrowUL20.setEnabled(false);
+                black_stone20.setEnabled(false);
             }
-            if (num == 21) {
+            if(num==21) {
                 arrowUR21.startAnimation(animTran1End);
                 arrowR21.startAnimation(animTran2End);
                 arrowDR21.startAnimation(animTran3End);
@@ -3721,9 +6925,9 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL21.setEnabled(false);
                 arrowL21.setEnabled(false);
                 arrowUL21.setEnabled(false);
+                black_stone21.setEnabled(false);
             }
-
-            if (num == 22) {
+            if(num==22) {
                 arrowUR22.startAnimation(animTran1End);
                 arrowR22.startAnimation(animTran2End);
                 arrowDR22.startAnimation(animTran3End);
@@ -3736,8 +6940,9 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL22.setEnabled(false);
                 arrowL22.setEnabled(false);
                 arrowUL22.setEnabled(false);
+                black_stone22.setEnabled(false);
             }
-            if (num == 23) {
+            if(num==23) {
                 arrowUR23.startAnimation(animTran1End);
                 arrowR23.startAnimation(animTran2End);
                 arrowDR23.startAnimation(animTran3End);
@@ -3750,8 +6955,9 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL23.setEnabled(false);
                 arrowL23.setEnabled(false);
                 arrowUL23.setEnabled(false);
+                black_stone23.setEnabled(false);
             }
-            if (num == 24) {
+            if(num==24) {
                 arrowUR24.startAnimation(animTran1End);
                 arrowR24.startAnimation(animTran2End);
                 arrowDR24.startAnimation(animTran3End);
@@ -3764,6 +6970,7 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL24.setEnabled(false);
                 arrowL24.setEnabled(false);
                 arrowUL24.setEnabled(false);
+                black_stone24.setEnabled(false);
             }
             if(num==25) {
                 arrowUR25.startAnimation(animTran1End);
@@ -3778,6 +6985,7 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL25.setEnabled(false);
                 arrowL25.setEnabled(false);
                 arrowUL25.setEnabled(false);
+                black_stone25.setEnabled(false);
             }
             if(num==26) {
                 arrowUR26.startAnimation(animTran1End);
@@ -3788,7 +6996,473 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL26.setEnabled(false);
                 arrowL26.setEnabled(false);
                 arrowUL26.setEnabled(false);
-          }
+                black_stone26.setEnabled(false);
+            }
+            if(num==27) {
+                arrowUR27.startAnimation(animTran1End);
+                arrowR27.startAnimation(animTran2End);
+                arrowDR27.startAnimation(animTran3End);
+                arrowUR27.setEnabled(false);
+                arrowR27.setEnabled(false);
+                arrowDR27.setEnabled(false);
+                black_stone27.setEnabled(false);
+            }
+            if(num==28) {
+                arrowUR28.startAnimation(animTran1End);
+                arrowR28.startAnimation(animTran2End);
+                arrowDR28.startAnimation(animTran3End);
+                arrowDL28.startAnimation(animTran4End);
+                arrowL28.startAnimation(animTran5End);
+                arrowUL28.startAnimation(animTran6End);
+                arrowUR28.setEnabled(false);
+                arrowR28.setEnabled(false);
+                arrowDR28.setEnabled(false);
+                arrowDL28.setEnabled(false);
+                arrowL28.setEnabled(false);
+                arrowUL28.setEnabled(false);
+                black_stone28.setEnabled(false);
+            }
+            if(num==29) {
+                arrowUR29.startAnimation(animTran1End);
+                arrowR29.startAnimation(animTran2End);
+                arrowDR29.startAnimation(animTran3End);
+                arrowDL29.startAnimation(animTran4End);
+                arrowL29.startAnimation(animTran5End);
+                arrowUL29.startAnimation(animTran6End);
+                arrowUR29.setEnabled(false);
+                arrowR29.setEnabled(false);
+                arrowDR29.setEnabled(false);
+                arrowDL29.setEnabled(false);
+                arrowL29.setEnabled(false);
+                arrowUL29.setEnabled(false);
+                black_stone29.setEnabled(false);
+            }
+            if(num==30) {
+                arrowUR30.startAnimation(animTran1End);
+                arrowR30.startAnimation(animTran2End);
+                arrowDR30.startAnimation(animTran3End);
+                arrowDL30.startAnimation(animTran4End);
+                arrowL30.startAnimation(animTran5End);
+                arrowUL30.startAnimation(animTran6End);
+                arrowUR30.setEnabled(false);
+                arrowR30.setEnabled(false);
+                arrowDR30.setEnabled(false);
+                arrowDL30.setEnabled(false);
+                arrowL30.setEnabled(false);
+                arrowUL30.setEnabled(false);
+                black_stone30.setEnabled(false);
+            }
+            if(num==31) {
+                arrowUR31.startAnimation(animTran1End);
+                arrowR31.startAnimation(animTran2End);
+                arrowDR31.startAnimation(animTran3End);
+                arrowDL31.startAnimation(animTran4End);
+                arrowL31.startAnimation(animTran5End);
+                arrowUL31.startAnimation(animTran6End);
+                arrowUR31.setEnabled(false);
+                arrowR31.setEnabled(false);
+                arrowDR31.setEnabled(false);
+                arrowDL31.setEnabled(false);
+                arrowL31.setEnabled(false);
+                arrowUL31.setEnabled(false);
+                black_stone31.setEnabled(false);
+            }
+            if(num==32) {
+                arrowUR32.startAnimation(animTran1End);
+                arrowR32.startAnimation(animTran2End);
+                arrowDR32.startAnimation(animTran3End);
+                arrowDL32.startAnimation(animTran4End);
+                arrowL32.startAnimation(animTran5End);
+                arrowUL32.startAnimation(animTran6End);
+                arrowUR32.setEnabled(false);
+                arrowR32.setEnabled(false);
+                arrowDR32.setEnabled(false);
+                arrowDL32.setEnabled(false);
+                arrowL32.setEnabled(false);
+                arrowUL32.setEnabled(false);
+                black_stone32.setEnabled(false);
+            }
+            if(num==33) {
+                arrowUR33.startAnimation(animTran1End);
+                arrowR33.startAnimation(animTran2End);
+                arrowDR33.startAnimation(animTran3End);
+                arrowDL33.startAnimation(animTran4End);
+                arrowL33.startAnimation(animTran5End);
+                arrowUL33.startAnimation(animTran6End);
+                arrowUR33.setEnabled(false);
+                arrowR33.setEnabled(false);
+                arrowDR33.setEnabled(false);
+                arrowDL33.setEnabled(false);
+                arrowL33.setEnabled(false);
+                arrowUL33.setEnabled(false);
+                black_stone33.setEnabled(false);
+            }
+            if(num==34) {
+                arrowUR34.startAnimation(animTran1End);
+                arrowR34.startAnimation(animTran2End);
+                arrowDR34.startAnimation(animTran3End);
+                arrowDL34.startAnimation(animTran4End);
+                arrowL34.startAnimation(animTran5End);
+                arrowUL34.startAnimation(animTran6End);
+                arrowUR34.setEnabled(false);
+                arrowR34.setEnabled(false);
+                arrowDR34.setEnabled(false);
+                arrowDL34.setEnabled(false);
+                arrowL34.setEnabled(false);
+                arrowUL34.setEnabled(false);
+                black_stone34.setEnabled(false);
+            }
+            if(num==35) {
+                arrowDL35.startAnimation(animTran4End);
+                arrowL35.startAnimation(animTran5End);
+                arrowUL35.startAnimation(animTran6End);
+                arrowDL35.setEnabled(false);
+                arrowL35.setEnabled(false);
+                arrowUL35.setEnabled(false);
+                black_stone35.setEnabled(false);
+            }
+            if(num==36) {
+                arrowUR36.startAnimation(animTran1End);
+                arrowR36.startAnimation(animTran2End);
+                arrowDR36.startAnimation(animTran3End);
+                arrowDL36.startAnimation(animTran4End);
+                arrowUR36.setEnabled(false);
+                arrowR36.setEnabled(false);
+                arrowDR36.setEnabled(false);
+                arrowDL36.setEnabled(false);
+                black_stone36.setEnabled(false);
+            }
+            if(num==37) {
+                arrowUR37.startAnimation(animTran1End);
+                arrowR37.startAnimation(animTran2End);
+                arrowDR37.startAnimation(animTran3End);
+                arrowDL37.startAnimation(animTran4End);
+                arrowL37.startAnimation(animTran5End);
+                arrowUL37.startAnimation(animTran6End);
+                arrowUR37.setEnabled(false);
+                arrowR37.setEnabled(false);
+                arrowDR37.setEnabled(false);
+                arrowDL37.setEnabled(false);
+                arrowL37.setEnabled(false);
+                arrowUL37.setEnabled(false);
+                black_stone37.setEnabled(false);
+            }
+            if(num==38) {
+                arrowUR38.startAnimation(animTran1End);
+                arrowR38.startAnimation(animTran2End);
+                arrowDR38.startAnimation(animTran3End);
+                arrowDL38.startAnimation(animTran4End);
+                arrowL38.startAnimation(animTran5End);
+                arrowUL38.startAnimation(animTran6End);
+                arrowUR38.setEnabled(false);
+                arrowR38.setEnabled(false);
+                arrowDR38.setEnabled(false);
+                arrowDL38.setEnabled(false);
+                arrowL38.setEnabled(false);
+                arrowUL38.setEnabled(false);
+                black_stone38.setEnabled(false);
+            }
+            if(num==39) {
+                arrowUR39.startAnimation(animTran1End);
+                arrowR39.startAnimation(animTran2End);
+                arrowDR39.startAnimation(animTran3End);
+                arrowDL39.startAnimation(animTran4End);
+                arrowL39.startAnimation(animTran5End);
+                arrowUL39.startAnimation(animTran6End);
+                arrowUR39.setEnabled(false);
+                arrowR39.setEnabled(false);
+                arrowDR39.setEnabled(false);
+                arrowDL39.setEnabled(false);
+                arrowL39.setEnabled(false);
+                arrowUL39.setEnabled(false);
+                black_stone39.setEnabled(false);
+            }
+            if(num==40) {
+                arrowUR40.startAnimation(animTran1End);
+                arrowR40.startAnimation(animTran2End);
+                arrowDR40.startAnimation(animTran3End);
+                arrowDL40.startAnimation(animTran4End);
+                arrowL40.startAnimation(animTran5End);
+                arrowUL40.startAnimation(animTran6End);
+                arrowUR40.setEnabled(false);
+                arrowR40.setEnabled(false);
+                arrowDR40.setEnabled(false);
+                arrowDL40.setEnabled(false);
+                arrowL40.setEnabled(false);
+                arrowUL40.setEnabled(false);
+                black_stone40.setEnabled(false);
+            }
+            if(num==41) {
+                arrowUR41.startAnimation(animTran1End);
+                arrowR41.startAnimation(animTran2End);
+                arrowDR41.startAnimation(animTran3End);
+                arrowDL41.startAnimation(animTran4End);
+                arrowL41.startAnimation(animTran5End);
+                arrowUL41.startAnimation(animTran6End);
+                arrowUR41.setEnabled(false);
+                arrowR41.setEnabled(false);
+                arrowDR41.setEnabled(false);
+                arrowDL41.setEnabled(false);
+                arrowL41.setEnabled(false);
+                arrowUL41.setEnabled(false);
+                black_stone41.setEnabled(false);
+            }
+            if(num==42) {
+                arrowUR42.startAnimation(animTran1End);
+                arrowR42.startAnimation(animTran2End);
+                arrowDR42.startAnimation(animTran3End);
+                arrowDL42.startAnimation(animTran4End);
+                arrowL42.startAnimation(animTran5End);
+                arrowUL42.startAnimation(animTran6End);
+                arrowUR42.setEnabled(false);
+                arrowR42.setEnabled(false);
+                arrowDR42.setEnabled(false);
+                arrowDL42.setEnabled(false);
+                arrowL42.setEnabled(false);
+                arrowUL42.setEnabled(false);
+                black_stone42.setEnabled(false);
+            }
+            if(num==43) {
+                arrowDR43.startAnimation(animTran3End);
+                arrowDL43.startAnimation(animTran4End);
+                arrowL43.startAnimation(animTran5End);
+                arrowUL43.startAnimation(animTran6End);
+                arrowDR43.setEnabled(false);
+                arrowDL43.setEnabled(false);
+                arrowL43.setEnabled(false);
+                arrowUL43.setEnabled(false);
+                black_stone43.setEnabled(false);
+            }
+            if(num==44) {
+                arrowUR44.startAnimation(animTran1End);
+                arrowR44.startAnimation(animTran2End);
+                arrowDR44.startAnimation(animTran3End);
+                arrowDL44.startAnimation(animTran4End);
+                arrowUR44.setEnabled(false);
+                arrowR44.setEnabled(false);
+                arrowDR44.setEnabled(false);
+                arrowDL44.setEnabled(false);
+                black_stone44.setEnabled(false);
+            }
+            if(num==45) {
+                arrowUR45.startAnimation(animTran1End);
+                arrowR45.startAnimation(animTran2End);
+                arrowDR45.startAnimation(animTran3End);
+                arrowDL45.startAnimation(animTran4End);
+                arrowL45.startAnimation(animTran5End);
+                arrowUL45.startAnimation(animTran6End);
+                arrowUR45.setEnabled(false);
+                arrowR45.setEnabled(false);
+                arrowDR45.setEnabled(false);
+                arrowDL45.setEnabled(false);
+                arrowL45.setEnabled(false);
+                arrowUL45.setEnabled(false);
+                black_stone45.setEnabled(false);
+            }
+            if(num==46) {
+                arrowUR46.startAnimation(animTran1End);
+                arrowR46.startAnimation(animTran2End);
+                arrowDR46.startAnimation(animTran3End);
+                arrowDL46.startAnimation(animTran4End);
+                arrowL46.startAnimation(animTran5End);
+                arrowUL46.startAnimation(animTran6End);
+                arrowUR46.setEnabled(false);
+                arrowR46.setEnabled(false);
+                arrowDR46.setEnabled(false);
+                arrowDL46.setEnabled(false);
+                arrowL46.setEnabled(false);
+                arrowUL46.setEnabled(false);
+                black_stone46.setEnabled(false);
+            }
+            if(num==47) {
+                arrowUR47.startAnimation(animTran1End);
+                arrowR47.startAnimation(animTran2End);
+                arrowDR47.startAnimation(animTran3End);
+                arrowDL47.startAnimation(animTran4End);
+                arrowL47.startAnimation(animTran5End);
+                arrowUL47.startAnimation(animTran6End);
+                arrowUR47.setEnabled(false);
+                arrowR47.setEnabled(false);
+                arrowDR47.setEnabled(false);
+                arrowDL47.setEnabled(false);
+                arrowL47.setEnabled(false);
+                arrowUL47.setEnabled(false);
+                black_stone47.setEnabled(false);
+            }
+            if(num==48) {
+                arrowUR48.startAnimation(animTran1End);
+                arrowR48.startAnimation(animTran2End);
+                arrowDR48.startAnimation(animTran3End);
+                arrowDL48.startAnimation(animTran4End);
+                arrowL48.startAnimation(animTran5End);
+                arrowUL48.startAnimation(animTran6End);
+                arrowUR48.setEnabled(false);
+                arrowR48.setEnabled(false);
+                arrowDR48.setEnabled(false);
+                arrowDL48.setEnabled(false);
+                arrowL48.setEnabled(false);
+                arrowUL48.setEnabled(false);
+                black_stone48.setEnabled(false);
+            }
+            if(num==49) {
+                arrowUR49.startAnimation(animTran1End);
+                arrowR49.startAnimation(animTran2End);
+                arrowDR49.startAnimation(animTran3End);
+                arrowDL49.startAnimation(animTran4End);
+                arrowL49.startAnimation(animTran5End);
+                arrowUL49.startAnimation(animTran6End);
+                arrowUR49.setEnabled(false);
+                arrowR49.setEnabled(false);
+                arrowDR49.setEnabled(false);
+                arrowDL49.setEnabled(false);
+                arrowL49.setEnabled(false);
+                arrowUL49.setEnabled(false);
+                black_stone49.setEnabled(false);
+            }
+            if(num==50) {
+                arrowDR50.startAnimation(animTran3End);
+                arrowDL50.startAnimation(animTran4End);
+                arrowL50.startAnimation(animTran5End);
+                arrowUL50.startAnimation(animTran6End);
+                arrowDR50.setEnabled(false);
+                arrowDL50.setEnabled(false);
+                arrowL50.setEnabled(false);
+                arrowUL50.setEnabled(false);
+                black_stone50.setEnabled(false);
+            }
+            if(num==51) {
+                arrowUR51.startAnimation(animTran1End);
+                arrowR51.startAnimation(animTran2End);
+                arrowDR51.startAnimation(animTran3End);
+                arrowDL51.startAnimation(animTran4End);
+                arrowUR51.setEnabled(false);
+                arrowR51.setEnabled(false);
+                arrowDR51.setEnabled(false);
+                arrowDL51.setEnabled(false);
+                black_stone51.setEnabled(false);
+            }
+            if(num==52) {
+                arrowUR52.startAnimation(animTran1End);
+                arrowR52.startAnimation(animTran2End);
+                arrowDR52.startAnimation(animTran3End);
+                arrowDL52.startAnimation(animTran4End);
+                arrowL52.startAnimation(animTran5End);
+                arrowUL52.startAnimation(animTran6End);
+                arrowUR52.setEnabled(false);
+                arrowR52.setEnabled(false);
+                arrowDR52.setEnabled(false);
+                arrowDL52.setEnabled(false);
+                arrowL52.setEnabled(false);
+                arrowUL52.setEnabled(false);
+                black_stone52.setEnabled(false);
+            }
+            if(num==53) {
+                arrowUR53.startAnimation(animTran1End);
+                arrowR53.startAnimation(animTran2End);
+                arrowDR53.startAnimation(animTran3End);
+                arrowDL53.startAnimation(animTran4End);
+                arrowL53.startAnimation(animTran5End);
+                arrowUL53.startAnimation(animTran6End);
+                arrowUR53.setEnabled(false);
+                arrowR53.setEnabled(false);
+                arrowDR53.setEnabled(false);
+                arrowDL53.setEnabled(false);
+                arrowL53.setEnabled(false);
+                arrowUL53.setEnabled(false);
+                black_stone53.setEnabled(false);
+            }
+            if(num==54) {
+                arrowUR54.startAnimation(animTran1End);
+                arrowR54.startAnimation(animTran2End);
+                arrowDR54.startAnimation(animTran3End);
+                arrowDL54.startAnimation(animTran4End);
+                arrowL54.startAnimation(animTran5End);
+                arrowUL54.startAnimation(animTran6End);
+                arrowUR54.setEnabled(false);
+                arrowR54.setEnabled(false);
+                arrowDR54.setEnabled(false);
+                arrowDL54.setEnabled(false);
+                arrowL54.setEnabled(false);
+                arrowUL54.setEnabled(false);
+                black_stone54.setEnabled(false);
+            }
+            if(num==55) {
+                arrowUR55.startAnimation(animTran1End);
+                arrowR55.startAnimation(animTran2End);
+                arrowDR55.startAnimation(animTran3End);
+                arrowDL55.startAnimation(animTran4End);
+                arrowL55.startAnimation(animTran5End);
+                arrowUL55.startAnimation(animTran6End);
+                arrowUR55.setEnabled(false);
+                arrowR55.setEnabled(false);
+                arrowDR55.setEnabled(false);
+                arrowDL55.setEnabled(false);
+                arrowL55.setEnabled(false);
+                arrowUL55.setEnabled(false);
+                black_stone55.setEnabled(false);
+            }
+            if(num==56) {
+                arrowDR56.startAnimation(animTran3End);
+                arrowDL56.startAnimation(animTran4End);
+                arrowL56.startAnimation(animTran5End);
+                arrowUL56.startAnimation(animTran6End);
+                arrowDR56.setEnabled(false);
+                arrowDL56.setEnabled(false);
+                arrowL56.setEnabled(false);
+                arrowUL56.setEnabled(false);
+                black_stone56.setEnabled(false);
+            }
+            if(num==57) {
+                arrowR57.startAnimation(animTran2End);
+                arrowDR57.startAnimation(animTran3End);
+                arrowDL57.startAnimation(animTran4End);
+                arrowR57.setEnabled(false);
+                arrowDR57.setEnabled(false);
+                arrowDL57.setEnabled(false);
+                black_stone57.setEnabled(false);
+            }
+            if(num==58) {
+                arrowR58.startAnimation(animTran2End);
+                arrowDR58.startAnimation(animTran3End);
+                arrowDL58.startAnimation(animTran4End);
+                arrowL58.startAnimation(animTran5End);
+                arrowR58.setEnabled(false);
+                arrowDR58.setEnabled(false);
+                arrowDL58.setEnabled(false);
+                arrowL58.setEnabled(false);
+                black_stone58.setEnabled(false);
+            }
+            if(num==59) {
+                arrowR59.startAnimation(animTran2End);
+                arrowDR59.startAnimation(animTran3End);
+                arrowDL59.startAnimation(animTran4End);
+                arrowL59.startAnimation(animTran5End);
+                arrowR59.setEnabled(false);
+                arrowDR59.setEnabled(false);
+                arrowDL59.setEnabled(false);
+                arrowL59.setEnabled(false);
+                black_stone59.setEnabled(false);
+            }
+            if(num==60) {
+                arrowR60.startAnimation(animTran2End);
+                arrowDR60.startAnimation(animTran3End);
+                arrowDL60.startAnimation(animTran4End);
+                arrowL60.startAnimation(animTran5End);
+                arrowR60.setEnabled(false);
+                arrowDR60.setEnabled(false);
+                arrowDL60.setEnabled(false);
+                arrowL60.setEnabled(false);
+                black_stone60.setEnabled(false);
+            }
+            if(num==61) {
+                arrowDR61.startAnimation(animTran3End);
+                arrowDL61.startAnimation(animTran4End);
+                arrowL61.startAnimation(animTran5End);
+                arrowDR61.setEnabled(false);
+                arrowDL61.setEnabled(false);
+                arrowL61.setEnabled(false);
+                black_stone61.setEnabled(false);
+            }
 
         }
     }
@@ -3979,6 +7653,257 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL26.setVisibility(v.VISIBLE);
                 arrowUR26.setVisibility(v.VISIBLE);
             }
+            if(num==27){
+                arrowDR27.setVisibility(v.VISIBLE);
+                arrowUR27.setVisibility(v.VISIBLE);
+                arrowR27.setVisibility(v.VISIBLE);
+            }
+            if(num==28){
+                arrowL28.setVisibility(v.VISIBLE);
+                arrowUL28.setVisibility(v.VISIBLE);
+                arrowDL28.setVisibility(v.VISIBLE);
+                arrowDR28.setVisibility(v.VISIBLE);
+                arrowUR28.setVisibility(v.VISIBLE);
+                arrowR28.setVisibility(v.VISIBLE);
+            }
+            if(num==29){
+                arrowL29.setVisibility(v.VISIBLE);
+                arrowUL29.setVisibility(v.VISIBLE);
+                arrowDL29.setVisibility(v.VISIBLE);
+                arrowDR29.setVisibility(v.VISIBLE);
+                arrowUR29.setVisibility(v.VISIBLE);
+                arrowR29.setVisibility(v.VISIBLE);
+            }
+            if(num==30){
+                arrowL30.setVisibility(v.VISIBLE);
+                arrowUL30.setVisibility(v.VISIBLE);
+                arrowDL30.setVisibility(v.VISIBLE);
+                arrowDR30.setVisibility(v.VISIBLE);
+                arrowUR30.setVisibility(v.VISIBLE);
+                arrowR30.setVisibility(v.VISIBLE);
+            }
+            if(num==31){
+                arrowL31.setVisibility(v.VISIBLE);
+                arrowUL31.setVisibility(v.VISIBLE);
+                arrowDL31.setVisibility(v.VISIBLE);
+                arrowDR31.setVisibility(v.VISIBLE);
+                arrowUR31.setVisibility(v.VISIBLE);
+                arrowR31.setVisibility(v.VISIBLE);
+            }
+            if(num==32){
+                arrowL32.setVisibility(v.VISIBLE);
+                arrowUL32.setVisibility(v.VISIBLE);
+                arrowDL32.setVisibility(v.VISIBLE);
+                arrowDR32.setVisibility(v.VISIBLE);
+                arrowUR32.setVisibility(v.VISIBLE);
+                arrowR32.setVisibility(v.VISIBLE);
+            }
+            if(num==33){
+                arrowL33.setVisibility(v.VISIBLE);
+                arrowUL33.setVisibility(v.VISIBLE);
+                arrowDL33.setVisibility(v.VISIBLE);
+                arrowDR33.setVisibility(v.VISIBLE);
+                arrowUR33.setVisibility(v.VISIBLE);
+                arrowR33.setVisibility(v.VISIBLE);
+            }
+            if(num==34){
+                arrowL34.setVisibility(v.VISIBLE);
+                arrowUL34.setVisibility(v.VISIBLE);
+                arrowDL34.setVisibility(v.VISIBLE);
+                arrowDR34.setVisibility(v.VISIBLE);
+                arrowUR34.setVisibility(v.VISIBLE);
+                arrowR34.setVisibility(v.VISIBLE);
+            }
+            if(num==35){
+                arrowL35.setVisibility(v.VISIBLE);
+                arrowUL35.setVisibility(v.VISIBLE);
+                arrowDL35.setVisibility(v.VISIBLE);
+            }
+            if(num==36){
+                arrowDL36.setVisibility(v.VISIBLE);
+                arrowDR36.setVisibility(v.VISIBLE);
+                arrowUR36.setVisibility(v.VISIBLE);
+                arrowR36.setVisibility(v.VISIBLE);
+            }
+            if(num==37){
+                arrowL37.setVisibility(v.VISIBLE);
+                arrowUL37.setVisibility(v.VISIBLE);
+                arrowDL37.setVisibility(v.VISIBLE);
+                arrowDR37.setVisibility(v.VISIBLE);
+                arrowUR37.setVisibility(v.VISIBLE);
+                arrowR37.setVisibility(v.VISIBLE);
+            }
+            if(num==38){
+                arrowL38.setVisibility(v.VISIBLE);
+                arrowUL38.setVisibility(v.VISIBLE);
+                arrowDL38.setVisibility(v.VISIBLE);
+                arrowDR38.setVisibility(v.VISIBLE);
+                arrowUR38.setVisibility(v.VISIBLE);
+                arrowR38.setVisibility(v.VISIBLE);
+            }
+            if(num==39){
+                arrowL39.setVisibility(v.VISIBLE);
+                arrowUL39.setVisibility(v.VISIBLE);
+                arrowDL39.setVisibility(v.VISIBLE);
+                arrowDR39.setVisibility(v.VISIBLE);
+                arrowUR39.setVisibility(v.VISIBLE);
+                arrowR39.setVisibility(v.VISIBLE);
+            }
+            if(num==40){
+                arrowL40.setVisibility(v.VISIBLE);
+                arrowUL40.setVisibility(v.VISIBLE);
+                arrowDL40.setVisibility(v.VISIBLE);
+                arrowDR40.setVisibility(v.VISIBLE);
+                arrowUR40.setVisibility(v.VISIBLE);
+                arrowR40.setVisibility(v.VISIBLE);
+            }
+            if(num==41){
+                arrowL41.setVisibility(v.VISIBLE);
+                arrowUL41.setVisibility(v.VISIBLE);
+                arrowDL41.setVisibility(v.VISIBLE);
+                arrowDR41.setVisibility(v.VISIBLE);
+                arrowUR41.setVisibility(v.VISIBLE);
+                arrowR41.setVisibility(v.VISIBLE);
+            }
+            if(num==42){
+                arrowL42.setVisibility(v.VISIBLE);
+                arrowUL42.setVisibility(v.VISIBLE);
+                arrowDL42.setVisibility(v.VISIBLE);
+                arrowDR42.setVisibility(v.VISIBLE);
+                arrowUR42.setVisibility(v.VISIBLE);
+                arrowR42.setVisibility(v.VISIBLE);
+            }
+            if(num==43){
+                arrowL43.setVisibility(v.VISIBLE);
+                arrowUL43.setVisibility(v.VISIBLE);
+                arrowDL43.setVisibility(v.VISIBLE);
+                arrowDR43.setVisibility(v.VISIBLE);
+            }
+            if(num==44){
+                arrowDL44.setVisibility(v.VISIBLE);
+                arrowDR44.setVisibility(v.VISIBLE);
+                arrowUR44.setVisibility(v.VISIBLE);
+                arrowR44.setVisibility(v.VISIBLE);
+            }
+            if(num==45){
+                arrowL45.setVisibility(v.VISIBLE);
+                arrowUL45.setVisibility(v.VISIBLE);
+                arrowDL45.setVisibility(v.VISIBLE);
+                arrowDR45.setVisibility(v.VISIBLE);
+                arrowUR45.setVisibility(v.VISIBLE);
+                arrowR45.setVisibility(v.VISIBLE);
+            }
+            if(num==46){
+                arrowL46.setVisibility(v.VISIBLE);
+                arrowUL46.setVisibility(v.VISIBLE);
+                arrowDL46.setVisibility(v.VISIBLE);
+                arrowDR46.setVisibility(v.VISIBLE);
+                arrowUR46.setVisibility(v.VISIBLE);
+                arrowR46.setVisibility(v.VISIBLE);
+            }
+            if(num==47){
+                arrowL47.setVisibility(v.VISIBLE);
+                arrowUL47.setVisibility(v.VISIBLE);
+                arrowDL47.setVisibility(v.VISIBLE);
+                arrowDR47.setVisibility(v.VISIBLE);
+                arrowUR47.setVisibility(v.VISIBLE);
+                arrowR47.setVisibility(v.VISIBLE);
+            }
+            if(num==48){
+                arrowL48.setVisibility(v.VISIBLE);
+                arrowUL48.setVisibility(v.VISIBLE);
+                arrowDL48.setVisibility(v.VISIBLE);
+                arrowDR48.setVisibility(v.VISIBLE);
+                arrowUR48.setVisibility(v.VISIBLE);
+                arrowR48.setVisibility(v.VISIBLE);
+            }
+            if(num==49){
+                arrowL49.setVisibility(v.VISIBLE);
+                arrowUL49.setVisibility(v.VISIBLE);
+                arrowDL49.setVisibility(v.VISIBLE);
+                arrowDR49.setVisibility(v.VISIBLE);
+                arrowUR49.setVisibility(v.VISIBLE);
+                arrowR49.setVisibility(v.VISIBLE);
+            }
+            if(num==50){
+                arrowL50.setVisibility(v.VISIBLE);
+                arrowUL50.setVisibility(v.VISIBLE);
+                arrowDL50.setVisibility(v.VISIBLE);
+                arrowDR50.setVisibility(v.VISIBLE);
+            }
+            if(num==51){
+                arrowDL51.setVisibility(v.VISIBLE);
+                arrowDR51.setVisibility(v.VISIBLE);
+                arrowUR51.setVisibility(v.VISIBLE);
+                arrowR51.setVisibility(v.VISIBLE);
+            }
+            if(num==52){
+                arrowL52.setVisibility(v.VISIBLE);
+                arrowUL52.setVisibility(v.VISIBLE);
+                arrowDL52.setVisibility(v.VISIBLE);
+                arrowDR52.setVisibility(v.VISIBLE);
+                arrowUR52.setVisibility(v.VISIBLE);
+                arrowR52.setVisibility(v.VISIBLE);
+            }
+            if(num==53){
+                arrowL53.setVisibility(v.VISIBLE);
+                arrowUL53.setVisibility(v.VISIBLE);
+                arrowDL53.setVisibility(v.VISIBLE);
+                arrowDR53.setVisibility(v.VISIBLE);
+                arrowUR53.setVisibility(v.VISIBLE);
+                arrowR53.setVisibility(v.VISIBLE);
+            }
+            if(num==54){
+                arrowL54.setVisibility(v.VISIBLE);
+                arrowUL54.setVisibility(v.VISIBLE);
+                arrowDL54.setVisibility(v.VISIBLE);
+                arrowDR54.setVisibility(v.VISIBLE);
+                arrowUR54.setVisibility(v.VISIBLE);
+                arrowR54.setVisibility(v.VISIBLE);
+            }
+            if(num==55){
+                arrowL55.setVisibility(v.VISIBLE);
+                arrowUL55.setVisibility(v.VISIBLE);
+                arrowDL55.setVisibility(v.VISIBLE);
+                arrowDR55.setVisibility(v.VISIBLE);
+                arrowUR55.setVisibility(v.VISIBLE);
+                arrowR55.setVisibility(v.VISIBLE);
+            }
+            if(num==56){
+                arrowL56.setVisibility(v.VISIBLE);
+                arrowUL56.setVisibility(v.VISIBLE);
+                arrowDL56.setVisibility(v.VISIBLE);
+                arrowDR56.setVisibility(v.VISIBLE);
+            }
+            if(num==57){
+                arrowDL57.setVisibility(v.VISIBLE);
+                arrowDR57.setVisibility(v.VISIBLE);
+                arrowR57.setVisibility(v.VISIBLE);
+            }
+            if(num==58){
+                arrowL58.setVisibility(v.VISIBLE);
+                arrowDL58.setVisibility(v.VISIBLE);
+                arrowDR58.setVisibility(v.VISIBLE);
+                arrowR58.setVisibility(v.VISIBLE);
+            }
+            if(num==59){
+                arrowL59.setVisibility(v.VISIBLE);
+                arrowDL59.setVisibility(v.VISIBLE);
+                arrowDR59.setVisibility(v.VISIBLE);
+                arrowR59.setVisibility(v.VISIBLE);
+            }
+            if(num==60){
+                arrowL60.setVisibility(v.VISIBLE);
+                arrowDL60.setVisibility(v.VISIBLE);
+                arrowDR60.setVisibility(v.VISIBLE);
+                arrowR60.setVisibility(v.VISIBLE);
+            }
+            if(num==61){
+                arrowL61.setVisibility(v.VISIBLE);
+                arrowDL61.setVisibility(v.VISIBLE);
+                arrowDR61.setVisibility(v.VISIBLE);
+            }
+
         }
         else{
             if(num==1){
@@ -4075,6 +8000,14 @@ public class GameActivity extends AppCompatActivity {
                 arrowUR14.setVisibility(v.INVISIBLE);
                 arrowR14.setVisibility(v.INVISIBLE);
             }
+            if(num==15){
+                arrowL15.setVisibility(v.INVISIBLE);
+                arrowUL15.setVisibility(v.INVISIBLE);
+                arrowDL15.setVisibility(v.INVISIBLE);
+                arrowDR15.setVisibility(v.INVISIBLE);
+                arrowUR15.setVisibility(v.INVISIBLE);
+                arrowR15.setVisibility(v.INVISIBLE);
+            }
             if(num==16){
                 arrowL16.setVisibility(v.INVISIBLE);
                 arrowUL16.setVisibility(v.INVISIBLE);
@@ -4157,6 +8090,256 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL26.setVisibility(v.INVISIBLE);
                 arrowUR26.setVisibility(v.INVISIBLE);
             }
+            if(num==27){
+                arrowDR27.setVisibility(v.INVISIBLE);
+                arrowUR27.setVisibility(v.INVISIBLE);
+                arrowR27.setVisibility(v.INVISIBLE);
+            }
+            if(num==28){
+                arrowL28.setVisibility(v.INVISIBLE);
+                arrowUL28.setVisibility(v.INVISIBLE);
+                arrowDL28.setVisibility(v.INVISIBLE);
+                arrowDR28.setVisibility(v.INVISIBLE);
+                arrowUR28.setVisibility(v.INVISIBLE);
+                arrowR28.setVisibility(v.INVISIBLE);
+            }
+            if(num==29){
+                arrowL29.setVisibility(v.INVISIBLE);
+                arrowUL29.setVisibility(v.INVISIBLE);
+                arrowDL29.setVisibility(v.INVISIBLE);
+                arrowDR29.setVisibility(v.INVISIBLE);
+                arrowUR29.setVisibility(v.INVISIBLE);
+                arrowR29.setVisibility(v.INVISIBLE);
+            }
+            if(num==30){
+                arrowL30.setVisibility(v.INVISIBLE);
+                arrowUL30.setVisibility(v.INVISIBLE);
+                arrowDL30.setVisibility(v.INVISIBLE);
+                arrowDR30.setVisibility(v.INVISIBLE);
+                arrowUR30.setVisibility(v.INVISIBLE);
+                arrowR30.setVisibility(v.INVISIBLE);
+            }
+            if(num==31){
+                arrowL31.setVisibility(v.INVISIBLE);
+                arrowUL31.setVisibility(v.INVISIBLE);
+                arrowDL31.setVisibility(v.INVISIBLE);
+                arrowDR31.setVisibility(v.INVISIBLE);
+                arrowUR31.setVisibility(v.INVISIBLE);
+                arrowR31.setVisibility(v.INVISIBLE);
+            }
+            if(num==32){
+                arrowL32.setVisibility(v.INVISIBLE);
+                arrowUL32.setVisibility(v.INVISIBLE);
+                arrowDL32.setVisibility(v.INVISIBLE);
+                arrowDR32.setVisibility(v.INVISIBLE);
+                arrowUR32.setVisibility(v.INVISIBLE);
+                arrowR32.setVisibility(v.INVISIBLE);
+            }
+            if(num==33){
+                arrowL33.setVisibility(v.INVISIBLE);
+                arrowUL33.setVisibility(v.INVISIBLE);
+                arrowDL33.setVisibility(v.INVISIBLE);
+                arrowDR33.setVisibility(v.INVISIBLE);
+                arrowUR33.setVisibility(v.INVISIBLE);
+                arrowR33.setVisibility(v.INVISIBLE);
+            }
+            if(num==34){
+                arrowL34.setVisibility(v.INVISIBLE);
+                arrowUL34.setVisibility(v.INVISIBLE);
+                arrowDL34.setVisibility(v.INVISIBLE);
+                arrowDR34.setVisibility(v.INVISIBLE);
+                arrowUR34.setVisibility(v.INVISIBLE);
+                arrowR34.setVisibility(v.INVISIBLE);
+            }
+            if(num==35){
+                arrowL35.setVisibility(v.INVISIBLE);
+                arrowUL35.setVisibility(v.INVISIBLE);
+                arrowDL35.setVisibility(v.INVISIBLE);
+            }
+            if(num==36){
+                arrowDL36.setVisibility(v.INVISIBLE);
+                arrowDR36.setVisibility(v.INVISIBLE);
+                arrowUR36.setVisibility(v.INVISIBLE);
+                arrowR36.setVisibility(v.INVISIBLE);
+            }
+            if(num==37){
+                arrowL37.setVisibility(v.INVISIBLE);
+                arrowUL37.setVisibility(v.INVISIBLE);
+                arrowDL37.setVisibility(v.INVISIBLE);
+                arrowDR37.setVisibility(v.INVISIBLE);
+                arrowUR37.setVisibility(v.INVISIBLE);
+                arrowR37.setVisibility(v.INVISIBLE);
+            }
+            if(num==38){
+                arrowL38.setVisibility(v.INVISIBLE);
+                arrowUL38.setVisibility(v.INVISIBLE);
+                arrowDL38.setVisibility(v.INVISIBLE);
+                arrowDR38.setVisibility(v.INVISIBLE);
+                arrowUR38.setVisibility(v.INVISIBLE);
+                arrowR38.setVisibility(v.INVISIBLE);
+            }
+            if(num==39){
+                arrowL39.setVisibility(v.INVISIBLE);
+                arrowUL39.setVisibility(v.INVISIBLE);
+                arrowDL39.setVisibility(v.INVISIBLE);
+                arrowDR39.setVisibility(v.INVISIBLE);
+                arrowUR39.setVisibility(v.INVISIBLE);
+                arrowR39.setVisibility(v.INVISIBLE);
+            }
+            if(num==40){
+                arrowL40.setVisibility(v.INVISIBLE);
+                arrowUL40.setVisibility(v.INVISIBLE);
+                arrowDL40.setVisibility(v.INVISIBLE);
+                arrowDR40.setVisibility(v.INVISIBLE);
+                arrowUR40.setVisibility(v.INVISIBLE);
+                arrowR40.setVisibility(v.INVISIBLE);
+            }
+            if(num==41){
+                arrowL41.setVisibility(v.INVISIBLE);
+                arrowUL41.setVisibility(v.INVISIBLE);
+                arrowDL41.setVisibility(v.INVISIBLE);
+                arrowDR41.setVisibility(v.INVISIBLE);
+                arrowUR41.setVisibility(v.INVISIBLE);
+                arrowR41.setVisibility(v.INVISIBLE);
+            }
+            if(num==42){
+                arrowL42.setVisibility(v.INVISIBLE);
+                arrowUL42.setVisibility(v.INVISIBLE);
+                arrowDL42.setVisibility(v.INVISIBLE);
+                arrowDR42.setVisibility(v.INVISIBLE);
+                arrowUR42.setVisibility(v.INVISIBLE);
+                arrowR42.setVisibility(v.INVISIBLE);
+            }
+            if(num==43){
+                arrowL43.setVisibility(v.INVISIBLE);
+                arrowUL43.setVisibility(v.INVISIBLE);
+                arrowDL43.setVisibility(v.INVISIBLE);
+                arrowDR43.setVisibility(v.INVISIBLE);
+            }
+            if(num==44){
+                arrowDL44.setVisibility(v.INVISIBLE);
+                arrowDR44.setVisibility(v.INVISIBLE);
+                arrowUR44.setVisibility(v.INVISIBLE);
+                arrowR44.setVisibility(v.INVISIBLE);
+            }
+            if(num==45){
+                arrowL45.setVisibility(v.INVISIBLE);
+                arrowUL45.setVisibility(v.INVISIBLE);
+                arrowDL45.setVisibility(v.INVISIBLE);
+                arrowDR45.setVisibility(v.INVISIBLE);
+                arrowUR45.setVisibility(v.INVISIBLE);
+                arrowR45.setVisibility(v.INVISIBLE);
+            }
+            if(num==46){
+                arrowL46.setVisibility(v.INVISIBLE);
+                arrowUL46.setVisibility(v.INVISIBLE);
+                arrowDL46.setVisibility(v.INVISIBLE);
+                arrowDR46.setVisibility(v.INVISIBLE);
+                arrowUR46.setVisibility(v.INVISIBLE);
+                arrowR46.setVisibility(v.INVISIBLE);
+            }
+            if(num==47){
+                arrowL47.setVisibility(v.INVISIBLE);
+                arrowUL47.setVisibility(v.INVISIBLE);
+                arrowDL47.setVisibility(v.INVISIBLE);
+                arrowDR47.setVisibility(v.INVISIBLE);
+                arrowUR47.setVisibility(v.INVISIBLE);
+                arrowR47.setVisibility(v.INVISIBLE);
+            }
+            if(num==48){
+                arrowL48.setVisibility(v.INVISIBLE);
+                arrowUL48.setVisibility(v.INVISIBLE);
+                arrowDL48.setVisibility(v.INVISIBLE);
+                arrowDR48.setVisibility(v.INVISIBLE);
+                arrowUR48.setVisibility(v.INVISIBLE);
+                arrowR48.setVisibility(v.INVISIBLE);
+            }
+            if(num==49){
+                arrowL49.setVisibility(v.INVISIBLE);
+                arrowUL49.setVisibility(v.INVISIBLE);
+                arrowDL49.setVisibility(v.INVISIBLE);
+                arrowDR49.setVisibility(v.INVISIBLE);
+                arrowUR49.setVisibility(v.INVISIBLE);
+                arrowR49.setVisibility(v.INVISIBLE);
+            }
+            if(num==50){
+                arrowL50.setVisibility(v.INVISIBLE);
+                arrowUL50.setVisibility(v.INVISIBLE);
+                arrowDL50.setVisibility(v.INVISIBLE);
+                arrowDR50.setVisibility(v.INVISIBLE);
+            }
+            if(num==51){
+                arrowDL51.setVisibility(v.INVISIBLE);
+                arrowDR51.setVisibility(v.INVISIBLE);
+                arrowUR51.setVisibility(v.INVISIBLE);
+                arrowR51.setVisibility(v.INVISIBLE);
+            }
+            if(num==52){
+                arrowL52.setVisibility(v.INVISIBLE);
+                arrowUL52.setVisibility(v.INVISIBLE);
+                arrowDL52.setVisibility(v.INVISIBLE);
+                arrowDR52.setVisibility(v.INVISIBLE);
+                arrowUR52.setVisibility(v.INVISIBLE);
+                arrowR52.setVisibility(v.INVISIBLE);
+            }
+            if(num==53){
+                arrowL53.setVisibility(v.INVISIBLE);
+                arrowUL53.setVisibility(v.INVISIBLE);
+                arrowDL53.setVisibility(v.INVISIBLE);
+                arrowDR53.setVisibility(v.INVISIBLE);
+                arrowUR53.setVisibility(v.INVISIBLE);
+                arrowR53.setVisibility(v.INVISIBLE);
+            }
+            if(num==54){
+                arrowL54.setVisibility(v.INVISIBLE);
+                arrowUL54.setVisibility(v.INVISIBLE);
+                arrowDL54.setVisibility(v.INVISIBLE);
+                arrowDR54.setVisibility(v.INVISIBLE);
+                arrowUR54.setVisibility(v.INVISIBLE);
+                arrowR54.setVisibility(v.INVISIBLE);
+            }
+            if(num==55){
+                arrowL55.setVisibility(v.INVISIBLE);
+                arrowUL55.setVisibility(v.INVISIBLE);
+                arrowDL55.setVisibility(v.INVISIBLE);
+                arrowDR55.setVisibility(v.INVISIBLE);
+                arrowUR55.setVisibility(v.INVISIBLE);
+                arrowR55.setVisibility(v.INVISIBLE);
+            }
+            if(num==56){
+                arrowL56.setVisibility(v.INVISIBLE);
+                arrowUL56.setVisibility(v.INVISIBLE);
+                arrowDL56.setVisibility(v.INVISIBLE);
+                arrowDR56.setVisibility(v.INVISIBLE);
+            }
+            if(num==57){
+                arrowDL57.setVisibility(v.INVISIBLE);
+                arrowDR57.setVisibility(v.INVISIBLE);
+                arrowR57.setVisibility(v.INVISIBLE);
+            }
+            if(num==58){
+                arrowL58.setVisibility(v.INVISIBLE);
+                arrowDL58.setVisibility(v.INVISIBLE);
+                arrowDR58.setVisibility(v.INVISIBLE);
+                arrowR58.setVisibility(v.INVISIBLE);
+            }
+            if(num==59){
+                arrowL59.setVisibility(v.INVISIBLE);
+                arrowDL59.setVisibility(v.INVISIBLE);
+                arrowDR59.setVisibility(v.INVISIBLE);
+                arrowR59.setVisibility(v.INVISIBLE);
+            }
+            if(num==60){
+                arrowL60.setVisibility(v.INVISIBLE);
+                arrowDL60.setVisibility(v.INVISIBLE);
+                arrowDR60.setVisibility(v.INVISIBLE);
+                arrowR60.setVisibility(v.INVISIBLE);
+            }
+            if(num==61){
+                arrowL61.setVisibility(v.INVISIBLE);
+                arrowDL61.setVisibility(v.INVISIBLE);
+                arrowDR61.setVisibility(v.INVISIBLE);
+            }
         }
     }
     private void allUnabled(){
@@ -4186,6 +8369,41 @@ public class GameActivity extends AppCompatActivity {
         black_stone24.setEnabled(false);
         black_stone25.setEnabled(false);
         black_stone26.setEnabled(false);
+        black_stone27.setEnabled(false);
+        black_stone28.setEnabled(false);
+        black_stone29.setEnabled(false);
+        black_stone30.setEnabled(false);
+        black_stone31.setEnabled(false);
+        black_stone32.setEnabled(false);
+        black_stone33.setEnabled(false);
+        black_stone34.setEnabled(false);
+        black_stone35.setEnabled(false);
+        black_stone36.setEnabled(false);
+        black_stone37.setEnabled(false);
+        black_stone38.setEnabled(false);
+        black_stone39.setEnabled(false);
+        black_stone40.setEnabled(false);
+        black_stone41.setEnabled(false);
+        black_stone42.setEnabled(false);
+        black_stone43.setEnabled(false);
+        black_stone44.setEnabled(false);
+        black_stone45.setEnabled(false);
+        black_stone46.setEnabled(false);
+        black_stone47.setEnabled(false);
+        black_stone48.setEnabled(false);
+        black_stone49.setEnabled(false);
+        black_stone50.setEnabled(false);
+        black_stone51.setEnabled(false);
+        black_stone52.setEnabled(false);
+        black_stone53.setEnabled(false);
+        black_stone54.setEnabled(false);
+        black_stone55.setEnabled(false);
+        black_stone56.setEnabled(false);
+        black_stone57.setEnabled(false);
+        black_stone58.setEnabled(false);
+        black_stone59.setEnabled(false);
+        black_stone60.setEnabled(false);
+        black_stone61.setEnabled(false);
     }
     private void allEnabled(){
         black_stone1.setEnabled(true);
@@ -4214,6 +8432,41 @@ public class GameActivity extends AppCompatActivity {
         black_stone24.setEnabled(true);
         black_stone25.setEnabled(true);
         black_stone26.setEnabled(true);
+        black_stone27.setEnabled(true);
+        black_stone28.setEnabled(true);
+        black_stone29.setEnabled(true);
+        black_stone30.setEnabled(true);
+        black_stone31.setEnabled(true);
+        black_stone32.setEnabled(true);
+        black_stone33.setEnabled(true);
+        black_stone34.setEnabled(true);
+        black_stone35.setEnabled(true);
+        black_stone36.setEnabled(true);
+        black_stone37.setEnabled(true);
+        black_stone38.setEnabled(true);
+        black_stone39.setEnabled(true);
+        black_stone40.setEnabled(true);
+        black_stone41.setEnabled(true);
+        black_stone42.setEnabled(true);
+        black_stone43.setEnabled(true);
+        black_stone44.setEnabled(true);
+        black_stone45.setEnabled(true);
+        black_stone46.setEnabled(true);
+        black_stone47.setEnabled(true);
+        black_stone48.setEnabled(true);
+        black_stone49.setEnabled(true);
+        black_stone50.setEnabled(true);
+        black_stone51.setEnabled(true);
+        black_stone52.setEnabled(true);
+        black_stone53.setEnabled(true);
+        black_stone54.setEnabled(true);
+        black_stone55.setEnabled(true);
+        black_stone56.setEnabled(true);
+        black_stone57.setEnabled(true);
+        black_stone58.setEnabled(true);
+        black_stone59.setEnabled(true);
+        black_stone60.setEnabled(true);
+        black_stone61.setEnabled(true);
     }
 
 }
