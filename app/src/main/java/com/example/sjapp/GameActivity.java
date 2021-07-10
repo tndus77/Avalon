@@ -5112,7 +5112,7 @@ public class GameActivity extends AppCompatActivity {
         int coloffset=0;
         for(int oneline=0; oneline<count; oneline++) {
             if (way == 0) {//UR
-                if (row + oneline < 5) {
+                if (row + oneline < 4) {
                     row++;
                     col++;
                 } else {
@@ -5142,7 +5142,7 @@ public class GameActivity extends AppCompatActivity {
                 col--;
             }
             if (way == 5) {
-                if (row + oneline < 5) {
+                if (row + oneline < 4) {
                     row++;
                 } else {
                     row++;
