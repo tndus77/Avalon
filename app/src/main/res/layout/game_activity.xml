@@ -2373,8 +2373,8 @@
         android:id="@+id/black_stone30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="402dp"
-        android:layout_marginRight="402dp"
+        android:layout_marginEnd="380dp"
+        android:layout_marginRight="380dp"
         android:layout_marginBottom="152dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
@@ -2463,8 +2463,8 @@
         android:id="@+id/black_stone31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="380dp"
-        android:layout_marginRight="380dp"
+        android:layout_marginEnd="336dp"
+        android:layout_marginRight="336dp"
         android:layout_marginBottom="152dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
@@ -2553,8 +2553,8 @@
         android:id="@+id/black_stone32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="358dp"
-        android:layout_marginRight="358dp"
+        android:layout_marginEnd="296dp"
+        android:layout_marginRight="296dp"
         android:layout_marginBottom="152dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
@@ -2643,8 +2643,8 @@
         android:id="@+id/black_stone33"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="336dp"
-        android:layout_marginRight="336dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginRight="248dp"
         android:layout_marginBottom="152dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
@@ -2733,8 +2733,8 @@
         android:id="@+id/black_stone34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="314dp"
-        android:layout_marginRight="314dp"
+        android:layout_marginEnd="204dp"
+        android:layout_marginRight="204dp"
         android:layout_marginBottom="152dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
@@ -2768,7 +2768,6 @@
         app:fabSize="mini"
         app:layout_constraintEnd_toStartOf="@+id/black_stone35"
         app:layout_constraintTop_toTopOf="@+id/black_stone35" />
-
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowDL35"
@@ -2811,7 +2810,6 @@
         app:fabSize="mini"
         app:layout_constraintBottom_toTopOf="@+id/black_stone36"
         app:layout_constraintStart_toStartOf="@+id/black_stone36" />
-
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowR36"
@@ -3442,7 +3440,6 @@
         app:layout_constraintEnd_toStartOf="@+id/black_stone43"
         app:layout_constraintTop_toTopOf="@+id/black_stone43" />
 
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowDL43"
         android:layout_width="wrap_content"
@@ -3484,7 +3481,6 @@
         app:fabSize="mini"
         app:layout_constraintBottom_toTopOf="@+id/black_stone44"
         app:layout_constraintStart_toStartOf="@+id/black_stone44" />
-
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowR44"
@@ -4025,7 +4021,6 @@
         app:layout_constraintEnd_toStartOf="@+id/black_stone50"
         app:layout_constraintTop_toTopOf="@+id/black_stone50" />
 
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowDL50"
         android:layout_width="wrap_content"
@@ -4043,8 +4038,8 @@
         android:id="@+id/black_stone50"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="226dp"
-        android:layout_marginRight="226dp"
+        android:layout_marginEnd="204dp"
+        android:layout_marginRight="204dp"
         android:layout_marginBottom="228dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
@@ -4519,7 +4514,6 @@
         app:layout_constraintEnd_toStartOf="@+id/black_stone56"
         app:layout_constraintTop_toTopOf="@+id/black_stone56" />
 
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowDL56"
         android:layout_width="wrap_content"
@@ -4537,8 +4531,8 @@
         android:id="@+id/black_stone56"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="248dp"
-        android:layout_marginRight="248dp"
+        android:layout_marginEnd="226dp"
+        android:layout_marginRight="226dp"
         android:layout_marginBottom="266dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
@@ -4818,7 +4812,6 @@
         app:layout_constraintEnd_toStartOf="@+id/black_stone61"
         app:layout_constraintTop_toTopOf="@+id/black_stone61" />
 
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowDL61"
         android:layout_width="wrap_content"
@@ -4836,8 +4829,8 @@
         android:id="@+id/black_stone61"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="270dp"
-        android:layout_marginRight="270dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginRight="248dp"
         android:layout_marginBottom="304dp"
         android:background="@drawable/black_stone"
         android:clickable="true"

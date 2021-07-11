@@ -19,6 +19,13 @@ import android.widget.Toast;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.Arrays;
+import java.util.HashMap;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class GameActivity extends AppCompatActivity {
 
@@ -474,6 +481,11 @@ public class GameActivity extends AppCompatActivity {
     Canvas canvas;
     Paint paint;
 
+    Retrofit retrofit;
+    retrofitInterface retrofitInterface;
+
+    Call<Void> direction;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -482,6 +494,16 @@ public class GameActivity extends AppCompatActivity {
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
+
+        String BASE_URL = "http://192.249.18.138:443";
+
+        retrofit = new Retrofit.Builder()
+                .baseUrl(BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        retrofitInterface = retrofit.create(retrofitInterface.class);
+
         stoneExist = new int[9][9];
 
         for(int i=0;i<9;i++){
@@ -5112,7 +5134,7 @@ public class GameActivity extends AppCompatActivity {
         int coloffset=0;
         for(int oneline=0; oneline<count; oneline++) {
             if (way == 0) {//UR
-                if (row + oneline < 5) {
+                if (row + oneline < 6) {
                     row++;
                     col++;
                 } else {
@@ -5142,7 +5164,7 @@ public class GameActivity extends AppCompatActivity {
                 col--;
             }
             if (way == 5) {
-                if (row + oneline < 5) {
+                if (row + oneline < 6) {
                     row++;
                 } else {
                     row++;
@@ -5185,6 +5207,26 @@ public class GameActivity extends AppCompatActivity {
     private void moving(int start, int end, int kindOfStone){
         Log.d("start",Integer.toString(start));
         Log.d("end",Integer.toString(end));
+
+        String startmsg = Integer.toString(start);
+
+        HashMap<String, String> map = new HashMap<>();
+
+        map.put("start",startmsg);
+
+        direction = retrofitInterface.putDirection(map);
+
+        direction.enqueue(new Callback<Void>() {
+            @Override
+            public void onResponse(Call<Void> call, Response<Void> response) {
+                Log.d("start",Integer.toString(start));
+            }
+
+            @Override
+            public void onFailure(Call<Void> call, Throwable t) {
+                Log.d("end","실패");
+            }
+        });
 
         int row=0,col=0;
 
@@ -6663,7 +6705,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowUR1.setEnabled(false);
                 arrowR1.setEnabled(false);
                 arrowUL1.setEnabled(false);
-                black_stone1.setEnabled(false);
             }
             if(num==2) {
                 arrowUR2.startAnimation(animTran1End);
@@ -6674,7 +6715,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowR2.setEnabled(false);
                 arrowUL2.setEnabled(false);
                 arrowL2.setEnabled(false);
-                black_stone2.setEnabled(false);
             }
             if(num==3){
                 arrowUR3.startAnimation(animTran1End);
@@ -6685,7 +6725,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowR3.setEnabled(false);
                 arrowUL3.setEnabled(false);
                 arrowL3.setEnabled(false);
-                black_stone3.setEnabled(false);
             }
             if(num==4){
                 arrowUR4.startAnimation(animTran1End);
@@ -6696,7 +6735,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowR4.setEnabled(false);
                 arrowUL4.setEnabled(false);
                 arrowL4.setEnabled(false);
-                black_stone4.setEnabled(false);
             }
             if(num==5) {
                 arrowUR5.startAnimation(animTran1End);
@@ -6705,7 +6743,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowUR5.setEnabled(false);
                 arrowL5.setEnabled(false);
                 arrowUL5.setEnabled(false);
-                black_stone5.setEnabled(false);
             }
             if(num==6) {
                 arrowUR6.startAnimation(animTran1End);
@@ -6716,7 +6753,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowR6.setEnabled(false);
                 arrowDR6.setEnabled(false);
                 arrowUL6.setEnabled(false);
-                black_stone6.setEnabled(false);
             }
             if(num==7) {
                 arrowUR7.startAnimation(animTran1End);
@@ -6731,7 +6767,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL7.setEnabled(false);
                 arrowL7.setEnabled(false);
                 arrowUL7.setEnabled(false);
-                black_stone7.setEnabled(false);
             }
             if(num==8) {
                 arrowUR8.startAnimation(animTran1End);
@@ -6746,7 +6781,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL8.setEnabled(false);
                 arrowL8.setEnabled(false);
                 arrowUL8.setEnabled(false);
-                black_stone8.setEnabled(false);
             }
             if(num==9) {
                 arrowUR9.startAnimation(animTran1End);
@@ -6761,7 +6795,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL9.setEnabled(false);
                 arrowL9.setEnabled(false);
                 arrowUL9.setEnabled(false);
-                black_stone9.setEnabled(false);
             }
             if(num==10) {
                 arrowUR10.startAnimation(animTran1End);
@@ -6776,7 +6809,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL10.setEnabled(false);
                 arrowL10.setEnabled(false);
                 arrowUL10.setEnabled(false);
-                black_stone10.setEnabled(false);
             }
             if(num==11) {
                 arrowUR11.startAnimation(animTran1End);
@@ -6787,7 +6819,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL11.setEnabled(false);
                 arrowL11.setEnabled(false);
                 arrowUL11.setEnabled(false);
-                black_stone11.setEnabled(false);
             }
             if(num==12) {
                 arrowUR12.startAnimation(animTran1End);
@@ -6798,7 +6829,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowR12.setEnabled(false);
                 arrowDR12.setEnabled(false);
                 arrowUL12.setEnabled(false);
-                black_stone12.setEnabled(false);
             }
             if(num==13) {
                 arrowUR13.startAnimation(animTran1End);
@@ -6813,7 +6843,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL13.setEnabled(false);
                 arrowL13.setEnabled(false);
                 arrowUL13.setEnabled(false);
-                black_stone13.setEnabled(false);
             }
             if(num==14) {
                 arrowUR14.startAnimation(animTran1End);
@@ -6828,7 +6857,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL14.setEnabled(false);
                 arrowL14.setEnabled(false);
                 arrowUL14.setEnabled(false);
-                black_stone14.setEnabled(false);
             }
             if(num==15) {
                 arrowUR15.startAnimation(animTran1End);
@@ -6843,7 +6871,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL15.setEnabled(false);
                 arrowL15.setEnabled(false);
                 arrowUL15.setEnabled(false);
-                black_stone15.setEnabled(false);
             }
             if(num==16) {
                 arrowUR16.startAnimation(animTran1End);
@@ -6858,7 +6885,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL16.setEnabled(false);
                 arrowL16.setEnabled(false);
                 arrowUL16.setEnabled(false);
-                black_stone16.setEnabled(false);
             }
             if(num==17) {
                 arrowUR17.startAnimation(animTran1End);
@@ -6873,7 +6899,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL17.setEnabled(false);
                 arrowL17.setEnabled(false);
                 arrowUL17.setEnabled(false);
-                black_stone17.setEnabled(false);
             }
             if(num==18) {
                 arrowUR18.startAnimation(animTran1End);
@@ -6884,7 +6909,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL18.setEnabled(false);
                 arrowL18.setEnabled(false);
                 arrowUL18.setEnabled(false);
-                black_stone18.setEnabled(false);
             }
             if(num==19) {
                 arrowUR19.startAnimation(animTran1End);
@@ -6895,7 +6919,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowR19.setEnabled(false);
                 arrowDR19.setEnabled(false);
                 arrowUL19.setEnabled(false);
-                black_stone19.setEnabled(false);
             }
             if(num==20) {
                 arrowUR20.startAnimation(animTran1End);
@@ -6910,7 +6933,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL20.setEnabled(false);
                 arrowL20.setEnabled(false);
                 arrowUL20.setEnabled(false);
-                black_stone20.setEnabled(false);
             }
             if(num==21) {
                 arrowUR21.startAnimation(animTran1End);
@@ -6925,7 +6947,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL21.setEnabled(false);
                 arrowL21.setEnabled(false);
                 arrowUL21.setEnabled(false);
-                black_stone21.setEnabled(false);
             }
             if(num==22) {
                 arrowUR22.startAnimation(animTran1End);
@@ -6940,7 +6961,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL22.setEnabled(false);
                 arrowL22.setEnabled(false);
                 arrowUL22.setEnabled(false);
-                black_stone22.setEnabled(false);
             }
             if(num==23) {
                 arrowUR23.startAnimation(animTran1End);
@@ -6955,7 +6975,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL23.setEnabled(false);
                 arrowL23.setEnabled(false);
                 arrowUL23.setEnabled(false);
-                black_stone23.setEnabled(false);
             }
             if(num==24) {
                 arrowUR24.startAnimation(animTran1End);
@@ -6985,7 +7004,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL25.setEnabled(false);
                 arrowL25.setEnabled(false);
                 arrowUL25.setEnabled(false);
-                black_stone25.setEnabled(false);
             }
             if(num==26) {
                 arrowUR26.startAnimation(animTran1End);
@@ -7005,7 +7023,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowUR27.setEnabled(false);
                 arrowR27.setEnabled(false);
                 arrowDR27.setEnabled(false);
-                black_stone27.setEnabled(false);
             }
             if(num==28) {
                 arrowUR28.startAnimation(animTran1End);
@@ -7020,7 +7037,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL28.setEnabled(false);
                 arrowL28.setEnabled(false);
                 arrowUL28.setEnabled(false);
-                black_stone28.setEnabled(false);
             }
             if(num==29) {
                 arrowUR29.startAnimation(animTran1End);
@@ -7035,7 +7051,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL29.setEnabled(false);
                 arrowL29.setEnabled(false);
                 arrowUL29.setEnabled(false);
-                black_stone29.setEnabled(false);
             }
             if(num==30) {
                 arrowUR30.startAnimation(animTran1End);
@@ -7050,7 +7065,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL30.setEnabled(false);
                 arrowL30.setEnabled(false);
                 arrowUL30.setEnabled(false);
-                black_stone30.setEnabled(false);
             }
             if(num==31) {
                 arrowUR31.startAnimation(animTran1End);
@@ -7065,7 +7079,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL31.setEnabled(false);
                 arrowL31.setEnabled(false);
                 arrowUL31.setEnabled(false);
-                black_stone31.setEnabled(false);
             }
             if(num==32) {
                 arrowUR32.startAnimation(animTran1End);
@@ -7080,7 +7093,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL32.setEnabled(false);
                 arrowL32.setEnabled(false);
                 arrowUL32.setEnabled(false);
-                black_stone32.setEnabled(false);
             }
             if(num==33) {
                 arrowUR33.startAnimation(animTran1End);
@@ -7095,7 +7107,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL33.setEnabled(false);
                 arrowL33.setEnabled(false);
                 arrowUL33.setEnabled(false);
-                black_stone33.setEnabled(false);
             }
             if(num==34) {
                 arrowUR34.startAnimation(animTran1End);
@@ -7110,7 +7121,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL34.setEnabled(false);
                 arrowL34.setEnabled(false);
                 arrowUL34.setEnabled(false);
-                black_stone34.setEnabled(false);
             }
             if(num==35) {
                 arrowDL35.startAnimation(animTran4End);
@@ -7119,7 +7129,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL35.setEnabled(false);
                 arrowL35.setEnabled(false);
                 arrowUL35.setEnabled(false);
-                black_stone35.setEnabled(false);
             }
             if(num==36) {
                 arrowUR36.startAnimation(animTran1End);
@@ -7130,7 +7139,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowR36.setEnabled(false);
                 arrowDR36.setEnabled(false);
                 arrowDL36.setEnabled(false);
-                black_stone36.setEnabled(false);
             }
             if(num==37) {
                 arrowUR37.startAnimation(animTran1End);
@@ -7145,7 +7153,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL37.setEnabled(false);
                 arrowL37.setEnabled(false);
                 arrowUL37.setEnabled(false);
-                black_stone37.setEnabled(false);
             }
             if(num==38) {
                 arrowUR38.startAnimation(animTran1End);
@@ -7160,7 +7167,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL38.setEnabled(false);
                 arrowL38.setEnabled(false);
                 arrowUL38.setEnabled(false);
-                black_stone38.setEnabled(false);
             }
             if(num==39) {
                 arrowUR39.startAnimation(animTran1End);
@@ -7175,7 +7181,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL39.setEnabled(false);
                 arrowL39.setEnabled(false);
                 arrowUL39.setEnabled(false);
-                black_stone39.setEnabled(false);
             }
             if(num==40) {
                 arrowUR40.startAnimation(animTran1End);
@@ -7190,7 +7195,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL40.setEnabled(false);
                 arrowL40.setEnabled(false);
                 arrowUL40.setEnabled(false);
-                black_stone40.setEnabled(false);
             }
             if(num==41) {
                 arrowUR41.startAnimation(animTran1End);
@@ -7205,7 +7209,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL41.setEnabled(false);
                 arrowL41.setEnabled(false);
                 arrowUL41.setEnabled(false);
-                black_stone41.setEnabled(false);
             }
             if(num==42) {
                 arrowUR42.startAnimation(animTran1End);
@@ -7220,7 +7223,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL42.setEnabled(false);
                 arrowL42.setEnabled(false);
                 arrowUL42.setEnabled(false);
-                black_stone42.setEnabled(false);
             }
             if(num==43) {
                 arrowDR43.startAnimation(animTran3End);
@@ -7231,7 +7233,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL43.setEnabled(false);
                 arrowL43.setEnabled(false);
                 arrowUL43.setEnabled(false);
-                black_stone43.setEnabled(false);
             }
             if(num==44) {
                 arrowUR44.startAnimation(animTran1End);
@@ -7242,7 +7243,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowR44.setEnabled(false);
                 arrowDR44.setEnabled(false);
                 arrowDL44.setEnabled(false);
-                black_stone44.setEnabled(false);
             }
             if(num==45) {
                 arrowUR45.startAnimation(animTran1End);
@@ -7257,7 +7257,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL45.setEnabled(false);
                 arrowL45.setEnabled(false);
                 arrowUL45.setEnabled(false);
-                black_stone45.setEnabled(false);
             }
             if(num==46) {
                 arrowUR46.startAnimation(animTran1End);
@@ -7272,7 +7271,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL46.setEnabled(false);
                 arrowL46.setEnabled(false);
                 arrowUL46.setEnabled(false);
-                black_stone46.setEnabled(false);
             }
             if(num==47) {
                 arrowUR47.startAnimation(animTran1End);
@@ -7287,7 +7285,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL47.setEnabled(false);
                 arrowL47.setEnabled(false);
                 arrowUL47.setEnabled(false);
-                black_stone47.setEnabled(false);
             }
             if(num==48) {
                 arrowUR48.startAnimation(animTran1End);
@@ -7302,7 +7299,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL48.setEnabled(false);
                 arrowL48.setEnabled(false);
                 arrowUL48.setEnabled(false);
-                black_stone48.setEnabled(false);
             }
             if(num==49) {
                 arrowUR49.startAnimation(animTran1End);
@@ -7317,7 +7313,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL49.setEnabled(false);
                 arrowL49.setEnabled(false);
                 arrowUL49.setEnabled(false);
-                black_stone49.setEnabled(false);
             }
             if(num==50) {
                 arrowDR50.startAnimation(animTran3End);
@@ -7328,7 +7323,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL50.setEnabled(false);
                 arrowL50.setEnabled(false);
                 arrowUL50.setEnabled(false);
-                black_stone50.setEnabled(false);
             }
             if(num==51) {
                 arrowUR51.startAnimation(animTran1End);
@@ -7339,7 +7333,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowR51.setEnabled(false);
                 arrowDR51.setEnabled(false);
                 arrowDL51.setEnabled(false);
-                black_stone51.setEnabled(false);
             }
             if(num==52) {
                 arrowUR52.startAnimation(animTran1End);
@@ -7354,7 +7347,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL52.setEnabled(false);
                 arrowL52.setEnabled(false);
                 arrowUL52.setEnabled(false);
-                black_stone52.setEnabled(false);
             }
             if(num==53) {
                 arrowUR53.startAnimation(animTran1End);
@@ -7369,7 +7361,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL53.setEnabled(false);
                 arrowL53.setEnabled(false);
                 arrowUL53.setEnabled(false);
-                black_stone53.setEnabled(false);
             }
             if(num==54) {
                 arrowUR54.startAnimation(animTran1End);
@@ -7384,7 +7375,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL54.setEnabled(false);
                 arrowL54.setEnabled(false);
                 arrowUL54.setEnabled(false);
-                black_stone54.setEnabled(false);
             }
             if(num==55) {
                 arrowUR55.startAnimation(animTran1End);
@@ -7399,7 +7389,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL55.setEnabled(false);
                 arrowL55.setEnabled(false);
                 arrowUL55.setEnabled(false);
-                black_stone55.setEnabled(false);
             }
             if(num==56) {
                 arrowDR56.startAnimation(animTran3End);
@@ -7410,7 +7399,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL56.setEnabled(false);
                 arrowL56.setEnabled(false);
                 arrowUL56.setEnabled(false);
-                black_stone56.setEnabled(false);
             }
             if(num==57) {
                 arrowR57.startAnimation(animTran2End);
@@ -7419,7 +7407,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowR57.setEnabled(false);
                 arrowDR57.setEnabled(false);
                 arrowDL57.setEnabled(false);
-                black_stone57.setEnabled(false);
             }
             if(num==58) {
                 arrowR58.startAnimation(animTran2End);
@@ -7430,7 +7417,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDR58.setEnabled(false);
                 arrowDL58.setEnabled(false);
                 arrowL58.setEnabled(false);
-                black_stone58.setEnabled(false);
             }
             if(num==59) {
                 arrowR59.startAnimation(animTran2End);
@@ -7441,7 +7427,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDR59.setEnabled(false);
                 arrowDL59.setEnabled(false);
                 arrowL59.setEnabled(false);
-                black_stone59.setEnabled(false);
             }
             if(num==60) {
                 arrowR60.startAnimation(animTran2End);
@@ -7452,7 +7437,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDR60.setEnabled(false);
                 arrowDL60.setEnabled(false);
                 arrowL60.setEnabled(false);
-                black_stone60.setEnabled(false);
             }
             if(num==61) {
                 arrowDR61.startAnimation(animTran3End);
@@ -7461,7 +7445,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDR61.setEnabled(false);
                 arrowDL61.setEnabled(false);
                 arrowL61.setEnabled(false);
-                black_stone61.setEnabled(false);
             }
 
         }
@@ -7903,7 +7886,6 @@ public class GameActivity extends AppCompatActivity {
                 arrowDL61.setVisibility(v.VISIBLE);
                 arrowDR61.setVisibility(v.VISIBLE);
             }
-
         }
         else{
             if(num==1){
