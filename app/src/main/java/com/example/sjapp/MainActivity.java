@@ -10,8 +10,20 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import io.socket.client.IO;
+import io.socket.client.Socket;
 
 import com.bumptech.glide.Glide;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.net.URISyntaxException;
+import java.util.logging.SocketHandler;
+
+import io.socket.emitter.Emitter;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +31,16 @@ public class MainActivity extends AppCompatActivity {
     ImageView iv_profile;
     Button btn_goGame;
     TextView textView;
+    private Retrofit retrofit;
+    private retrofitInterface retrofitInterface;
+
+    private Socket mSocket;
+    {
+        try {
+            mSocket = IO.socket("http://192.249.18.138:443");
+        } catch (URISyntaxException e) {}
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +51,39 @@ public class MainActivity extends AppCompatActivity {
         iv_profile=findViewById(R.id.iv_profile);//카카오 프로필
         btn_goGame=findViewById(R.id.btn_goGame);
         textView=findViewById(R.id.textView);
+
+
+        retrofit = new Retrofit.Builder()
+                .baseUrl("http://192.249.18.138:443")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        mSocket.connect();
+
+        mSocket.on("connection", new Emitter.Listener() {
+                    @Override
+                    public void call(Object... args) {
+                        try {
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    JSONObject data = (JSONObject) args[0];
+                                    try {
+                                        Toast.makeText(MainActivity.this, data.getString(mSocket.id()), Toast.LENGTH_SHORT).show();
+                                        //connect
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            });
+                        } catch (Exception e) {
+                            System.out.println("에러");
+                        }
+                    }
+                });
+
+
+
 
         Intent intent=getIntent();
 
