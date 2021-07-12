@@ -14,4 +14,7 @@ public interface retrofitInterface {
         @POST("/direction")
         Call<Void> putDirection(@Body HashMap<String, String> map);
 
+        @POST("/enter")
+        Call<Void> enterRoom(@Body HashMap<String, String> map);
+
 }

@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -65,10 +66,6 @@ public class LoginActivity extends AppCompatActivity {
                 Session session = Session.getCurrentSession();
                 session.addCallback(new SessionCallback());
                 session.open(AuthType.KAKAO_LOGIN_ALL, LoginActivity.this);
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                intent.putExtra("id",id);
-                intent.putExtra("profile",profileImg);
-                startActivity(intent);
             }
         });
 
@@ -147,6 +144,10 @@ public class LoginActivity extends AppCompatActivity {
                             Log.d("KAKAO_API", "nickname: " + profile.getNickname());
                             id = profile.getNickname();
                             profileImg = profile.getProfileImageUrl();
+                            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                            intent.putExtra("id",id);
+                            intent.putExtra("profile",profileImg);
+                            startActivity(intent);
 
                         } else if (kakaoAccount.profileNeedsAgreement() == OptionalBoolean.TRUE) {
                             // 동의 요청 후 프로필 정보 획득 가능
@@ -155,14 +156,13 @@ public class LoginActivity extends AppCompatActivity {
                             // 프로필 획득 불가
                         }
                         HashMap<String, String> map = new HashMap<>();
-                        map.put("name", result.getKakaoAccount().getProfile().getNickname());
-
+                        map.put("name", profile.getNickname());
 
                         Call<Void> call = retrofitInterface.executeLogin(map);
 
                         call.enqueue(new Callback<Void>() {
                             @Override
-                            public void onResponse(Call<Void> call, Response<Void> response) {
+                            public void onResponse(@NonNull Call<Void> call, @NonNull Response<Void> response) {
                                 if(response.code() == 200){
                                     Toast.makeText(getApplicationContext(), "성공하였습니다.",Toast.LENGTH_SHORT).show();
                                 }
