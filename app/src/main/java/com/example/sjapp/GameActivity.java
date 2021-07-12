@@ -5343,8 +5343,8 @@ public class GameActivity extends AppCompatActivity {
                         coloffset = oneline;
                         if(endroad(row+oneline, col+oneline)){//막다른길 아니면
                             wayinfo[way][oneline]=stoneExist[row+oneline][col+oneline];
-                            Log.d("row+oneline",Integer.toString(row+oneline));
-                            Log.d("col+oneline",Integer.toString(col+oneline));
+//                            Log.d("row+oneline",Integer.toString(row+oneline));
+//                            Log.d("col+oneline",Integer.toString(col+oneline));
                         }else{
                             wayinfo[way][oneline]=-1;
                             break;
@@ -5352,8 +5352,8 @@ public class GameActivity extends AppCompatActivity {
                     }else{
                         if(endroad(row+oneline, col+coloffset)){
                             wayinfo[way][oneline]=stoneExist[row+oneline][col+coloffset];
-                            Log.d("row+oneline",Integer.toString(row+oneline));
-                            Log.d("col+oneline",Integer.toString(col+coloffset));
+//                            Log.d("row+oneline",Integer.toString(row+oneline));
+//                            Log.d("col+oneline",Integer.toString(col+coloffset));
                         }else{
                             wayinfo[way][oneline]=-1;
                             break;
@@ -5486,9 +5486,10 @@ public class GameActivity extends AppCompatActivity {
     private int[] movingPoint(int num , int[] wayinfo, int way){
         int[] movingpoint = new int[2];
         int count=0;
-        for(int i =0; i<6; i++){
-            Log.d("wayinfo",Integer.toString(wayinfo[i]));
-        }
+        int whiteCount=0;
+//        for(int i =0; i<6; i++){
+//            Log.d("wayinfo",Integer.toString(wayinfo[i]));
+//        }
         for(int i=0; i<6; i++){
             if(wayinfo[i]==-1){
                 movingpoint[1]=-1;
@@ -5499,8 +5500,92 @@ public class GameActivity extends AppCompatActivity {
                 movingpoint[1]=wayinfo[i-1];//빈칸이 오기 직전의 돌을 반환함
                 break;
             }
-            if(wayinfo[i]==1||wayinfo[i]==2){//자리에 돌이 있다면
+            if(wayinfo[i]==1){//자리에 돌이 있다면
                 count++;
+            }
+            if(wayinfo[i]==2){//흰 돌 일 경우에는 카운트 안함.
+                whiteCount++;
+            }
+        }
+        if(whiteCount>0){
+            int tempcount=0;
+            tempcount=count+whiteCount;
+            int col,row;//num의 stoneExist상의 위치
+            col=0; row=0;
+            if(num<=5){
+                col = num - 1;
+                row = 0;
+            }if(num>=6 && num<=11){
+                col = num - 6;
+                row = 1;
+            }if(num>=12 && num<=18){
+                col = num - 12;
+                row = 2;
+            }if(num>=19 && num<=26){
+                col = num - 19;
+                row = 3;
+            }if(num>=27 && num<=35){
+                col = num - 27;
+                row = 4;
+            }if(num>=36 && num<=43){
+                col = num - 36;
+                row = 5;
+            }if(num>=44 && num<=50){
+                col = num - 44;
+                row = 6;
+            }if(num>=51 && num<=56){
+                col = num - 51;
+                row = 7;
+            }if(num>=57 && num<=61){
+                col = num - 57;
+                row = 8;
+            }
+
+            int coloffset=0;
+            int rowCount=0;
+            for(int oneline=0; oneline<tempcount; oneline++) {
+                if (way == 0) {//UR
+                    if (row + oneline < 4) {
+                        rowCount++;
+                        col++;
+                    } else {
+                        rowCount++;
+                    }
+                }
+                if (way == 1) {
+                    col++;
+                }
+                if (way == 2) {
+                    if (row - oneline > 4) {
+                        rowCount--;
+                        col++;
+                    } else {
+                        rowCount--;;
+                    }
+                }
+                if (way == 3) {
+                    if (row - oneline > 4) {
+                        rowCount--;
+                    } else {
+                        rowCount--;
+                        col--;
+                    }
+                }
+                if (way == 4) {
+                    col--;
+                }
+                if (way == 5) {
+                    if (row + oneline < 4) {
+                        rowCount++;
+                    } else {
+                        rowCount++;
+                        col--;
+                    }
+                }
+            }
+            row += rowCount;
+            if(row<9 && col<9){
+                stoneExist[row][col]=2;
             }
         }
 
@@ -5535,15 +5620,11 @@ public class GameActivity extends AppCompatActivity {
             row = 8;
         }
 
-        Log.d("info",Integer.toString(count));
-        Log.d("Becol",Integer.toString(col));
-
         int coloffset=0;
         int rowCount=0;
         for(int oneline=0; oneline<count; oneline++) {
             if (way == 0) {//UR
                 if (row + oneline < 4) {
-                    Log.d("row+oneline",Integer.toString(row + oneline));
                     rowCount++;
                     col++;
                 } else {
@@ -5581,7 +5662,6 @@ public class GameActivity extends AppCompatActivity {
                 }
             }
         }
-        Log.d("Afcol",Integer.toString(col));
         row += rowCount;
 
         movingpoint[0]=rowcolToNum(row,col);
@@ -5621,8 +5701,8 @@ public class GameActivity extends AppCompatActivity {
     }
 
     private void moving(int start, int end, int kindOfStone){
-        Log.d("start",Integer.toString(start));
-        Log.d("end",Integer.toString(end));
+//        Log.d("start",Integer.toString(start));
+//        Log.d("end",Integer.toString(end));
 
         String startmsg = Integer.toString(start);
 
@@ -5916,10 +5996,9 @@ public class GameActivity extends AppCompatActivity {
             onBlackButtonClicked(view,60);
         }
         if(start==61){
-            black_stone60.setVisibility(View.INVISIBLE);
-            onBlackButtonClicked(view,60);
+            black_stone61.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,61);
         }
-
 
         if(kindOfStone==-1)
             return;
@@ -5954,7 +6033,9 @@ public class GameActivity extends AppCompatActivity {
             col = end - 57;
             row = 8;
         }
-        stoneExist[row][col] = kindOfStone;
+        if(kindOfStone!=2){
+            stoneExist[row][col] = kindOfStone;
+        }
 
         if(end==1){
             black_stone1.setVisibility(View.VISIBLE);
