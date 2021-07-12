@@ -7,6 +7,8 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.RectF;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -506,11 +508,14 @@ public class GameActivity extends AppCompatActivity {
 
         stoneExist = new int[9][9];
 
-        for(int i=0;i<9;i++){
-            if(i<=1 || i>=7){
-                for(int j=0;j<6;j++){
-                    stoneExist[i][j]=1;
-                }
+        for(int i=0;i<2;i++){
+            for(int j=0;j<6;j++){
+                stoneExist[i][j]=1;
+            }
+        }
+        for(int i=7;i<9;i++){
+            for(int j=0;j<6;j++){
+                stoneExist[i][j]=2;
             }
         }
         stoneExist[2][2]=1;
@@ -973,7 +978,7 @@ public class GameActivity extends AppCompatActivity {
 
 
         imageView = (ImageView)findViewById(R.id.background);
-        bitmap = Bitmap.createBitmap(1080,1080,Bitmap.Config.ARGB_8888);
+        bitmap = Bitmap.createBitmap(1200,1080,Bitmap.Config.ARGB_8888);
         canvas = new Canvas(bitmap);
         imageView.setImageBitmap(bitmap);
 
@@ -4840,9 +4845,407 @@ public class GameActivity extends AppCompatActivity {
         });
 
         init();
+        turnStartInit();
     }
+
+    private void turnStartInit() {//캔버스에 흰 돌 이미지 찍어주기
+        int row, col;
+        row = 0;
+        int yCen=0;
+        int xCen=0;
+        int r=63;
+        allUnabled();
+        canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR);
+        drawingBackground();
+        Paint paint = new Paint();
+        paint.setColor(getResources().getColor(R.color.blue));
+        paint.setAlpha(200);
+        RectF rect = new RectF();
+
+        for (col = 0; col < 5; col++) {
+            if (stoneExist[row][col] == 1) {
+                setStone(rowcolToNum(row, col));
+            }
+            if (stoneExist[row][col] == 2) {
+                yCen=70+120*(8-row);
+                xCen=40+Math.abs(4-row)*70+col*140;
+                rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
+                canvas.drawArc(rect, 0,360,true,paint);
+            }
+        }
+        row=1;
+        for (col = 0; col < 6; col++) {
+            if (stoneExist[row][col] == 1) {
+                setStone(rowcolToNum(row, col));
+            }
+            if (stoneExist[row][col] == 2) {
+                yCen=70+120*(8-row);
+                xCen=40+Math.abs(4-row)*70+col*140;
+                rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
+                canvas.drawArc(rect, 0,360,true,paint);
+            }
+        }
+        row=2;
+        for (col = 0; col < 7; col++) {
+            if (stoneExist[row][col] == 1) {
+                setStone(rowcolToNum(row, col));
+            }
+            if (stoneExist[row][col] == 2) {
+                yCen=70+120*(8-row);
+                xCen=40+Math.abs(4-row)*70+col*140;
+                rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
+                canvas.drawArc(rect, 0,360,true,paint);
+            }
+        }
+        row=3;
+        for (col = 0; col < 8; col++) {
+            if (stoneExist[row][col] == 1) {
+                setStone(rowcolToNum(row, col));
+            }
+            if (stoneExist[row][col] == 2) {
+                yCen=70+120*(8-row);
+                xCen=40+Math.abs(4-row)*70+col*140;
+                rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
+                canvas.drawArc(rect, 0,360,true,paint);
+            }
+        }
+        row=4;
+        for (col = 0; col < 9; col++) {
+            if (stoneExist[row][col] == 1) {
+                setStone(rowcolToNum(row, col));
+            }
+            if (stoneExist[row][col] == 2) {
+                yCen=70+120*(8-row);
+                xCen=40+Math.abs(4-row)*70+col*140;
+                rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
+                canvas.drawArc(rect, 0,360,true,paint);
+            }
+        }
+        row=5;
+        for (col = 0; col < 8; col++) {
+            if (stoneExist[row][col] == 1) {
+                setStone(rowcolToNum(row, col));
+            }
+            if (stoneExist[row][col] == 2) {
+                yCen=70+120*(8-row);
+                xCen=40+Math.abs(4-row)*70+col*140;
+                rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
+                canvas.drawArc(rect, 0,360,true,paint);
+            }
+        }
+        row=6;
+        for (col = 0; col < 7; col++) {
+            if (stoneExist[row][col] == 1) {
+                setStone(rowcolToNum(row, col));
+            }
+            if (stoneExist[row][col] == 2) {
+                yCen=70+120*(8-row);
+                xCen=40+Math.abs(4-row)*70+col*140;
+                rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
+                canvas.drawArc(rect, 0,360,true,paint);
+            }
+        }
+        row=7;
+        for (col = 0; col < 6; col++) {
+            if (stoneExist[row][col] == 1) {
+                setStone(rowcolToNum(row, col));
+            }
+            if (stoneExist[row][col] == 2) {
+                yCen=70+120*(8-row);
+                xCen=40+Math.abs(4-row)*70+col*140;
+                rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
+                canvas.drawArc(rect, 0,360,true,paint);
+            }
+        }
+        row=8;
+        for (col = 0; col < 5; col++) {
+            if (stoneExist[row][col] == 1) {
+                setStone(rowcolToNum(row, col));
+            }
+            if (stoneExist[row][col] == 2) {
+                yCen=70+120*(8-row);
+                xCen=40+Math.abs(4-row)*70+col*140;
+                rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
+                canvas.drawArc(rect, 0,360,true,paint);
+            }
+        }
+    }
+
+    private void setStone(int num){
+        if(num==1){
+            black_stone1.setEnabled(true);
+            black_stone1.setVisibility(View.VISIBLE);
+        }
+        if(num==2){
+            black_stone2.setEnabled(true);
+            black_stone2.setVisibility(View.VISIBLE);
+        }
+        if(num==3){
+            black_stone3.setEnabled(true);
+            black_stone3.setVisibility(View.VISIBLE);
+        }
+        if(num==4){
+            black_stone4.setEnabled(true);
+            black_stone4.setVisibility(View.VISIBLE);
+        }
+        if(num==5){
+            black_stone5.setEnabled(true);
+            black_stone5.setVisibility(View.VISIBLE);
+        }
+        if(num==6){
+            black_stone6.setEnabled(true);
+            black_stone6.setVisibility(View.VISIBLE);
+        }
+        if(num==7){
+            black_stone7.setEnabled(true);
+            black_stone7.setVisibility(View.VISIBLE);
+        }
+        if(num==8){
+            black_stone8.setEnabled(true);
+            black_stone8.setVisibility(View.VISIBLE);
+        }
+        if(num==9){
+            black_stone9.setEnabled(true);
+            black_stone9.setVisibility(View.VISIBLE);
+        }
+        if(num==10){
+            black_stone10.setEnabled(true);
+            black_stone10.setVisibility(View.VISIBLE);
+        }
+        if(num==11){
+            black_stone11.setEnabled(true);
+            black_stone11.setVisibility(View.VISIBLE);
+        }
+        if(num==12){
+            black_stone12.setEnabled(true);
+            black_stone12.setVisibility(View.VISIBLE);
+        }
+        if(num==13){
+            black_stone13.setEnabled(true);
+            black_stone13.setVisibility(View.VISIBLE);
+        }
+        if(num==14){
+            black_stone14.setEnabled(true);
+            black_stone14.setVisibility(View.VISIBLE);
+        }
+        if(num==15){
+            black_stone15.setEnabled(true);
+            black_stone15.setVisibility(View.VISIBLE);
+        }
+        if(num==16){
+            black_stone16.setEnabled(true);
+            black_stone16.setVisibility(View.VISIBLE);
+        }
+        if(num==17){
+            black_stone17.setEnabled(true);
+            black_stone17.setVisibility(View.VISIBLE);
+        }
+        if(num==18){
+            black_stone18.setEnabled(true);
+            black_stone18.setVisibility(View.VISIBLE);
+        }
+        if(num==19){
+            black_stone19.setEnabled(true);
+            black_stone19.setVisibility(View.VISIBLE);
+        }
+        if(num==20){
+            black_stone20.setEnabled(true);
+            black_stone20.setVisibility(View.VISIBLE);
+        }
+        if(num==21){
+            black_stone21.setEnabled(true);
+            black_stone21.setVisibility(View.VISIBLE);
+        }
+        if(num==22){
+            black_stone22.setEnabled(true);
+            black_stone22.setVisibility(View.VISIBLE);
+        }
+        if(num==23){
+            black_stone23.setEnabled(true);
+            black_stone23.setVisibility(View.VISIBLE);
+        }
+        if(num==24){
+            black_stone24.setEnabled(true);
+            black_stone24.setVisibility(View.VISIBLE);
+        }
+        if(num==25){
+            black_stone25.setEnabled(true);
+            black_stone25.setVisibility(View.VISIBLE);
+        }
+        if(num==26){
+            black_stone26.setEnabled(true);
+            black_stone26.setVisibility(View.VISIBLE);
+        }
+        if(num==27){
+            black_stone27.setEnabled(true);
+            black_stone27.setVisibility(View.VISIBLE);
+        }
+        if(num==28){
+            black_stone28.setEnabled(true);
+            black_stone28.setVisibility(View.VISIBLE);
+        }
+        if(num==29){
+            black_stone29.setEnabled(true);
+            black_stone29.setVisibility(View.VISIBLE);
+        }
+        if(num==30){
+            black_stone30.setEnabled(true);
+            black_stone30.setVisibility(View.VISIBLE);
+        }
+        if(num==31){
+            black_stone31.setEnabled(true);
+            black_stone31.setVisibility(View.VISIBLE);
+        }
+        if(num==32){
+            black_stone32.setEnabled(true);
+            black_stone32.setVisibility(View.VISIBLE);
+        }
+        if(num==33){
+            black_stone33.setEnabled(true);
+            black_stone33.setVisibility(View.VISIBLE);
+        }
+        if(num==34){
+            black_stone34.setEnabled(true);
+            black_stone34.setVisibility(View.VISIBLE);
+        }
+        if(num==35){
+            black_stone35.setEnabled(true);
+            black_stone35.setVisibility(View.VISIBLE);
+        }
+        if(num==36){
+            black_stone36.setEnabled(true);
+            black_stone36.setVisibility(View.VISIBLE);
+        }
+        if(num==37){
+            black_stone37.setEnabled(true);
+            black_stone37.setVisibility(View.VISIBLE);
+        }
+        if(num==38){
+            black_stone38.setEnabled(true);
+            black_stone38.setVisibility(View.VISIBLE);
+        }
+        if(num==39){
+            black_stone39.setEnabled(true);
+            black_stone39.setVisibility(View.VISIBLE);
+        }
+        if(num==40){
+            black_stone40.setEnabled(true);
+            black_stone40.setVisibility(View.VISIBLE);
+        }
+        if(num==41){
+            black_stone41.setEnabled(true);
+            black_stone41.setVisibility(View.VISIBLE);
+        }
+        if(num==42){
+            black_stone42.setEnabled(true);
+            black_stone42.setVisibility(View.VISIBLE);
+        }
+        if(num==43){
+            black_stone43.setEnabled(true);
+            black_stone43.setVisibility(View.VISIBLE);
+        }
+        if(num==44){
+            black_stone44.setEnabled(true);
+            black_stone44.setVisibility(View.VISIBLE);
+        }
+        if(num==45){
+            black_stone45.setEnabled(true);
+            black_stone45.setVisibility(View.VISIBLE);
+        }
+        if(num==46){
+            black_stone46.setEnabled(true);
+            black_stone46.setVisibility(View.VISIBLE);
+        }
+        if(num==47){
+            black_stone47.setEnabled(true);
+            black_stone47.setVisibility(View.VISIBLE);
+        }
+        if(num==48){
+            black_stone48.setEnabled(true);
+            black_stone48.setVisibility(View.VISIBLE);
+        }
+        if(num==49){
+            black_stone49.setEnabled(true);
+            black_stone49.setVisibility(View.VISIBLE);
+        }
+        if(num==50){
+            black_stone50.setEnabled(true);
+            black_stone50.setVisibility(View.VISIBLE);
+        }
+        if(num==51){
+            black_stone51.setEnabled(true);
+            black_stone51.setVisibility(View.VISIBLE);
+        }
+        if(num==52){
+            black_stone52.setEnabled(true);
+            black_stone52.setVisibility(View.VISIBLE);
+        }
+        if(num==53){
+            black_stone53.setEnabled(true);
+            black_stone53.setVisibility(View.VISIBLE);
+        }
+        if(num==54){
+            black_stone54.setEnabled(true);
+            black_stone54.setVisibility(View.VISIBLE);
+        }
+        if(num==55){
+            black_stone55.setEnabled(true);
+            black_stone55.setVisibility(View.VISIBLE);
+        }
+        if(num==56){
+            black_stone56.setEnabled(true);
+            black_stone56.setVisibility(View.VISIBLE);
+        }
+        if(num==57){
+            black_stone57.setEnabled(true);
+            black_stone57.setVisibility(View.VISIBLE);
+        }
+        if(num==58){
+            black_stone58.setEnabled(true);
+            black_stone58.setVisibility(View.VISIBLE);
+        }
+        if(num==59){
+            black_stone59.setEnabled(true);
+            black_stone59.setVisibility(View.VISIBLE);
+        }
+        if(num==60){
+            black_stone60.setEnabled(true);
+            black_stone60.setVisibility(View.VISIBLE);
+        }
+        if(num==61){
+            black_stone61.setEnabled(true);
+            black_stone61.setVisibility(View.VISIBLE);
+        }
+    }
+
+
+
     private void init(){
-        drawingBackground();//backgroud 그리기
+//        drawingBackground();//backgroud 그리기
+//        Paint paint = new Paint();
+//        paint.setColor(getResources().getColor(R.color.blue));
+//        paint.setAlpha(200);
+//        RectF rect = new RectF();
+//        int xCen, yCen, r;
+//        r=63;
+//        for(int i=0; i<5; i++){
+//            xCen = 260 + i*140+60;
+//            yCen = 70;
+//            rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
+//            canvas.drawArc(rect, 0,360,true,paint);
+//        }
+//        for(int i=0;i<6;i++){
+//            xCen = 190 + i*140+60;
+//            yCen = 190;
+//            rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
+//            canvas.drawArc(rect, 0,360,true,paint);
+//        }
+//        for(int i=0;i<3;i++){
+//            xCen = 400 + i*140+60;
+//            yCen = 310;
+//            rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
+//            canvas.drawArc(rect, 0,360,true,paint);
+//        }
         nowWayInfo = new int[6][6];
         black_stone12.setVisibility(View.INVISIBLE);
         black_stone13.setVisibility(View.INVISIBLE);
@@ -4927,11 +5330,11 @@ public class GameActivity extends AppCompatActivity {
             col = num - 57;
             row = 8;
         }
-        for(int i=0; i<6; i++){
-            String n = "gg";
-            Log.d("availpass",n);
-            Log.d("passfind",Integer.toString(stoneExist[0][i]));
-        }
+//        for(int i=0; i<6; i++){
+//            String n = "gg";
+//            Log.d("availpass",n);
+//            Log.d("passfind",Integer.toString(stoneExist[0][i]));
+//        }
         for(int way=0; way<6; way++){
             int coloffset=0;
             for(int oneline=0; oneline<6; oneline++){
@@ -4940,13 +5343,17 @@ public class GameActivity extends AppCompatActivity {
                         coloffset = oneline;
                         if(endroad(row+oneline, col+oneline)){//막다른길 아니면
                             wayinfo[way][oneline]=stoneExist[row+oneline][col+oneline];
+                            Log.d("row+oneline",Integer.toString(row+oneline));
+                            Log.d("col+oneline",Integer.toString(col+oneline));
                         }else{
                             wayinfo[way][oneline]=-1;
                             break;
                         }
                     }else{
                         if(endroad(row+oneline, col+coloffset)){
-                            wayinfo[way][oneline]=stoneExist[row+oneline][col+oneline];
+                            wayinfo[way][oneline]=stoneExist[row+oneline][col+coloffset];
+                            Log.d("row+oneline",Integer.toString(row+oneline));
+                            Log.d("col+oneline",Integer.toString(col+coloffset));
                         }else{
                             wayinfo[way][oneline]=-1;
                             break;
@@ -5079,9 +5486,9 @@ public class GameActivity extends AppCompatActivity {
     private int[] movingPoint(int num , int[] wayinfo, int way){
         int[] movingpoint = new int[2];
         int count=0;
-//        for(int i =0; i<6; i++){
-//            Log.d("wayinfo",Integer.toString(wayinfo[i]));
-//        }
+        for(int i =0; i<6; i++){
+            Log.d("wayinfo",Integer.toString(wayinfo[i]));
+        }
         for(int i=0; i<6; i++){
             if(wayinfo[i]==-1){
                 movingpoint[1]=-1;
@@ -5132,31 +5539,33 @@ public class GameActivity extends AppCompatActivity {
         Log.d("Becol",Integer.toString(col));
 
         int coloffset=0;
+        int rowCount=0;
         for(int oneline=0; oneline<count; oneline++) {
             if (way == 0) {//UR
-                if (row + oneline < 6) {
-                    row++;
+                if (row + oneline < 4) {
+                    Log.d("row+oneline",Integer.toString(row + oneline));
+                    rowCount++;
                     col++;
                 } else {
-                    row++;
+                    rowCount++;
                 }
             }
             if (way == 1) {
                 col++;
             }
             if (way == 2) {
-                if (row - oneline > 3) {
-                    row--;
+                if (row - oneline > 4) {
+                    rowCount--;
                     col++;
                 } else {
-                    row--;;
+                    rowCount--;;
                 }
             }
             if (way == 3) {
-                if (row - oneline > 3) {
-                    row--;
+                if (row - oneline > 4) {
+                    rowCount--;
                 } else {
-                    row--;
+                    rowCount--;
                     col--;
                 }
             }
@@ -5164,44 +5573,51 @@ public class GameActivity extends AppCompatActivity {
                 col--;
             }
             if (way == 5) {
-                if (row + oneline < 6) {
-                    row++;
+                if (row + oneline < 4) {
+                    rowCount++;
                 } else {
-                    row++;
+                    rowCount++;
                     col--;
                 }
             }
         }
         Log.d("Afcol",Integer.toString(col));
+        row += rowCount;
 
+        movingpoint[0]=rowcolToNum(row,col);
+
+        return movingpoint;
+    }
+    private int rowcolToNum(int row, int col){
+        int num=0;
         if(row==0){
-            movingpoint[0]=col+1;
+            num=col+1;
         }
         if(row==1){
-            movingpoint[0]=col+6;
+            num=col+6;
         }
         if(row==2){
-            movingpoint[0]=col+12;
+            num=col+12;
         }
         if(row==3){
-            movingpoint[0]=col+19;
+            num=col+19;
         }
         if(row==4){
-            movingpoint[0]=col+27;
+            num=col+27;
         }
         if(row==5){
-            movingpoint[0]=col+36;
+            num=col+36;
         }
         if(row==6){
-            movingpoint[0]=col+44;
+            num=col+44;
         }
         if(row==7){
-            movingpoint[0]=col+51;
+            num=col+51;
         }
         if(row==8){
-            movingpoint[0]=col+57;
+            num=col+57;
         }
-        return movingpoint;
+        return num;
     }
 
     private void moving(int start, int end, int kindOfStone){
@@ -5768,13 +6184,13 @@ public class GameActivity extends AppCompatActivity {
         float endx;
         float endy;
         for(int i=0;i<5;i++) {
-            firstartx = 255;
+            firstartx = 255+60;
             firstarty = 70;
-            firendx = 825;
+            firendx = 825+60;
             firendy = 70;
-            secstartx = 825;
+            secstartx = 825+60;
             secstarty = 1010;
-            secendx = 1080;
+            secendx = 1080+60;
             secendy = 540;
             startx = Math.abs((firendx-firstartx)/4)*i+firstartx;
             starty = Math.abs((firendy-firstarty)/4)*i+firendy;
@@ -5783,13 +6199,13 @@ public class GameActivity extends AppCompatActivity {
             canvas.drawLine(startx,starty,endx,endy,paint);
         }
         for(int i=0;i<5;i++) {
-            firstartx = 255;
+            firstartx = 255+60;
             firstarty = 70;
-            firendx = 825;
+            firendx = 825+60;
             firendy = 70;
-            secstartx = 0;
+            secstartx = 0+60;
             secstarty = 540;
-            secendx = 255;
+            secendx = 255+60;
             secendy = 1010;
             startx = Math.abs((firendx-firstartx)/4)*i+firstartx;
             starty = Math.abs((firendy-firstarty)/4)*i+firendy;
@@ -5798,13 +6214,13 @@ public class GameActivity extends AppCompatActivity {
             canvas.drawLine(startx,starty,endx,endy,paint);
         }
         for(int i=0;i<5;i++) {
-            firstartx = 255;
+            firstartx = 255+60;
             firstarty = 1010;
-            firendx = 825;
+            firendx = 825+60;
             firendy = 1010;
-            secstartx = 0;
+            secstartx = 0+60;
             secstarty = 540;
-            secendx = 255;
+            secendx = 255+60;
             secendy = 70;
             startx = Math.abs((firendx-firstartx)/4)*i+firstartx;
             starty = Math.abs((firendy-firstarty)/4)*i+firendy;
@@ -5813,13 +6229,13 @@ public class GameActivity extends AppCompatActivity {
             canvas.drawLine(startx,starty,endx,endy,paint);
         }
         for(int i=0;i<5;i++) {
-            firstartx = 255;
+            firstartx = 255+60;
             firstarty = 1010;
-            firendx = 825;
+            firendx = 825+60;
             firendy = 1010;
-            secstartx = 825;
+            secstartx = 825+60;
             secstarty = 70;
-            secendx = 1080;
+            secendx = 1080+60;
             secendy = 540;
             startx = Math.abs((firendx-firstartx)/4)*i+firstartx;
             starty = Math.abs((firendy-firstarty)/4)*i+firendy;
@@ -5828,13 +6244,13 @@ public class GameActivity extends AppCompatActivity {
             canvas.drawLine(startx,starty,endx,endy,paint);
         }
         for(int i=0;i<5;i++) {
-            firstartx = 255;
+            firstartx = 255+60;
             firstarty = 70;
-            firendx = 0;
+            firendx = 0+60;
             firendy = 540;
-            secstartx = 825;
+            secstartx = 825+60;
             secstarty = 70;
-            secendx = 1080;
+            secendx = 1080+60;
             secendy = 540;
             startx = -Math.abs((firendx-firstartx)/4)*i+firstartx;
             starty = Math.abs((firendy-firstarty)/4)*i+firstarty;
@@ -5843,13 +6259,13 @@ public class GameActivity extends AppCompatActivity {
             canvas.drawLine(startx,starty,endx,endy,paint);
         }
         for(int i=0;i<5;i++) {
-            firstartx = 255;
+            firstartx = 255+60;
             firstarty = 540;
-            firendx = 0;
+            firendx = 0+60;
             firendy = 1010;
-            secstartx = 825;
+            secstartx = 825+60;
             secstarty = 540;
-            secendx = 1080;
+            secendx = 1080+60;
             secendy = 1010;
             startx = Math.abs((firendx-firstartx)/4)*i+firendx;
             starty = Math.abs((firendy-firstarty)/4)*i+firstarty;
@@ -8323,6 +8739,7 @@ public class GameActivity extends AppCompatActivity {
                 arrowDR61.setVisibility(v.INVISIBLE);
             }
         }
+        turnStartInit();
     }
     private void allUnabled(){
         black_stone1.setEnabled(false);
