@@ -5343,8 +5343,8 @@ public class GameActivity extends AppCompatActivity {
                         coloffset = oneline;
                         if(endroad(row+oneline, col+oneline)){//막다른길 아니면
                             wayinfo[way][oneline]=stoneExist[row+oneline][col+oneline];
-                            Log.d("row+oneline",Integer.toString(row+oneline));
-                            Log.d("col+oneline",Integer.toString(col+oneline));
+//                            Log.d("row+oneline",Integer.toString(row+oneline));
+//                            Log.d("col+oneline",Integer.toString(col+oneline));
                         }else{
                             wayinfo[way][oneline]=-1;
                             break;
@@ -5352,8 +5352,8 @@ public class GameActivity extends AppCompatActivity {
                     }else{
                         if(endroad(row+oneline, col+coloffset)){
                             wayinfo[way][oneline]=stoneExist[row+oneline][col+coloffset];
-                            Log.d("row+oneline",Integer.toString(row+oneline));
-                            Log.d("col+oneline",Integer.toString(col+coloffset));
+//                            Log.d("row+oneline",Integer.toString(row+oneline));
+//                            Log.d("col+oneline",Integer.toString(col+coloffset));
                         }else{
                             wayinfo[way][oneline]=-1;
                             break;
@@ -5486,21 +5486,110 @@ public class GameActivity extends AppCompatActivity {
     private int[] movingPoint(int num , int[] wayinfo, int way){
         int[] movingpoint = new int[2];
         int count=0;
+        int whiteCount=0;
         for(int i =0; i<6; i++){
             Log.d("wayinfo",Integer.toString(wayinfo[i]));
         }
         for(int i=0; i<6; i++){
             if(wayinfo[i]==-1){
+                if(wayinfo[i-1]==2){
+                    movingpoint[1]=3;
+                    break;
+                }
                 movingpoint[1]=-1;
                 break;
             }
             if(wayinfo[i]==0){
                 //count가 빈 칸의 위치를 나타냄
-                movingpoint[1]=wayinfo[i-1];//빈칸이 오기 직전의 돌을 반환함
+                movingpoint[1]=1;//빈칸이 오기 직전의 돌을 반환함
                 break;
             }
-            if(wayinfo[i]==1||wayinfo[i]==2){//자리에 돌이 있다면
+            if(wayinfo[i]==1){//자리에 돌이 있다면
                 count++;
+            }
+            if(wayinfo[i]==2){//흰 돌 일 경우에는 카운트 안함.
+                whiteCount++;
+            }
+        }
+        if(whiteCount>0){
+            int tempcount=0;
+            tempcount=count+whiteCount;
+            int col,row;//num의 stoneExist상의 위치
+            col=0; row=0;
+            if(num<=5){
+                col = num - 1;
+                row = 0;
+            }if(num>=6 && num<=11){
+                col = num - 6;
+                row = 1;
+            }if(num>=12 && num<=18){
+                col = num - 12;
+                row = 2;
+            }if(num>=19 && num<=26){
+                col = num - 19;
+                row = 3;
+            }if(num>=27 && num<=35){
+                col = num - 27;
+                row = 4;
+            }if(num>=36 && num<=43){
+                col = num - 36;
+                row = 5;
+            }if(num>=44 && num<=50){
+                col = num - 44;
+                row = 6;
+            }if(num>=51 && num<=56){
+                col = num - 51;
+                row = 7;
+            }if(num>=57 && num<=61){
+                col = num - 57;
+                row = 8;
+            }
+
+            int coloffset=0;
+            int rowCount=0;
+            for(int oneline=0; oneline<tempcount; oneline++) {
+                if (way == 0) {//UR
+                    if (row + oneline < 4) {
+                        rowCount++;
+                        col++;
+                    } else {
+                        rowCount++;
+                    }
+                }
+                if (way == 1) {
+                    col++;
+                }
+                if (way == 2) {
+                    if (row - oneline > 4) {
+                        rowCount--;
+                        col++;
+                    } else {
+                        rowCount--;;
+                    }
+                }
+                if (way == 3) {
+                    if (row - oneline > 4) {
+                        rowCount--;
+                    } else {
+                        rowCount--;
+                        col--;
+                    }
+                }
+                if (way == 4) {
+                    col--;
+                }
+                if (way == 5) {
+                    if (row + oneline < 4) {
+                        rowCount++;
+                    } else {
+                        rowCount++;
+                        col--;
+                    }
+                }
+            }
+            row += rowCount;
+            if(row<9 && col<9 && row>=0 && col>=0){
+                stoneExist[row][col]=2;
             }
         }
 
@@ -5535,15 +5624,11 @@ public class GameActivity extends AppCompatActivity {
             row = 8;
         }
 
-        Log.d("info",Integer.toString(count));
-        Log.d("Becol",Integer.toString(col));
-
         int coloffset=0;
         int rowCount=0;
         for(int oneline=0; oneline<count; oneline++) {
             if (way == 0) {//UR
                 if (row + oneline < 4) {
-                    Log.d("row+oneline",Integer.toString(row + oneline));
                     rowCount++;
                     col++;
                 } else {
@@ -5581,10 +5666,14 @@ public class GameActivity extends AppCompatActivity {
                 }
             }
         }
-        Log.d("Afcol",Integer.toString(col));
         row += rowCount;
 
         movingpoint[0]=rowcolToNum(row,col);
+        if(whiteCount>0){
+            stoneExist[row][col]=1;
+            Log.d("여기 떠야해row",Integer.toString(row));
+            Log.d("여기 떠야해col",Integer.toString(col));
+        }
 
         return movingpoint;
     }
@@ -5621,8 +5710,8 @@ public class GameActivity extends AppCompatActivity {
     }
 
     private void moving(int start, int end, int kindOfStone){
-        Log.d("start",Integer.toString(start));
-        Log.d("end",Integer.toString(end));
+//        Log.d("start",Integer.toString(start));
+//        Log.d("end",Integer.toString(end));
 
         String startmsg = Integer.toString(start);
 
@@ -5916,228 +6005,237 @@ public class GameActivity extends AppCompatActivity {
             onBlackButtonClicked(view,60);
         }
         if(start==61){
-            black_stone60.setVisibility(View.INVISIBLE);
-            onBlackButtonClicked(view,60);
+            black_stone61.setVisibility(View.INVISIBLE);
+            onBlackButtonClicked(view,61);
         }
 
+        if(kindOfStone!=-1){
+            row=0;
+            col=0;
+            if(end<=5){
+                col = end - 1;
+                row = 0;
+            }if(end>=6 && end<=11){
+                col = end - 6;
+                row = 1;
+            }if(end>=12 && end<=18){
+                col = end - 12;
+                row = 2;
+            }if(end>=19 && end<=26){
+                col = end - 19;
+                row = 3;
+            }if(end>=27 && end<=35){
+                col = end - 27;
+                row = 4;
+            }if(end>=36 && end<=43){
+                col = end - 36;
+                row = 5;
+            }if(end>=44 && end<=50){
+                col = end - 44;
+                row = 6;
+            }if(end>=51 && end<=56){
+                col = end - 51;
+                row = 7;
+            }if(end>=57 && end<=61){
+                col = end - 57;
+                row = 8;
+            }
+            if(row>=0 && row<9 && col>=0 && col<9){
+                if(kindOfStone!=3) {
+                    stoneExist[row][col] = kindOfStone;
+                }
+                else{
+                    stoneExist[row][col]=1;
+                }
+            }
 
-        if(kindOfStone==-1)
-            return;
+            if(end==1){
+                black_stone1.setVisibility(View.VISIBLE);
+            }
+            if(end==2){
+                black_stone2.setVisibility(View.VISIBLE);
+            }
+            if(end==3){
+                black_stone3.setVisibility(View.VISIBLE);
+            }
+            if(end==4){
+                black_stone4.setVisibility(View.VISIBLE);
+            }
+            if(end==5){
+                black_stone5.setVisibility(View.VISIBLE);
+            }
+            if(end==6){
+                black_stone6.setVisibility(View.VISIBLE);
+            }
+            if(end==7){
+                black_stone7.setVisibility(View.VISIBLE);
+            }
+            if(end==8){
+                black_stone8.setVisibility(View.VISIBLE);
+            }
+            if(end==9){
+                black_stone9.setVisibility(View.VISIBLE);
+            }
+            if(end==10){
+                black_stone10.setVisibility(View.VISIBLE);
+            }
+            if(end==11){
+                black_stone11.setVisibility(View.VISIBLE);
+            }
+            if(end==12){
+                black_stone12.setVisibility(View.VISIBLE);
+            }
+            if(end==13){
+                black_stone13.setVisibility(View.VISIBLE);
+            }
+            if(end==14){
+                black_stone14.setVisibility(View.VISIBLE);
+            }
+            if(end==15){
+                black_stone15.setVisibility(View.VISIBLE);
+            }
+            if(end==16){
+                black_stone16.setVisibility(View.VISIBLE);
+            }
+            if(end==17){
+                black_stone17.setVisibility(View.VISIBLE);
+            }
+            if(end==18){
+                black_stone18.setVisibility(View.VISIBLE);
+            }
+            if(end==19){
+                black_stone19.setVisibility(View.VISIBLE);
+            }
+            if(end==20){
+                black_stone20.setVisibility(View.VISIBLE);
+            }
+            if(end==21){
+                black_stone21.setVisibility(View.VISIBLE);
+            }
+            if(end==22){
+                black_stone22.setVisibility(View.VISIBLE);
+            }
+            if(end==23){
+                black_stone23.setVisibility(View.VISIBLE);
+            }
+            if(end==24){
+                black_stone24.setVisibility(View.VISIBLE);
+            }
+            if(end==25){
+                black_stone25.setVisibility(View.VISIBLE);
+            }
+            if(end==26){
+                black_stone26.setVisibility(View.VISIBLE);
+            }
+            if(end==27){
+                black_stone27.setVisibility(View.VISIBLE);
+            }
+            if(end==28){
+                black_stone28.setVisibility(View.VISIBLE);
+            }
+            if(end==29){
+                black_stone29.setVisibility(View.VISIBLE);
+            }
+            if(end==30){
+                black_stone30.setVisibility(View.VISIBLE);
+            }
+            if(end==31){
+                black_stone31.setVisibility(View.VISIBLE);
+            }
+            if(end==32){
+                black_stone32.setVisibility(View.VISIBLE);
+            }
+            if(end==33){
+                black_stone33.setVisibility(View.VISIBLE);
+            }
+            if(end==34){
+                black_stone34.setVisibility(View.VISIBLE);
+            }
+            if(end==35){
+                black_stone35.setVisibility(View.VISIBLE);
+            }
+            if(end==36){
+                black_stone36.setVisibility(View.VISIBLE);
+            }
+            if(end==37){
+                black_stone37.setVisibility(View.VISIBLE);
+            }
+            if(end==38){
+                black_stone38.setVisibility(View.VISIBLE);
+            }
+            if(end==39){
+                black_stone39.setVisibility(View.VISIBLE);
+            }
+            if(end==40){
+                black_stone40.setVisibility(View.VISIBLE);
+            }if(end==41){
+                black_stone41.setVisibility(View.VISIBLE);
+            }
+            if(end==42){
+                black_stone42.setVisibility(View.VISIBLE);
+            }
+            if(end==43){
+                black_stone43.setVisibility(View.VISIBLE);
+            }
+            if(end==44){
+                black_stone44.setVisibility(View.VISIBLE);
+            }
+            if(end==45){
+                black_stone45.setVisibility(View.VISIBLE);
+            }
+            if(end==46){
+                black_stone46.setVisibility(View.VISIBLE);
+            }
+            if(end==47){
+                black_stone47.setVisibility(View.VISIBLE);
+            }
+            if(end==48){
+                black_stone48.setVisibility(View.VISIBLE);
+            }
+            if(end==49){
+                black_stone49.setVisibility(View.VISIBLE);
+            }
+            if(end==50){
+                black_stone50.setVisibility(View.VISIBLE);
+            }
+            if(end==51){
+                black_stone51.setVisibility(View.VISIBLE);
+            }
+            if(end==52){
+                black_stone52.setVisibility(View.VISIBLE);
+            }
+            if(end==53){
+                black_stone53.setVisibility(View.VISIBLE);
+            }
+            if(end==54){
+                black_stone54.setVisibility(View.VISIBLE);
+            }
+            if(end==55){
+                black_stone55.setVisibility(View.VISIBLE);
+            }
+            if(end==56){
+                black_stone56.setVisibility(View.VISIBLE);
+            }
+            if(end==57){
+                black_stone57.setVisibility(View.VISIBLE);
+            }
+            if(end==58){
+                black_stone58.setVisibility(View.VISIBLE);
+            }
+            if(end==59){
+                black_stone59.setVisibility(View.VISIBLE);
+            }
+            if(end==60){
+                black_stone60.setVisibility(View.VISIBLE);
+            }
+            if(end==61){
+                black_stone61.setVisibility(View.VISIBLE);
+            }
+            turnStartInit();
+        }
 
-        row=0;
-        col=0;
-        if(end<=5){
-            col = end - 1;
-            row = 0;
-        }if(end>=6 && end<=11){
-            col = end - 6;
-            row = 1;
-        }if(end>=12 && end<=18){
-            col = end - 12;
-            row = 2;
-        }if(end>=19 && end<=26){
-            col = end - 19;
-            row = 3;
-        }if(end>=27 && end<=35){
-            col = end - 27;
-            row = 4;
-        }if(end>=36 && end<=43){
-            col = end - 36;
-            row = 5;
-        }if(end>=44 && end<=50){
-            col = end - 44;
-            row = 6;
-        }if(end>=51 && end<=56){
-            col = end - 51;
-            row = 7;
-        }if(end>=57 && end<=61){
-            col = end - 57;
-            row = 8;
-        }
-        stoneExist[row][col] = kindOfStone;
+        //버튼 누르고 나면 제일 마지막으로 뜨는 곳
 
-        if(end==1){
-            black_stone1.setVisibility(View.VISIBLE);
-        }
-        if(end==2){
-            black_stone2.setVisibility(View.VISIBLE);
-        }
-        if(end==3){
-            black_stone3.setVisibility(View.VISIBLE);
-        }
-        if(end==4){
-            black_stone4.setVisibility(View.VISIBLE);
-        }
-        if(end==5){
-            black_stone5.setVisibility(View.VISIBLE);
-        }
-        if(end==6){
-            black_stone6.setVisibility(View.VISIBLE);
-        }
-        if(end==7){
-            black_stone7.setVisibility(View.VISIBLE);
-        }
-        if(end==8){
-            black_stone8.setVisibility(View.VISIBLE);
-        }
-        if(end==9){
-            black_stone9.setVisibility(View.VISIBLE);
-        }
-        if(end==10){
-            black_stone10.setVisibility(View.VISIBLE);
-        }
-        if(end==11){
-            black_stone11.setVisibility(View.VISIBLE);
-        }
-        if(end==12){
-            black_stone12.setVisibility(View.VISIBLE);
-        }
-        if(end==13){
-            black_stone13.setVisibility(View.VISIBLE);
-        }
-        if(end==14){
-            black_stone14.setVisibility(View.VISIBLE);
-        }
-        if(end==15){
-            black_stone15.setVisibility(View.VISIBLE);
-        }
-        if(end==16){
-            black_stone16.setVisibility(View.VISIBLE);
-        }
-        if(end==17){
-            black_stone17.setVisibility(View.VISIBLE);
-        }
-        if(end==18){
-            black_stone18.setVisibility(View.VISIBLE);
-        }
-        if(end==19){
-            black_stone19.setVisibility(View.VISIBLE);
-        }
-        if(end==20){
-            black_stone20.setVisibility(View.VISIBLE);
-        }
-        if(end==21){
-            black_stone21.setVisibility(View.VISIBLE);
-        }
-        if(end==22){
-            black_stone22.setVisibility(View.VISIBLE);
-        }
-        if(end==23){
-            black_stone23.setVisibility(View.VISIBLE);
-        }
-        if(end==24){
-            black_stone24.setVisibility(View.VISIBLE);
-        }
-        if(end==25){
-            black_stone25.setVisibility(View.VISIBLE);
-        }
-        if(end==26){
-            black_stone26.setVisibility(View.VISIBLE);
-        }
-        if(end==27){
-            black_stone27.setVisibility(View.VISIBLE);
-        }
-        if(end==28){
-            black_stone28.setVisibility(View.VISIBLE);
-        }
-        if(end==29){
-            black_stone29.setVisibility(View.VISIBLE);
-        }
-        if(end==30){
-            black_stone30.setVisibility(View.VISIBLE);
-        }
-        if(end==31){
-            black_stone31.setVisibility(View.VISIBLE);
-        }
-        if(end==32){
-            black_stone32.setVisibility(View.VISIBLE);
-        }
-        if(end==33){
-            black_stone33.setVisibility(View.VISIBLE);
-        }
-        if(end==34){
-            black_stone34.setVisibility(View.VISIBLE);
-        }
-        if(end==35){
-            black_stone35.setVisibility(View.VISIBLE);
-        }
-        if(end==36){
-            black_stone36.setVisibility(View.VISIBLE);
-        }
-        if(end==37){
-            black_stone37.setVisibility(View.VISIBLE);
-        }
-        if(end==38){
-            black_stone38.setVisibility(View.VISIBLE);
-        }
-        if(end==39){
-            black_stone39.setVisibility(View.VISIBLE);
-        }
-        if(end==40){
-            black_stone40.setVisibility(View.VISIBLE);
-        }if(end==41){
-            black_stone41.setVisibility(View.VISIBLE);
-        }
-        if(end==42){
-            black_stone42.setVisibility(View.VISIBLE);
-        }
-        if(end==43){
-            black_stone43.setVisibility(View.VISIBLE);
-        }
-        if(end==44){
-            black_stone44.setVisibility(View.VISIBLE);
-        }
-        if(end==45){
-            black_stone45.setVisibility(View.VISIBLE);
-        }
-        if(end==46){
-            black_stone46.setVisibility(View.VISIBLE);
-        }
-        if(end==47){
-            black_stone47.setVisibility(View.VISIBLE);
-        }
-        if(end==48){
-            black_stone48.setVisibility(View.VISIBLE);
-        }
-        if(end==49){
-            black_stone49.setVisibility(View.VISIBLE);
-        }
-        if(end==50){
-            black_stone50.setVisibility(View.VISIBLE);
-        }
-        if(end==51){
-            black_stone51.setVisibility(View.VISIBLE);
-        }
-        if(end==52){
-            black_stone52.setVisibility(View.VISIBLE);
-        }
-        if(end==53){
-            black_stone53.setVisibility(View.VISIBLE);
-        }
-        if(end==54){
-            black_stone54.setVisibility(View.VISIBLE);
-        }
-        if(end==55){
-            black_stone55.setVisibility(View.VISIBLE);
-        }
-        if(end==56){
-            black_stone56.setVisibility(View.VISIBLE);
-        }
-        if(end==57){
-            black_stone57.setVisibility(View.VISIBLE);
-        }
-        if(end==58){
-            black_stone58.setVisibility(View.VISIBLE);
-        }
-        if(end==59){
-            black_stone59.setVisibility(View.VISIBLE);
-        }
-        if(end==60){
-            black_stone60.setVisibility(View.VISIBLE);
-        }
-        if(end==61){
-            black_stone60.setVisibility(View.VISIBLE);
-        }
     }
 
     private boolean endroad(int row, int col){//false: no line
