@@ -16,8 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SJapp"
-        android:usesCleartextTraffic="true">>
-        <activity android:name=".GameActivity"></activity>
+        android:usesCleartextTraffic="true">
+        <activity android:name=".MainActivity"></activity>
 
         <meta-data
             android:name="com.google.android.actions"
@@ -33,7 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".GameActivity" />
     </application>
 
 </manifest>
