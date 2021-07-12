@@ -16,6 +16,7 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -465,7 +466,7 @@ public class GameActivity extends AppCompatActivity {
     FloatingActionButton arrowDL61;
     FloatingActionButton arrowDR61;
 
-
+    TextView tv_user1,tv_user2,tv_score1,tv_score2;
 
 
     int stoneExist[][];//0:없음,1:내돌,2:상대돌
@@ -498,6 +499,11 @@ public class GameActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         String BASE_URL = "http://192.249.18.138:443";
+
+        tv_user1 = findViewById(R.id.player1Name);
+        tv_user2 = findViewById(R.id.player2Name);
+        tv_score1 = findViewById(R.id.player1Score);
+        tv_score2 = findViewById(R.id.player2Score);
 
         retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
@@ -4849,6 +4855,9 @@ public class GameActivity extends AppCompatActivity {
     }
 
     private void turnStartInit() {//캔버스에 흰 돌 이미지 찍어주기
+        int score1, score2;
+        score1=0;
+        score2=0;
         int row, col;
         row = 0;
         int yCen=0;
@@ -4864,9 +4873,11 @@ public class GameActivity extends AppCompatActivity {
 
         for (col = 0; col < 5; col++) {
             if (stoneExist[row][col] == 1) {
+                score1++;
                 setStone(rowcolToNum(row, col));
             }
             if (stoneExist[row][col] == 2) {
+                score2++;
                 yCen=70+120*(8-row);
                 xCen=40+Math.abs(4-row)*70+col*140;
                 rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
@@ -4876,9 +4887,11 @@ public class GameActivity extends AppCompatActivity {
         row=1;
         for (col = 0; col < 6; col++) {
             if (stoneExist[row][col] == 1) {
+                score1++;
                 setStone(rowcolToNum(row, col));
             }
             if (stoneExist[row][col] == 2) {
+                score2++;
                 yCen=70+120*(8-row);
                 xCen=40+Math.abs(4-row)*70+col*140;
                 rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
@@ -4888,9 +4901,11 @@ public class GameActivity extends AppCompatActivity {
         row=2;
         for (col = 0; col < 7; col++) {
             if (stoneExist[row][col] == 1) {
+                score1++;
                 setStone(rowcolToNum(row, col));
             }
             if (stoneExist[row][col] == 2) {
+                score2++;
                 yCen=70+120*(8-row);
                 xCen=40+Math.abs(4-row)*70+col*140;
                 rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
@@ -4899,10 +4914,12 @@ public class GameActivity extends AppCompatActivity {
         }
         row=3;
         for (col = 0; col < 8; col++) {
+            score1++;
             if (stoneExist[row][col] == 1) {
                 setStone(rowcolToNum(row, col));
             }
             if (stoneExist[row][col] == 2) {
+                score2++;
                 yCen=70+120*(8-row);
                 xCen=40+Math.abs(4-row)*70+col*140;
                 rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
@@ -4912,9 +4929,11 @@ public class GameActivity extends AppCompatActivity {
         row=4;
         for (col = 0; col < 9; col++) {
             if (stoneExist[row][col] == 1) {
+                score1++;
                 setStone(rowcolToNum(row, col));
             }
             if (stoneExist[row][col] == 2) {
+                score2++;
                 yCen=70+120*(8-row);
                 xCen=40+Math.abs(4-row)*70+col*140;
                 rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
@@ -4924,9 +4943,11 @@ public class GameActivity extends AppCompatActivity {
         row=5;
         for (col = 0; col < 8; col++) {
             if (stoneExist[row][col] == 1) {
+                score1++;
                 setStone(rowcolToNum(row, col));
             }
             if (stoneExist[row][col] == 2) {
+                score2++;
                 yCen=70+120*(8-row);
                 xCen=40+Math.abs(4-row)*70+col*140;
                 rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
@@ -4936,9 +4957,11 @@ public class GameActivity extends AppCompatActivity {
         row=6;
         for (col = 0; col < 7; col++) {
             if (stoneExist[row][col] == 1) {
+                score1++;
                 setStone(rowcolToNum(row, col));
             }
             if (stoneExist[row][col] == 2) {
+                score2++;
                 yCen=70+120*(8-row);
                 xCen=40+Math.abs(4-row)*70+col*140;
                 rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
@@ -4948,9 +4971,11 @@ public class GameActivity extends AppCompatActivity {
         row=7;
         for (col = 0; col < 6; col++) {
             if (stoneExist[row][col] == 1) {
+                score1++;
                 setStone(rowcolToNum(row, col));
             }
             if (stoneExist[row][col] == 2) {
+                score2++;
                 yCen=70+120*(8-row);
                 xCen=40+Math.abs(4-row)*70+col*140;
                 rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
@@ -4960,15 +4985,21 @@ public class GameActivity extends AppCompatActivity {
         row=8;
         for (col = 0; col < 5; col++) {
             if (stoneExist[row][col] == 1) {
+                score1++;
                 setStone(rowcolToNum(row, col));
             }
             if (stoneExist[row][col] == 2) {
+                score2++;
                 yCen=70+120*(8-row);
                 xCen=40+Math.abs(4-row)*70+col*140;
                 rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
                 canvas.drawArc(rect, 0,360,true,paint);
             }
         }
+        String score1Show = Integer.toString(score1) + "점";
+        tv_score1.setText(score1Show);
+        String score2Show = Integer.toString(score2) + "점";
+        tv_score2.setText(score2Show);
     }
 
     private void setStone(int num){

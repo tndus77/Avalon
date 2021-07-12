@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SJapp"
         android:usesCleartextTraffic="true">>
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".GameActivity"></activity>
 
         <meta-data
             android:name="com.google.android.actions"
@@ -26,7 +26,7 @@
             android:name="com.kakao.sdk.AppKey"
             android:value="91094397a69339690e4ded69b25761e9" />
 
-        <activity android:name=".GameActivity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
