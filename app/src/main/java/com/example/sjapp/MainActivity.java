@@ -93,6 +93,17 @@ public class MainActivity extends AppCompatActivity {
         mSocket.on("player join", new Emitter.Listener() {
             @Override
             public void call(Object... args) {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        String userId = (String) args[0];
+                        try {
+                            Toast.makeText(getApplicationContext(), id + "님이 입장하셨습니다.", Toast.LENGTH_SHORT).show();
+                        }catch (RuntimeException r){
+
+                        }
+                    }
+                });
             }
         });
 
