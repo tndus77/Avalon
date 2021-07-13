@@ -5002,9 +5002,9 @@ public class GameActivity extends AppCompatActivity {
                 canvas.drawArc(rect, 0,360,true,paint);
             }
         }
-        String score1Show = Integer.toString(14-score1) + "점";
+        String score1Show = Integer.toString(14-score2) + "점";
         tv_score1.setText(score1Show);
-        String score2Show = Integer.toString(14-score2) + "점";
+        String score2Show = Integer.toString(14-score1) + "점";
         tv_score2.setText(score2Show);
     }
 
