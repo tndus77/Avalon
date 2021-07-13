@@ -2,6 +2,7 @@ package com.example.sjapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -29,6 +30,8 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+
+import static com.example.sjapp.LoginActivity.BASE_URL;
 
 public class GameActivity extends AppCompatActivity {
 
@@ -498,12 +501,15 @@ public class GameActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
 
-        String BASE_URL = "http://192.249.18.138:443";
-
         tv_user1 = findViewById(R.id.player1Name);
         tv_user2 = findViewById(R.id.player2Name);
         tv_score1 = findViewById(R.id.player1Score);
         tv_score2 = findViewById(R.id.player2Score);
+
+        Intent intent = getIntent();
+
+        tv_user1.setText(intent.getStringExtra("Me"));
+        tv_user2.setText(intent.getStringExtra("You"));
 
         retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
@@ -4914,8 +4920,8 @@ public class GameActivity extends AppCompatActivity {
         }
         row=3;
         for (col = 0; col < 8; col++) {
-            score1++;
             if (stoneExist[row][col] == 1) {
+                score1++;
                 setStone(rowcolToNum(row, col));
             }
             if (stoneExist[row][col] == 2) {
@@ -4996,9 +5002,9 @@ public class GameActivity extends AppCompatActivity {
                 canvas.drawArc(rect, 0,360,true,paint);
             }
         }
-        String score1Show = Integer.toString(score1) + "점";
+        String score1Show = Integer.toString(14-score1) + "점";
         tv_score1.setText(score1Show);
-        String score2Show = Integer.toString(score2) + "점";
+        String score2Show = Integer.toString(14-score2) + "점";
         tv_score2.setText(score2Show);
     }
 

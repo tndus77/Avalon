@@ -7,7 +7,7 @@
     tools:context=".GameActivity">
 
     <TextView
-        android:id="@+id/player1Name"
+        android:id="@+id/player2Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -15,10 +15,11 @@
         android:layout_marginRight="400dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/background" />
+        app:layout_constraintTop_toTopOf="@+id/background"
+        android:textSize="30sp"/>
 
     <TextView
-        android:id="@+id/player2Name"
+        android:id="@+id/player1Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="500dp"
@@ -26,21 +27,24 @@
         android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="30sp"/>
 
     <TextView
-        android:id="@+id/player1Score"
+        android:id="@+id/player2Score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="400dp"
-        android:layout_marginRight="400dp"
+        android:layout_marginEnd="500dp"
+        android:layout_marginRight="500dp"
+        android:textColor="#FF3E3E"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/player2Score"
+        android:id="@+id/player1Score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="500dp"
@@ -48,7 +52,9 @@
         android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20sp"
+        android:textColor="#FF3E3E"/>
 
     <ImageView
         android:id="@+id/background"
