@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/com_kakao_brown"
     tools:context=".GameActivity">
 
     <TextView
@@ -60,7 +61,7 @@
 
     <ImageView
         android:id="@+id/background"
-        android:layout_width="wrap_content"
+        android:layout_width="400dp"
         android:layout_height="400dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,16 +117,15 @@
         android:id="@+id/black_stone1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="424dp"
-        android:layout_marginRight="424dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:fabSize="mini"
-        app:srcCompat="@drawable/black_stone"/>
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone3"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:srcCompat="@drawable/black_stone" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowUR2"
@@ -179,16 +179,15 @@
         android:id="@+id/black_stone2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="380dp"
-        android:layout_marginRight="380dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:fabSize="mini"
-        app:srcCompat="@drawable/black_stone"/>
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone3"
+        app:layout_constraintStart_toStartOf="@+id/black_stone1"
+        app:srcCompat="@drawable/black_stone" />
     //////3
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowUR3"
@@ -242,15 +241,14 @@
         android:id="@+id/black_stone3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="336dp"
-        android:layout_marginRight="336dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background"
         app:srcCompat="@drawable/black_stone" />
 
     //////4
@@ -306,16 +304,15 @@
         android:id="@+id/black_stone4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="292dp"
-        android:layout_marginRight="292dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:fabSize="mini"
-        app:srcCompat="@drawable/black_stone"/>
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone5"
+        app:layout_constraintStart_toStartOf="@+id/black_stone3"
+        app:srcCompat="@drawable/black_stone" />
 
     //////5
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -360,16 +357,15 @@
         android:id="@+id/black_stone5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="248dp"
-        android:layout_marginRight="248dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:fabSize="mini"
-        app:srcCompat="@drawable/black_stone"/>
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/black_stone3"
+        app:srcCompat="@drawable/black_stone" />
 
     //////6
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -422,24 +418,21 @@
         app:layout_constraintStart_toStartOf="@+id/black_stone6"
         app:layout_constraintTop_toBottomOf="@+id/black_stone6" />
 
-
-    ////////7
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/black_stone6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="446dp"
-        android:layout_marginRight="446dp"
-        android:layout_marginBottom="36dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone1"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone13"
+        app:layout_constraintStart_toStartOf="@+id/black_stone12"
+        app:layout_constraintTop_toTopOf="@+id/black_stone12"
         app:srcCompat="@drawable/black_stone" />
 
+    ////////7
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowUR7"
         android:layout_width="wrap_content"
@@ -518,15 +511,14 @@
         android:id="@+id/black_stone7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="402dp"
-        android:layout_marginRight="402dp"
-        android:layout_marginBottom="38dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone2"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone14"
+        app:layout_constraintStart_toStartOf="@+id/black_stone13"
+        app:layout_constraintTop_toTopOf="@+id/black_stone13"
         app:srcCompat="@drawable/black_stone" />
     ////////8
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -607,15 +599,14 @@
         android:id="@+id/black_stone8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="358dp"
-        android:layout_marginRight="358dp"
-        android:layout_marginBottom="38dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone3"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone15"
+        app:layout_constraintStart_toStartOf="@+id/black_stone14"
+        app:layout_constraintTop_toTopOf="@+id/black_stone14"
         app:srcCompat="@drawable/black_stone" />
     ////////9
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -696,15 +687,14 @@
         android:id="@+id/black_stone9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="314dp"
-        android:layout_marginRight="314dp"
-        android:layout_marginBottom="38dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone4"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone16"
+        app:layout_constraintStart_toStartOf="@+id/black_stone15"
+        app:layout_constraintTop_toTopOf="@+id/black_stone15"
         app:srcCompat="@drawable/black_stone" />
     ////////10
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -785,15 +775,14 @@
         android:id="@+id/black_stone10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="270dp"
-        android:layout_marginRight="270dp"
-        android:layout_marginBottom="38dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone5"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone17"
+        app:layout_constraintStart_toStartOf="@+id/black_stone16"
+        app:layout_constraintTop_toTopOf="@+id/black_stone16"
         app:srcCompat="@drawable/black_stone" />
     //////11
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -851,15 +840,14 @@
         android:id="@+id/black_stone11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="226dp"
-        android:layout_marginRight="226dp"
-        android:layout_marginBottom="38dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone5"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone18"
+        app:layout_constraintStart_toStartOf="@+id/black_stone17"
+        app:layout_constraintTop_toTopOf="@+id/black_stone17"
         app:srcCompat="@drawable/black_stone" />
 
     ////////12
@@ -918,30 +906,31 @@
         android:id="@+id/black_stone12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="468dp"
-        android:layout_marginRight="468dp"
-        android:layout_marginBottom="75dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone13"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/black_stone28"
         app:srcCompat="@drawable/black_stone" />
 
     ////////13
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowUR13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginLeft="25dp"
         android:clickable="true"
         android:focusable="true"
         android:visibility="invisible"
         app:fabSize="mini"
-        app:layout_constraintBottom_toTopOf="@+id/black_stone13"
-        app:layout_constraintStart_toStartOf="@+id/black_stone13" />
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone1"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone15"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/black_stone29" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowUL13"
@@ -1008,15 +997,14 @@
         android:id="@+id/black_stone13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="424dp"
-        android:layout_marginRight="424dp"
-        android:layout_marginBottom="75dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone1"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone15"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/black_stone29"
         app:srcCompat="@drawable/black_stone" />
 
     ////////14
@@ -1099,15 +1087,14 @@
         android:id="@+id/black_stone14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="380dp"
-        android:layout_marginRight="380dp"
-        android:layout_marginBottom="75dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone2"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone15"
+        app:layout_constraintStart_toStartOf="@+id/black_stone13"
+        app:layout_constraintTop_toTopOf="@+id/black_stone30"
         app:srcCompat="@drawable/black_stone" />
 /////15
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -1188,15 +1175,14 @@
         android:id="@+id/black_stone15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="336dp"
-        android:layout_marginRight="336dp"
-        android:layout_marginBottom="75dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone3"
+        app:layout_constraintTop_toTopOf="@+id/black_stone31"
         app:srcCompat="@drawable/black_stone" />
     //////16
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -1211,7 +1197,6 @@
         app:fabSize="mini"
         app:layout_constraintBottom_toTopOf="@+id/black_stone16"
         app:layout_constraintStart_toStartOf="@+id/black_stone16" />
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowUL16"
         android:layout_width="wrap_content"
@@ -1224,7 +1209,6 @@
         app:fabSize="mini"
         app:layout_constraintBottom_toTopOf="@+id/black_stone16"
         app:layout_constraintEnd_toEndOf="@+id/black_stone16" />
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowL16"
         android:layout_width="wrap_content"
@@ -1235,7 +1219,6 @@
         app:fabSize="mini"
         app:layout_constraintEnd_toStartOf="@+id/black_stone16"
         app:layout_constraintTop_toTopOf="@+id/black_stone16" />
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowR16"
         android:layout_width="wrap_content"
@@ -1246,7 +1229,6 @@
         app:fabSize="mini"
         app:layout_constraintStart_toEndOf="@+id/black_stone16"
         app:layout_constraintTop_toTopOf="@+id/black_stone16" />
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowDR16"
         android:layout_width="wrap_content"
@@ -1259,7 +1241,6 @@
         app:fabSize="mini"
         app:layout_constraintStart_toEndOf="@+id/arrowL16"
         app:layout_constraintTop_toBottomOf="@+id/black_stone16" />
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowDL16"
         android:layout_width="wrap_content"
@@ -1277,15 +1258,14 @@
         android:id="@+id/black_stone16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="292dp"
-        android:layout_marginRight="292dp"
-        android:layout_marginBottom="75dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone4"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone17"
+        app:layout_constraintStart_toStartOf="@+id/black_stone15"
+        app:layout_constraintTop_toTopOf="@+id/black_stone32"
         app:srcCompat="@drawable/black_stone" />
     //////17
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -1366,15 +1346,14 @@
         android:id="@+id/black_stone17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="248dp"
-        android:layout_marginRight="248dp"
-        android:layout_marginBottom="75dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone5"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/black_stone15"
+        app:layout_constraintTop_toTopOf="@+id/black_stone33"
         app:srcCompat="@drawable/black_stone" />
 
     //////18
@@ -1433,15 +1412,15 @@
         android:id="@+id/black_stone18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="204dp"
-        android:layout_marginRight="204dp"
-        android:layout_marginBottom="75dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/black_stone17"
+        app:layout_constraintTop_toTopOf="@+id/black_stone34"
         app:srcCompat="@drawable/black_stone" />
     ////////19
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -1499,15 +1478,14 @@
         android:id="@+id/black_stone19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="490dp"
-        android:layout_marginRight="490dp"
-        android:layout_marginBottom="113dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone12"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone28"
+        app:layout_constraintStart_toStartOf="@+id/black_stone27"
+        app:layout_constraintTop_toTopOf="@+id/black_stone27"
         app:srcCompat="@drawable/black_stone" />
     //////20
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -1588,15 +1566,14 @@
         android:id="@+id/black_stone20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="446dp"
-        android:layout_marginRight="446dp"
-        android:layout_marginBottom="113dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone13"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone29"
+        app:layout_constraintStart_toStartOf="@+id/black_stone28"
+        app:layout_constraintTop_toTopOf="@+id/black_stone28"
         app:srcCompat="@drawable/black_stone" />
     //////21
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -1677,15 +1654,14 @@
         android:id="@+id/black_stone21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="402dp"
-        android:layout_marginRight="402dp"
-        android:layout_marginBottom="113dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone14"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone30"
+        app:layout_constraintStart_toStartOf="@+id/black_stone29"
+        app:layout_constraintTop_toTopOf="@+id/black_stone29"
         app:srcCompat="@drawable/black_stone" />
 
     //////22
@@ -1767,15 +1743,14 @@
         android:id="@+id/black_stone22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="358dp"
-        android:layout_marginRight="358dp"
-        android:layout_marginBottom="113dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone15"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone31"
+        app:layout_constraintStart_toStartOf="@+id/black_stone30"
+        app:layout_constraintTop_toTopOf="@+id/black_stone30"
         app:srcCompat="@drawable/black_stone" />
 
     //////23
@@ -1857,15 +1832,14 @@
         android:id="@+id/black_stone23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="314dp"
-        android:layout_marginRight="314dp"
-        android:layout_marginBottom="113dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone16"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone32"
+        app:layout_constraintStart_toStartOf="@+id/black_stone31"
+        app:layout_constraintTop_toTopOf="@+id/black_stone31"
         app:srcCompat="@drawable/black_stone" />
     //////24
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -1946,15 +1920,14 @@
         android:id="@+id/black_stone24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="270dp"
-        android:layout_marginRight="270dp"
-        android:layout_marginBottom="113dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone17"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone33"
+        app:layout_constraintStart_toStartOf="@+id/black_stone32"
+        app:layout_constraintTop_toTopOf="@+id/black_stone32"
         app:srcCompat="@drawable/black_stone" />
     //////25
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -2035,15 +2008,14 @@
         android:id="@+id/black_stone25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="226dp"
-        android:layout_marginRight="226dp"
-        android:layout_marginBottom="113dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone18"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone34"
+        app:layout_constraintStart_toStartOf="@+id/black_stone33"
+        app:layout_constraintTop_toTopOf="@+id/black_stone33"
         app:srcCompat="@drawable/black_stone" />
     //////26
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -2101,15 +2073,14 @@
         android:id="@+id/black_stone26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="182dp"
-        android:layout_marginRight="182dp"
-        android:layout_marginBottom="113dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone18"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone35"
+        app:layout_constraintStart_toStartOf="@+id/black_stone34"
+        app:layout_constraintTop_toTopOf="@+id/black_stone34"
         app:srcCompat="@drawable/black_stone" />
 
     ////////27
@@ -2155,15 +2126,13 @@
         android:id="@+id/black_stone27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="512dp"
-        android:layout_marginRight="512dp"
-        android:layout_marginBottom="150dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background"
         app:srcCompat="@drawable/black_stone" />
 
     //////28
@@ -2245,15 +2214,14 @@
         android:id="@+id/black_stone28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="468dp"
-        android:layout_marginRight="468dp"
-        android:layout_marginBottom="150dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone29"
+        app:layout_constraintStart_toStartOf="@+id/black_stone27"
+        app:layout_constraintTop_toTopOf="@+id/background"
         app:srcCompat="@drawable/black_stone" />
     //////29
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -2334,15 +2302,14 @@
         android:id="@+id/black_stone29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="424dp"
-        android:layout_marginRight="424dp"
-        android:layout_marginBottom="150dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone31"
+        app:layout_constraintStart_toStartOf="@+id/black_stone27"
+        app:layout_constraintTop_toTopOf="@+id/background"
         app:srcCompat="@drawable/black_stone" />
 
     //////30
@@ -2424,15 +2391,14 @@
         android:id="@+id/black_stone30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="380dp"
-        android:layout_marginRight="380dp"
-        android:layout_marginBottom="150dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone31"
+        app:layout_constraintStart_toStartOf="@+id/black_stone29"
+        app:layout_constraintTop_toTopOf="@+id/background"
         app:srcCompat="@drawable/black_stone" />
 
     //////31
@@ -2514,18 +2480,18 @@
         android:id="@+id/black_stone31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="336dp"
-        android:layout_marginRight="336dp"
-        android:layout_marginBottom="150dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background"
         app:srcCompat="@drawable/black_stone" />
 
     //////32
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowUR32"
         android:layout_width="wrap_content"
@@ -2604,15 +2570,14 @@
         android:id="@+id/black_stone32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="292dp"
-        android:layout_marginRight="292dp"
-        android:layout_marginBottom="150dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone33"
+        app:layout_constraintStart_toStartOf="@+id/black_stone31"
+        app:layout_constraintTop_toTopOf="@+id/background"
         app:srcCompat="@drawable/black_stone" />
 
     //////33
@@ -2694,30 +2659,31 @@
         android:id="@+id/black_stone33"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="248dp"
-        android:layout_marginRight="248dp"
-        android:layout_marginBottom="150dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone35"
+        app:layout_constraintStart_toStartOf="@+id/black_stone31"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+
         app:srcCompat="@drawable/black_stone" />
 
     //////34
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowUR34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginLeft="25dp"
         android:clickable="true"
         android:focusable="true"
         android:visibility="invisible"
         app:fabSize="mini"
-        app:layout_constraintBottom_toTopOf="@+id/black_stone34"
-        app:layout_constraintStart_toStartOf="@+id/black_stone34" />
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone35"
+        app:layout_constraintStart_toStartOf="@+id/black_stone33"
+        app:layout_constraintTop_toTopOf="@+id/background" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowUL34"
@@ -2784,15 +2750,14 @@
         android:id="@+id/black_stone34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="204dp"
-        android:layout_marginRight="204dp"
-        android:layout_marginBottom="150dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone18"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone35"
+        app:layout_constraintStart_toStartOf="@+id/black_stone33"
+        app:layout_constraintTop_toTopOf="@+id/black_stone50"
         app:srcCompat="@drawable/black_stone" />
 
     //////35
@@ -2837,15 +2802,13 @@
         android:id="@+id/black_stone35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="160dp"
-        android:layout_marginRight="160dp"
-        android:layout_marginBottom="150dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background"
         app:srcCompat="@drawable/black_stone" />
 
     ////////36
@@ -2903,15 +2866,14 @@
         android:id="@+id/black_stone36"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="490dp"
-        android:layout_marginRight="490dp"
-        android:layout_marginBottom="188dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone27"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone28"
+        app:layout_constraintStart_toStartOf="@+id/black_stone27"
+        app:layout_constraintTop_toTopOf="@+id/black_stone44"
         app:srcCompat="@drawable/black_stone" />
 
     //////37
@@ -2993,15 +2955,14 @@
         android:id="@+id/black_stone37"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="446dp"
-        android:layout_marginRight="446dp"
-        android:layout_marginBottom="188dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone28"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone29"
+        app:layout_constraintStart_toStartOf="@+id/black_stone28"
+        app:layout_constraintTop_toTopOf="@+id/black_stone45"
         app:srcCompat="@drawable/black_stone" />
 
     //////38
@@ -3083,15 +3044,14 @@
         android:id="@+id/black_stone38"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="402dp"
-        android:layout_marginRight="402dp"
-        android:layout_marginBottom="188dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone29"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone30"
+        app:layout_constraintStart_toStartOf="@+id/black_stone29"
+        app:layout_constraintTop_toTopOf="@+id/black_stone46"
         app:srcCompat="@drawable/black_stone" />
 
     //////39
@@ -3173,15 +3133,14 @@
         android:id="@+id/black_stone39"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="358dp"
-        android:layout_marginRight="358dp"
-        android:layout_marginBottom="188dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone30"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone31"
+        app:layout_constraintStart_toStartOf="@+id/black_stone30"
+        app:layout_constraintTop_toTopOf="@+id/black_stone47"
         app:srcCompat="@drawable/black_stone" />
 
     //////40
@@ -3263,15 +3222,14 @@
         android:id="@+id/black_stone40"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="314dp"
-        android:layout_marginRight="314dp"
-        android:layout_marginBottom="188dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone31"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone32"
+        app:layout_constraintStart_toStartOf="@+id/black_stone31"
+        app:layout_constraintTop_toTopOf="@+id/black_stone48"
         app:srcCompat="@drawable/black_stone" />
 
     //////41
@@ -3353,15 +3311,14 @@
         android:id="@+id/black_stone41"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="270dp"
-        android:layout_marginRight="270dp"
-        android:layout_marginBottom="188dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone32"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone33"
+        app:layout_constraintStart_toStartOf="@+id/black_stone32"
+        app:layout_constraintTop_toTopOf="@+id/black_stone49"
         app:srcCompat="@drawable/black_stone" />
 
     //////42
@@ -3443,15 +3400,14 @@
         android:id="@+id/black_stone42"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="226dp"
-        android:layout_marginRight="226dp"
-        android:layout_marginBottom="188dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone33"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone34"
+        app:layout_constraintStart_toStartOf="@+id/black_stone33"
+        app:layout_constraintTop_toTopOf="@+id/black_stone50"
         app:srcCompat="@drawable/black_stone" />
 
     //////43
@@ -3508,15 +3464,14 @@
         android:id="@+id/black_stone43"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="182dp"
-        android:layout_marginRight="182dp"
-        android:layout_marginBottom="188dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone34"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone35"
+        app:layout_constraintStart_toStartOf="@+id/black_stone34"
+        app:layout_constraintTop_toTopOf="@+id/black_stone50"
         app:srcCompat="@drawable/black_stone" />
 
     ////////44
@@ -3574,15 +3529,15 @@
         android:id="@+id/black_stone44"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="468dp"
-        android:layout_marginRight="468dp"
-        android:layout_marginBottom="225dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone28"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone45"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background"
         app:srcCompat="@drawable/black_stone" />
 
     //////45
@@ -3664,15 +3619,14 @@
         android:id="@+id/black_stone45"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="424dp"
-        android:layout_marginRight="424dp"
-        android:layout_marginBottom="225dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone29"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone47"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/black_stone57"
         app:srcCompat="@drawable/black_stone" />
 
     //////46
@@ -3754,15 +3708,14 @@
         android:id="@+id/black_stone46"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="380dp"
-        android:layout_marginRight="380dp"
-        android:layout_marginBottom="225dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone30"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone47"
+        app:layout_constraintStart_toStartOf="@+id/black_stone45"
+        app:layout_constraintTop_toTopOf="@+id/black_stone58"
         app:srcCompat="@drawable/black_stone" />
 
     //////47
@@ -3844,15 +3797,14 @@
         android:id="@+id/black_stone47"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="336dp"
-        android:layout_marginRight="336dp"
-        android:layout_marginBottom="225dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone31"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/black_stone59"
         app:srcCompat="@drawable/black_stone" />
 
     //////48
@@ -3934,15 +3886,14 @@
         android:id="@+id/black_stone48"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="292dp"
-        android:layout_marginRight="292dp"
-        android:layout_marginBottom="225dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone32"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone49"
+        app:layout_constraintStart_toStartOf="@+id/black_stone47"
+        app:layout_constraintTop_toTopOf="@+id/black_stone60"
         app:srcCompat="@drawable/black_stone" />
 
     //////49
@@ -4024,15 +3975,14 @@
         android:id="@+id/black_stone49"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="248dp"
-        android:layout_marginRight="248dp"
-        android:layout_marginBottom="225dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone33"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/black_stone47"
+        app:layout_constraintTop_toTopOf="@+id/black_stone61"
         app:srcCompat="@drawable/black_stone" />
 
     //////50
@@ -4089,15 +4039,15 @@
         android:id="@+id/black_stone50"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="204dp"
-        android:layout_marginRight="204dp"
-        android:layout_marginBottom="225dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone34"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/black_stone49"
+        app:layout_constraintTop_toTopOf="@+id/background"
         app:srcCompat="@drawable/black_stone" />
 
     ////////51
@@ -4156,15 +4106,14 @@
         android:id="@+id/black_stone51"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="446dp"
-        android:layout_marginRight="446dp"
-        android:layout_marginBottom="263dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone44"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone45"
+        app:layout_constraintStart_toStartOf="@+id/black_stone44"
+        app:layout_constraintTop_toTopOf="@+id/black_stone57"
         app:srcCompat="@drawable/black_stone" />
 
     //////52
@@ -4246,15 +4195,14 @@
         android:id="@+id/black_stone52"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="402dp"
-        android:layout_marginRight="402dp"
-        android:layout_marginBottom="263dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone45"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone46"
+        app:layout_constraintStart_toStartOf="@+id/black_stone45"
+        app:layout_constraintTop_toTopOf="@+id/black_stone58"
         app:srcCompat="@drawable/black_stone" />
 
     //////53
@@ -4336,15 +4284,14 @@
         android:id="@+id/black_stone53"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="358dp"
-        android:layout_marginRight="358dp"
-        android:layout_marginBottom="263dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone46"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone47"
+        app:layout_constraintStart_toStartOf="@+id/black_stone46"
+        app:layout_constraintTop_toTopOf="@+id/black_stone59"
         app:srcCompat="@drawable/black_stone" />
 
     //////54
@@ -4426,15 +4373,14 @@
         android:id="@+id/black_stone54"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="314dp"
-        android:layout_marginRight="314dp"
-        android:layout_marginBottom="263dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone47"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone48"
+        app:layout_constraintStart_toStartOf="@+id/black_stone47"
+        app:layout_constraintTop_toTopOf="@+id/black_stone60"
         app:srcCompat="@drawable/black_stone" />
 
     //////55
@@ -4516,15 +4462,14 @@
         android:id="@+id/black_stone55"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="270dp"
-        android:layout_marginRight="270dp"
-        android:layout_marginBottom="263dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone48"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone49"
+        app:layout_constraintStart_toStartOf="@+id/black_stone48"
+        app:layout_constraintTop_toTopOf="@+id/black_stone61"
         app:srcCompat="@drawable/black_stone" />
 
     //////56
@@ -4582,15 +4527,14 @@
         android:id="@+id/black_stone56"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="226dp"
-        android:layout_marginRight="226dp"
-        android:layout_marginBottom="263dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/black_stone49"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone50"
+        app:layout_constraintStart_toStartOf="@+id/black_stone49"
+        app:layout_constraintTop_toTopOf="@+id/black_stone61"
         app:srcCompat="@drawable/black_stone" />
 
     ////////57
@@ -4635,15 +4579,14 @@
         android:id="@+id/black_stone57"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="424dp"
-        android:layout_marginRight="424dp"
-        android:layout_marginBottom="300dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone59"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background"
         app:srcCompat="@drawable/black_stone" />
 
     ////////58
@@ -4699,15 +4642,14 @@
         android:id="@+id/black_stone58"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="380dp"
-        android:layout_marginRight="380dp"
-        android:layout_marginBottom="300dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone59"
+        app:layout_constraintStart_toStartOf="@+id/black_stone57"
+        app:layout_constraintTop_toTopOf="@+id/background"
         app:srcCompat="@drawable/black_stone" />
 
     ////////59
@@ -4763,15 +4705,14 @@
         android:id="@+id/black_stone59"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="336dp"
-        android:layout_marginRight="336dp"
-        android:layout_marginBottom="300dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background"
         app:srcCompat="@drawable/black_stone" />
 
     ////////60
@@ -4823,22 +4764,22 @@
         app:layout_constraintEnd_toStartOf="@+id/black_stone60"
         app:layout_constraintTop_toTopOf="@+id/black_stone60" />
 
+    //////61
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/black_stone60"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="292dp"
-        android:layout_marginRight="292dp"
-        android:layout_marginBottom="300dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/black_stone61"
+        app:layout_constraintStart_toStartOf="@+id/black_stone59"
+        app:layout_constraintTop_toTopOf="@+id/background"
         app:srcCompat="@drawable/black_stone" />
 
-    //////61
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/arrowDR61"
         android:layout_width="wrap_content"
@@ -4880,15 +4821,14 @@
         android:id="@+id/black_stone61"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="248dp"
-        android:layout_marginRight="248dp"
-        android:layout_marginBottom="300dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/black_stone"
         android:clickable="true"
         android:focusable="true"
         app:fabSize="mini"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/black_stone59"
+        app:layout_constraintTop_toTopOf="@+id/background"
         app:srcCompat="@drawable/black_stone" />
 
 

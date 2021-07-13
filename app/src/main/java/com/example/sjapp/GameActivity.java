@@ -1,5 +1,6 @@
 package com.example.sjapp;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -502,6 +503,8 @@ public class GameActivity extends AppCompatActivity {
     private int	uiOption;
     String me = "";
     String you = "";
+    String winner="";
+    Boolean winnerExist=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -4905,6 +4908,13 @@ public class GameActivity extends AppCompatActivity {
                 });
             }
         });
+        mSocket2.on("winner", new Emitter.Listener() {
+            @Override
+            public void call(Object... args) {
+                winner = (String)args[0];
+                winnerExist = true;
+            }
+        });
 
         mSocket2.on("changedCanvas", new Emitter.Listener() {
             @Override
@@ -4952,6 +4962,16 @@ public class GameActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable @org.jetbrains.annotations.Nullable Intent data) {
+        if (requestCode == 1) {
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+            finish();
+        }
+        super.onActivityResult(requestCode, resultCode, data);
     }
 
     private void turnStartInit() {//캔버스에 흰 돌 이미지 찍어주기
@@ -5101,6 +5121,12 @@ public class GameActivity extends AppCompatActivity {
         tv_score1.setText(score1Show);
         String score2Show = Integer.toString(14-score1) + "점";
         tv_score2.setText(score2Show);
+        if(score2<10){//me 승리
+            mSocket2.emit("gameSet",me,score2);
+        }
+        if(score1<10) {//you 승리
+            mSocket2.emit("gameSet",you,score1);
+        }
     }
 
     private void setStone(int num){
@@ -6367,8 +6393,15 @@ public class GameActivity extends AppCompatActivity {
             turnStartInit();
         }
         //마지막 위치
+
         mSocket2.emit("moving",num1,num2,num2_kind,me);
         allUnabled();
+        if(winnerExist) {
+            Intent intent = new Intent(this,ScoreActivity.class);
+            intent.putExtra("winner","승자: "+ winner);
+            startActivityForResult(intent,1);
+        }
+
     }
 
     private boolean endroad(int row, int col){//false: no line
@@ -6396,7 +6429,7 @@ public class GameActivity extends AppCompatActivity {
     }
 
     private void drawingBackground() {
-        canvas.drawColor(Color.WHITE);
+        canvas.drawColor(getResources().getColor(R.color.yellow));
         Paint paint = new Paint();
         paint.setColor(Color.BLACK);
         paint.setStrokeWidth(5f);
