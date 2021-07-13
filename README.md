@@ -22,7 +22,6 @@ Android Studio 4.2.1
 - 카카오 로그인은 카카오 카카오계정과 앱을 연결하고 토큰을 발급받아 카카오 API를 사용했습니다. 
 - 카카오 API를 통해 사용자의 카카오계정의 프로필 정보를 제공받았고, 로그인 시 사용자 동의를 받아 접속할 수 있도록 구현하였습니다.
 
---> 로그인 시현하는 gif 
 ```java
 Profile profile = kakaoAccount.getProfile();
 id = profile.getNickname();
@@ -63,7 +62,7 @@ mSocket.on("player join", new Emitter.Listener() {
 ```
 # player입장해서 toast메시지 나오는 거 gif 넣기
 2. Button animation
-
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/77282190/125491647-687c3ad3-59e5-40c0-b8dd-cfc376a74412.gif)
 
 ### GameActivity
 #### Avalon Classic 규칙 설명
@@ -78,7 +77,7 @@ ex) (검 검 푸 검 푸)일 경우에는 이동이 불가능합니다.
 1. 경기장은 육각형 형태의 삼각형 밀집 구조이며, 선들이 겹치는 부분의 수는 총 61개 입니다. 또한 검은 돌의 경우에는 게임 참가자가 직접 조작하여야 하기 때문에 버튼 클릭 이벤트및 방향 조작을 보조할 이벤트가 필요했습니다. 따라서 모든 점에 대하여 floatingActionButton을 배치하여 클릭 이벤트를 만들었고, 각각의 돌을 클릭할 때마다 움직일 수 있는 방향을 선택할 수 있는 3~6개의 mini floatingActionButton이 애니메이션으로 나오도록 구현했습니다. 
 2. 기능적인 부분은 게임 규칙 설명에 적혀있는 모든 사항을 구현하였습니다.
 3. 두 사람이 하는 게임이기 때문에, 대기 룸에서 2사람이 입장하기 버튼을 누른 상태가 되면 GameActivity로 이동하게 되며, 한 사람이 돌을 옮기기 전에는 턴이 끝나지 않습니다. 2차원 배열에 검은 돌과 푸른 돌, 빈칸의 정보가 모두 들어있으며 매번 이동을 할 때마다 2차원 배열의 정보가 바뀌며 이에 따라 돌의 정보를 업데이트 해줍니다. 서버를 통해 상대방의 화면에 정보를 전달하는 방법은 사라지는 돌과 생겨나는 돌의 넘버와 종류를 전달하는 방식으로 처리하였습니다. 또한 보는 화면이 중심을 기준으로 점 대칭이며 아군 돌의 기준이 바뀌기 때문에 이 또한 전달시 적용하여 전달하도록 하였습니다. 
--> 시현하는 gif 넣기
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/77282190/125492238-1795e984-1e1c-4a41-881b-72be9e7a783a.gif)
 
 
 
