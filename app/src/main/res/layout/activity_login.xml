@@ -1,29 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
+    android:background="@color/com_kakao_brown"
+    android:orientation="horizontal"
     tools:context=".LoginActivity">
 
     <Button
         android:id="@+id/btn_custom_login"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="입장하기" />
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="241dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/black_stone"
+        android:text="입장하기"
+        app:layout_constraintBottom_toTopOf="@+id/btn_custom_login_out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.kakao.usermgmt.LoginButton
-        android:id="@+id/btn_kakao_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:id="@+id/btn_login_button"
+        android:layout_width="297dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kakao_login_large_narrow" />
 
     <Button
         android:id="@+id/btn_custom_login_out"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="로그아웃" />
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="57dp"
+        android:background="@drawable/black_stone"
+        android:text="로그아웃"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/btn_custom_login" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="321dp"
+        android:layout_height="462dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/아발론" />
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
