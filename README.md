@@ -70,6 +70,8 @@ mSocket.on("player join", new Emitter.Listener() {
 2.
 -> 시현하는 gif 넣기
 
+---
+## APK
 
 
 
