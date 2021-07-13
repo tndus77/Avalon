@@ -132,16 +132,24 @@ public class MainActivity extends AppCompatActivity {
         tv_id.setText(id);
         Glide.with(this).load(profileUrl).into(iv_profile);
 
+//        btn_goGame.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
+
+//        btn_animTrigger1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
+
         btn_goGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mSocket.emit("ready",id);
-            }
-        });
-
-        btn_animTrigger1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
@@ -206,22 +214,16 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         tv_loading.append(".");
-                        btn_animTrigger2.performClick();
+                        if(!start){
+                            start = true;
+                            tv_loading.startAnimation(anim);
+                        }else{
+                            start = false;
+                            tv_loading.clearAnimation();
+                        }
                     }
                 }, 1300);
-            }
-        });
 
-        btn_animTrigger2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(!start){
-                    start = true;
-                    tv_loading.startAnimation(anim);
-                }else{
-                    start = false;
-                    tv_loading.clearAnimation();
-                }
             }
         });
         anim = new AlphaAnimation(0.0f,1.0f);
@@ -229,8 +231,6 @@ public class MainActivity extends AppCompatActivity {
         anim.setStartOffset(100);
         anim.setRepeatMode(Animation.REVERSE);
         anim.setRepeatCount(Animation.INFINITE);
-
-        btn_animTrigger1.performClick();
 
     }
 }

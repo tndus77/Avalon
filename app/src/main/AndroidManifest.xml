@@ -10,10 +10,10 @@
     <application
         android:name=".GlobalApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/AVALON"
+        android:icon="@mipmap/avalon"
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
-        android:roundIcon="@mipmap/AVALON_round"
+        android:roundIcon="@mipmap/avalon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SJapp"
         android:usesCleartextTraffic="true">

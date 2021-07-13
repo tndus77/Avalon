@@ -4880,31 +4880,44 @@ public class GameActivity extends AppCompatActivity {
             @Override
             public void call(Object... args) {
                 Log.d("왜 안될까...","들어오긴 하네...");
-                if(args[3]!=me){
-                    int num1_row,num1_col,num2_row,num2_col,num2_kind;
-                    if((String) args[1]!="None"){
-                        num1_row = numToRowCol(Integer.parseInt((String) args[0]))[0];
-                        num1_col = numToRowCol(Integer.parseInt((String) args[0]))[1];
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        if( !((String) args[3]).equalsIgnoreCase(me)){
+                            int num1_row,num1_col,num2_row,num2_col,num2_kind;
+                            String none = "None";
+                            if(!((String) args[1]).equalsIgnoreCase(none)){
+                                num1_row = numToRowCol(Integer.parseInt((String) args[0]))[0];
+                                num1_col = numToRowCol(Integer.parseInt((String) args[0]))[1];
 
-                        num2_row = numToRowCol(Integer.parseInt((String) args[1]))[0];
-                        num2_col = numToRowCol(Integer.parseInt((String) args[1]))[1];
+                                num2_row = numToRowCol(Integer.parseInt((String) args[1]))[0];
+                                num2_col = numToRowCol(Integer.parseInt((String) args[1]))[1];
 
-                        num2_kind = Integer.parseInt((String) args[2]);
+                                num2_kind = Integer.parseInt((String) args[2]);
 
-                        stoneExist[num1_row][num1_col]=0;
-                        stoneExist[num2_row][num2_col]=num2_kind;
-                        turnStartInit();
-                        Log.d("왜 안될까...","그러게....");
+                                stoneExist[num1_row][num1_col]=0;
+                                int num2_kind_temp=0;
+                                if(num2_kind==2){
+                                    num2_kind_temp=1;
+                                }
+                                else if(num2_kind==1){
+                                    num2_kind_temp=2;
+                                }
+                                stoneExist[num2_row][num2_col]=num2_kind_temp;
+                                turnStartInit();
+                                Log.d("된다규","벽아님");
+                            }
+                            else{
+                                num1_row = numToRowCol(Integer.parseInt((String) args[0]))[0];
+                                num1_col = numToRowCol(Integer.parseInt((String) args[0]))[1];
+
+                                stoneExist[num1_row][num1_col]=0;
+                                turnStartInit();
+                                Log.d("된다아","벽임");
+                            }
+                        }
                     }
-                    else{
-                        num1_row = numToRowCol(Integer.parseInt((String) args[0]))[0];
-                        num1_col = numToRowCol(Integer.parseInt((String) args[0]))[1];
-
-                        stoneExist[num1_row][num1_col]=0;
-                        turnStartInit();
-                        Log.d("왜 안될까...","그러게....");
-                    }
-                }
+                });
             }
         });
 
