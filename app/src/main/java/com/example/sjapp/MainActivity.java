@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        String userId = (String) args[0];
+                        //String userId = (String) args[0];
                         try {
                             Toast.makeText(getApplicationContext(), id + "님이 입장하셨습니다.", Toast.LENGTH_SHORT).show();
                         }catch (RuntimeException r){
@@ -110,12 +110,18 @@ public class MainActivity extends AppCompatActivity {
         mSocket.on("start", new Emitter.Listener() {
             @Override
             public void call(Object... args) {
-                String UserMe = (String) args[0];
-                String UserYou = (String) args[1];
+                String you="";
+                for(int i=0;i<1;i++){
+                    if((String)args[i]!=id){
+                        you = (String)args[i];
+                    }
+                }
+//                String UserMe = (String) args[1];
+//                String UserYou = (String) args[0];
 
                 Intent intent = new Intent(getApplicationContext(),GameActivity.class);
-                intent.putExtra("Me",UserMe);
-                intent.putExtra("You",UserYou);
+                intent.putExtra("Me",id);
+                intent.putExtra("You",you);
                 startActivity(intent);
             }
         });

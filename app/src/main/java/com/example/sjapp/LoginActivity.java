@@ -51,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
     private ImageView profileImage;
     private Retrofit retrofit;
     private retrofitInterface retrofitInterface;
-    public static String BASE_URL = "http://192.249.18.138:443";
+    public static String BASE_URL = "http://192.168.1.40:3000";
 
     String id;
     String profileImg;

@@ -30,8 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kakao_login_large_narrow" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/btn_custom_login_out"
@@ -52,7 +51,7 @@
         android:layout_height="462dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/아발론" />
+        app:srcCompat="@drawable/avalone" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

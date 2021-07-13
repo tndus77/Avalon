@@ -22,9 +22,13 @@ import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.net.URISyntaxException;
 import java.util.Arrays;
 import java.util.HashMap;
 
+import io.socket.client.IO;
+import io.socket.client.Socket;
+import io.socket.emitter.Emitter;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -492,6 +496,9 @@ public class GameActivity extends AppCompatActivity {
 
     Call<Void> direction;
 
+    private Socket mSocket2;
+    String me = "";
+    String you = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -501,12 +508,22 @@ public class GameActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
 
+        try {
+            mSocket2 = IO.socket(BASE_URL);
+            mSocket2.connect();
+        } catch (URISyntaxException e) {
+        }
+
         tv_user1 = findViewById(R.id.player1Name);
         tv_user2 = findViewById(R.id.player2Name);
         tv_score1 = findViewById(R.id.player1Score);
         tv_score2 = findViewById(R.id.player2Score);
 
         Intent intent = getIntent();
+
+
+        me = intent.getStringExtra("Me");
+        you = intent.getStringExtra("You");
 
         tv_user1.setText(intent.getStringExtra("Me"));
         tv_user2.setText(intent.getStringExtra("You"));
@@ -4858,6 +4875,40 @@ public class GameActivity extends AppCompatActivity {
 
         init();
         turnStartInit();
+
+        mSocket2.on("changedCanvas", new Emitter.Listener() {
+            @Override
+            public void call(Object... args) {
+                Log.d("왜 안될까...","들어오긴 하네...");
+                if(args[3]!=me){
+                    int num1_row,num1_col,num2_row,num2_col,num2_kind;
+                    if((String) args[1]!="None"){
+                        num1_row = numToRowCol(Integer.parseInt((String) args[0]))[0];
+                        num1_col = numToRowCol(Integer.parseInt((String) args[0]))[1];
+
+                        num2_row = numToRowCol(Integer.parseInt((String) args[1]))[0];
+                        num2_col = numToRowCol(Integer.parseInt((String) args[1]))[1];
+
+                        num2_kind = Integer.parseInt((String) args[2]);
+
+                        stoneExist[num1_row][num1_col]=0;
+                        stoneExist[num2_row][num2_col]=num2_kind;
+                        turnStartInit();
+                        Log.d("왜 안될까...","그러게....");
+                    }
+                    else{
+                        num1_row = numToRowCol(Integer.parseInt((String) args[0]))[0];
+                        num1_col = numToRowCol(Integer.parseInt((String) args[0]))[1];
+
+                        stoneExist[num1_row][num1_col]=0;
+                        turnStartInit();
+                        Log.d("왜 안될까...","그러게....");
+                    }
+                }
+            }
+        });
+
+
     }
 
     private void turnStartInit() {//캔버스에 흰 돌 이미지 찍어주기
@@ -5258,31 +5309,6 @@ public class GameActivity extends AppCompatActivity {
 
 
     private void init(){
-//        drawingBackground();//backgroud 그리기
-//        Paint paint = new Paint();
-//        paint.setColor(getResources().getColor(R.color.blue));
-//        paint.setAlpha(200);
-//        RectF rect = new RectF();
-//        int xCen, yCen, r;
-//        r=63;
-//        for(int i=0; i<5; i++){
-//            xCen = 260 + i*140+60;
-//            yCen = 70;
-//            rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
-//            canvas.drawArc(rect, 0,360,true,paint);
-//        }
-//        for(int i=0;i<6;i++){
-//            xCen = 190 + i*140+60;
-//            yCen = 190;
-//            rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
-//            canvas.drawArc(rect, 0,360,true,paint);
-//        }
-//        for(int i=0;i<3;i++){
-//            xCen = 400 + i*140+60;
-//            yCen = 310;
-//            rect.set(xCen-r,yCen-r,xCen+r,yCen+r);
-//            canvas.drawArc(rect, 0,360,true,paint);
-//        }
         nowWayInfo = new int[6][6];
         black_stone12.setVisibility(View.INVISIBLE);
         black_stone13.setVisibility(View.INVISIBLE);
@@ -5331,6 +5357,43 @@ public class GameActivity extends AppCompatActivity {
         black_stone59.setVisibility(View.INVISIBLE);
         black_stone60.setVisibility(View.INVISIBLE);
         black_stone61.setVisibility(View.INVISIBLE);
+    }
+
+    private int[] numToRowCol(int num){
+        int[] rowCol = new int[2];
+        int col=0;
+        int row=0;
+        if(num<=5){
+            col = num - 1;
+            row = 0;
+        }if(num>=6 && num<=11){
+            col = num - 6;
+            row = 1;
+        }if(num>=12 && num<=18){
+            col = num - 12;
+            row = 2;
+        }if(num>=19 && num<=26){
+            col = num - 19;
+            row = 3;
+        }if(num>=27 && num<=35){
+            col = num - 27;
+            row = 4;
+        }if(num>=36 && num<=43){
+            col = num - 36;
+            row = 5;
+        }if(num>=44 && num<=50){
+            col = num - 44;
+            row = 6;
+        }if(num>=51 && num<=56){
+            col = num - 51;
+            row = 7;
+        }if(num>=57 && num<=61){
+            col = num - 57;
+            row = 8;
+        }
+        rowCol[0]=row;
+        rowCol[1]=col;
+        return rowCol;
     }
 
     private boolean[] canMove(int num){
@@ -5747,28 +5810,6 @@ public class GameActivity extends AppCompatActivity {
     }
 
     private void moving(int start, int end, int kindOfStone){
-//        Log.d("start",Integer.toString(start));
-//        Log.d("end",Integer.toString(end));
-
-        String startmsg = Integer.toString(start);
-
-        HashMap<String, String> map = new HashMap<>();
-
-        map.put("start",startmsg);
-
-        direction = retrofitInterface.putDirection(map);
-
-        direction.enqueue(new Callback<Void>() {
-            @Override
-            public void onResponse(Call<Void> call, Response<Void> response) {
-                Log.d("start",Integer.toString(start));
-            }
-
-            @Override
-            public void onFailure(Call<Void> call, Throwable t) {
-                Log.d("end","실패");
-            }
-        });
 
         int row=0,col=0;
 
@@ -6045,6 +6086,13 @@ public class GameActivity extends AppCompatActivity {
             black_stone61.setVisibility(View.INVISIBLE);
             onBlackButtonClicked(view,61);
         }
+        String num1=Integer.toString(62-start);
+        String num2="";
+        String num2_kind="";
+        if(kindOfStone==-1){
+            num2="None";
+            num2_kind="None";
+        }
 
         if(kindOfStone!=-1){
             row=0;
@@ -6077,12 +6125,15 @@ public class GameActivity extends AppCompatActivity {
                 col = end - 57;
                 row = 8;
             }
+            num2 = Integer.toString(62-end);
             if(row>=0 && row<9 && col>=0 && col<9){
                 if(kindOfStone!=3) {
                     stoneExist[row][col] = kindOfStone;
+                    num2_kind = Integer.toString(kindOfStone);
                 }
                 else{
                     stoneExist[row][col]=1;
+                    num2_kind = Integer.toString(1);
                 }
             }
 
@@ -6270,9 +6321,9 @@ public class GameActivity extends AppCompatActivity {
             }
             turnStartInit();
         }
-
-        //버튼 누르고 나면 제일 마지막으로 뜨는 곳
-
+        //마지막 위치
+        mSocket2.emit("moving",num1,num2,num2_kind,me);
+        allUnabled();
     }
 
     private boolean endroad(int row, int col){//false: no line
