@@ -174,6 +174,7 @@ public class LoginActivity extends AppCompatActivity {
                         // 프로필
                         Profile profile = kakaoAccount.getProfile();
 
+
                         if (profile != null) {
                             Log.d("KAKAO_API", "nickname: " + profile.getNickname());
                             id = profile.getNickname();
