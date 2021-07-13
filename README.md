@@ -22,8 +22,6 @@ Android Studio 4.2.1
 - 카카오 로그인은 카카오 카카오계정과 앱을 연결하고 토큰을 발급받아 카카오 API를 사용했습니다. 
 - 카카오 API를 통해 사용자의 카카오계정의 프로필 정보를 제공받았고, 로그인 시 사용자 동의를 받아 접속할 수 있도록 구현하였습니다.
 
- ![KakaoTalk_20210714_011135485](https://user-images.githubusercontent.com/77282190/125490368-80105691-34e0-487d-8bfc-6cc7e0901d70.gif)
-
 ```java
 Profile profile = kakaoAccount.getProfile();
 id = profile.getNickname();
@@ -62,7 +60,8 @@ mSocket.on("player join", new Emitter.Listener() {
             }
         });
 ```
-# player입장해서 toast메시지 나오는 거 gif 넣기
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/77282190/125491647-687c3ad3-59e5-40c0-b8dd-cfc376a74412.gif)
+
 2. Button animation
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/77282190/125490005-471e2e44-a3a8-4fe5-b4ca-c69dd10d5349.gif)
