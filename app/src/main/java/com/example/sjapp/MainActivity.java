@@ -126,8 +126,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void call(Object... args) {
                 String you="";
-                for(int i=0;i<1;i++){
-                    if((String)args[i]!=id){
+                for(int i=0;i<2;i++){
+                    if(!((String)args[i]).equalsIgnoreCase(id)){
                         you = (String)args[i];
                     }
                 }

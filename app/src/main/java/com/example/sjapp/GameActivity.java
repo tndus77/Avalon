@@ -4888,6 +4888,24 @@ public class GameActivity extends AppCompatActivity {
         init();
         turnStartInit();
 
+        mSocket2.on("changedBlue", new Emitter.Listener() {
+            @Override
+            public void call(Object... args) {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        if( !((String) args[1]).equalsIgnoreCase(me)){
+                            int num1_row,num1_col;
+                            num1_row = numToRowCol(Integer.parseInt((String) args[0]))[0];
+                            num1_col = numToRowCol(Integer.parseInt((String) args[0]))[1];
+                            stoneExist[num1_row][num1_col]=1;
+                            turnStartInit();
+                        }
+                    }
+                });
+            }
+        });
+
         mSocket2.on("changedCanvas", new Emitter.Listener() {
             @Override
             public void call(Object... args) {
@@ -4946,6 +4964,7 @@ public class GameActivity extends AppCompatActivity {
         int xCen=0;
         int r=63;
         allUnabled();
+        allInVisible();
         canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR);
         drawingBackground();
         Paint paint = new Paint();
@@ -5715,6 +5734,9 @@ public class GameActivity extends AppCompatActivity {
             row += rowCount;
             if(row<9 && col<9 && row>=0 && col>=0){
                 stoneExist[row][col]=2;
+                String bluenum1="";
+                bluenum1 = Integer.toString(62-rowcolToNum(row,col));
+                mSocket2.emit("blue",bluenum1,me);
             }
         }
 
@@ -5796,8 +5818,6 @@ public class GameActivity extends AppCompatActivity {
         movingpoint[0]=rowcolToNum(row,col);
         if(whiteCount>0){
             stoneExist[row][col]=1;
-            Log.d("여기 떠야해row",Integer.toString(row));
-            Log.d("여기 떠야해col",Integer.toString(col));
         }
 
         return movingpoint;
@@ -8951,6 +8971,69 @@ public class GameActivity extends AppCompatActivity {
             }
         }
         turnStartInit();
+    }
+    private void allInVisible(){
+        black_stone1.setVisibility(View.INVISIBLE);
+        black_stone2.setVisibility(View.INVISIBLE);
+        black_stone3.setVisibility(View.INVISIBLE);
+        black_stone4.setVisibility(View.INVISIBLE);
+        black_stone5.setVisibility(View.INVISIBLE);
+        black_stone6.setVisibility(View.INVISIBLE);
+        black_stone7.setVisibility(View.INVISIBLE);
+        black_stone8.setVisibility(View.INVISIBLE);
+        black_stone9.setVisibility(View.INVISIBLE);
+        black_stone10.setVisibility(View.INVISIBLE);
+        black_stone11.setVisibility(View.INVISIBLE);
+        black_stone12.setVisibility(View.INVISIBLE);
+        black_stone13.setVisibility(View.INVISIBLE);
+        black_stone14.setVisibility(View.INVISIBLE);
+        black_stone15.setVisibility(View.INVISIBLE);
+        black_stone16.setVisibility(View.INVISIBLE);
+        black_stone17.setVisibility(View.INVISIBLE);
+        black_stone18.setVisibility(View.INVISIBLE);
+        black_stone19.setVisibility(View.INVISIBLE);
+        black_stone20.setVisibility(View.INVISIBLE);
+        black_stone21.setVisibility(View.INVISIBLE);
+        black_stone22.setVisibility(View.INVISIBLE);
+        black_stone23.setVisibility(View.INVISIBLE);
+        black_stone24.setVisibility(View.INVISIBLE);
+        black_stone25.setVisibility(View.INVISIBLE);
+        black_stone26.setVisibility(View.INVISIBLE);
+        black_stone27.setVisibility(View.INVISIBLE);
+        black_stone28.setVisibility(View.INVISIBLE);
+        black_stone29.setVisibility(View.INVISIBLE);
+        black_stone30.setVisibility(View.INVISIBLE);
+        black_stone31.setVisibility(View.INVISIBLE);
+        black_stone32.setVisibility(View.INVISIBLE);
+        black_stone33.setVisibility(View.INVISIBLE);
+        black_stone34.setVisibility(View.INVISIBLE);
+        black_stone35.setVisibility(View.INVISIBLE);
+        black_stone36.setVisibility(View.INVISIBLE);
+        black_stone37.setVisibility(View.INVISIBLE);
+        black_stone38.setVisibility(View.INVISIBLE);
+        black_stone39.setVisibility(View.INVISIBLE);
+        black_stone40.setVisibility(View.INVISIBLE);
+        black_stone41.setVisibility(View.INVISIBLE);
+        black_stone42.setVisibility(View.INVISIBLE);
+        black_stone43.setVisibility(View.INVISIBLE);
+        black_stone44.setVisibility(View.INVISIBLE);
+        black_stone45.setVisibility(View.INVISIBLE);
+        black_stone46.setVisibility(View.INVISIBLE);
+        black_stone47.setVisibility(View.INVISIBLE);
+        black_stone48.setVisibility(View.INVISIBLE);
+        black_stone49.setVisibility(View.INVISIBLE);
+        black_stone50.setVisibility(View.INVISIBLE);
+        black_stone51.setVisibility(View.INVISIBLE);
+        black_stone52.setVisibility(View.INVISIBLE);
+        black_stone53.setVisibility(View.INVISIBLE);
+        black_stone54.setVisibility(View.INVISIBLE);
+        black_stone55.setVisibility(View.INVISIBLE);
+        black_stone56.setVisibility(View.INVISIBLE);
+        black_stone57.setVisibility(View.INVISIBLE);
+        black_stone58.setVisibility(View.INVISIBLE);
+        black_stone59.setVisibility(View.INVISIBLE);
+        black_stone60.setVisibility(View.INVISIBLE);
+        black_stone61.setVisibility(View.INVISIBLE);
     }
     private void allUnabled(){
         black_stone1.setEnabled(false);
