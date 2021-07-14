@@ -19,7 +19,7 @@ Android Studio 4.2.1
 ### LoginActivity
 #### SDK 활용
 1. 카카오 로그인 SDK
-- 카카오 로그인은 카카오 카카오계정과 앱을 연결하고 토큰을 발급받아 카카오 API를 사용했습니다. 
+- 카카오 로그인은 카카오계정과 앱을 연결하고 토큰을 발급받아 카카오 API를 사용했습니다. 
 - 카카오 API를 통해 사용자의 카카오계정의 프로필 정보를 제공받았고, 로그인 시 사용자 동의를 받아 접속할 수 있도록 구현하였습니다.
 
 ```java
@@ -40,8 +40,9 @@ profileImg = profile.getProfileImageUrl();
 
 ### MainActivity 
 #### 셜명과 기능
+
 1. Player 입장
-Socket을 활용하여 한 플레이어가 입장하면 카카오톡 프로필을 가져온 후 Toast 메시지가 나오도록 구현하였습니다. 
++ Socket을 활용하여 한 플레이어가 입장하면 카카오톡 프로필을 가져온 후 Toast 메시지가 나오도록 구현하였습니다. 
 ```java
 mSocket.on("player join", new Emitter.Listener() {
             @Override
