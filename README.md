@@ -64,7 +64,8 @@ mSocket.on("player join", new Emitter.Listener() {
 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/77282190/125491647-687c3ad3-59e5-40c0-b8dd-cfc376a74412.gif)
 
-2. Button animation
+2. Text animation
+#### 각 글자를 따로 Handler를 이용하여 일정한 시간 간격으로 append해주는 방식을 사용하여 text를 바꾸면 왼쪽부터 타이핑이 되는 효과를 만들 수 있습니다. 모든 텍스트가 다 나온 다음 깜빡이는 애니메이션을 설정해 두면 로딩과 같은 효과를 낼 수 있습니다. 
 
 
 ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/77282190/125492238-1795e984-1e1c-4a41-881b-72be9e7a783a.gif)
