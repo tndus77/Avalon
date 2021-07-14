@@ -40,8 +40,9 @@ profileImg = profile.getProfileImageUrl();
 
 ### MainActivity 
 #### 셜명과 기능
+
 1. Player 입장
-Socket을 활용하여 한 플레이어가 입장하면 카카오톡 프로필을 가져온 후 Toast 메시지가 나오도록 구현하였습니다. 
++ Socket을 활용하여 한 플레이어가 입장하면 카카오톡 프로필을 가져온 후 Toast 메시지가 나오도록 구현하였습니다. 
 ```java
 mSocket.on("player join", new Emitter.Listener() {
             @Override
