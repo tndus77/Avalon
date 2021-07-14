@@ -4901,8 +4901,10 @@ public class GameActivity extends AppCompatActivity {
                             int num1_row,num1_col;
                             num1_row = numToRowCol(Integer.parseInt((String) args[0]))[0];
                             num1_col = numToRowCol(Integer.parseInt((String) args[0]))[1];
-                            stoneExist[num1_row][num1_col]=1;
-                            turnStartInit();
+                            if(num1_row<9 && num1_col<9 && num1_row>=0 && num1_col>=0){
+                                stoneExist[num1_row][num1_col]=1;
+                                turnStartInit();
+                            }
                         }
                     }
                 });
